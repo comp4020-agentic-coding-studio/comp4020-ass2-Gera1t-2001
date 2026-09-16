@@ -903,3 +903,42 @@ drafted from; it is not itself the submission.
   been caught by twice this week.
 - **Citation:**
   [`2b66cc9`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/2b66cc9)
+
+---
+
+- **Date/time:** 2026-09-18, morning
+- **Tag:** [judgement]
+- **What happened:** `FACTS.md`, the typed module, and the test that ties
+  every figure on the site back to it.
+- **What I did instead of the obvious thing:** The brief lists the material
+  already gathered — deny thresholds, wave intervals, camp counts by tier,
+  aggro distances, the full attribute table — and the temptation was to carry
+  all of it, because a fuller file looks like better work. The governing rule
+  is the opposite: only facts a page actually states. So `FACTS.md` has seven
+  rows, and a section listing what was gathered and deliberately left out,
+  with a reason each. Week 5 is the case worth naming: the six per-attribute
+  conversion rates are real and available, and putting them on the page would
+  have buried the week's actual argument under a table. The two figures it
+  does carry are the ones the argument turns on.
+- **The module is canonical because a test makes it so.** The brief asks for
+  "a typed module the pages read from", and content-collection markdown cannot
+  import one — so a module the pages do not consult would be decorative. The
+  test closes it from the other end: it reads the built prose and fails on any
+  number that is not a declared fact.
+- **How I knew the test was worth having:** I built its exclusion list from
+  the pages rather than from imagination, and the first three attempts were
+  wrong in instructive ways. Scoped to `<article>` it silently fell back to
+  the whole document and "found" numbers in inline CSS and SVG — every token
+  appearing on all 24 pages, which is the shape of a broken extractor rather
+  than a dirty site. Then `39` turned out to be `&#39;`, an apostrophe
+  surviving tag-stripping. Then the last two survivors were "tier-1 tower" and
+  "Dota 2" — a tower's name and the game's name. Each exclusion is a number
+  that makes no claim about the game, and the list is written out in the test
+  with that reasoning, because a silent allowlist is how this kind of check
+  rots.
+- **Two guards against the test passing for the wrong reason:** it asserts it
+  found 24 pages and that none yielded empty prose, and it checks every module
+  row still has a row in `FACTS.md`. Then I proved it red by putting an
+  invented gold figure into week 2 and watching it fail.
+- **Citation:**
+  [`7038931`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/7038931)
