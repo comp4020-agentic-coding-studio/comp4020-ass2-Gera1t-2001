@@ -96,3 +96,25 @@ drafted from; it is not itself the submission.
   before committing to a repo that becomes public at the cutoff.
 - **Citation:**
   [`c1231ee`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/c1231ee)
+
+---
+
+- **Date/time:** 2026-09-16, afternoon
+- **Tag:** [harness]
+- **What happened:** The merged `CLAUDE.md` carried general working rules but
+  said nothing about this course, so nothing stopped the agent inventing hero
+  abilities, quoting gold costs from memory, or writing twelve interchangeable
+  weekly pages — the failure Assignment 2 names explicitly.
+- **What I did instead of the obvious thing:** Added the course rules as a
+  block of constraints rather than a description of the course. The load-bearing
+  ones are negative: no figures at all until a pinned data file exists, at most
+  two abilities per week, no Valve artwork, and decks written by the author
+  rather than the agent. A rule that says "the course is about decisions" is
+  decoration; "pages state no figures at all" is a rule an agent can actually
+  be caught breaking.
+- **How I knew it was right:** `pnpm typecheck` clean afterwards. The real
+  test is the next few steps: the no-numbers rule is what the twelve lecture
+  stubs are written under, and a stub that needs a number to make sense has to
+  be rewritten rather than fudged.
+- **Citation:**
+  [`4e5e46c`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/4e5e46c)
