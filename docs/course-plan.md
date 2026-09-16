@@ -112,16 +112,25 @@ Fixed sections every week's page carries, in this order:
   finished file, building it and checking every slide at both marking
   viewports.
 
-### Scrims (the `sessions` collection)
+### Lobby Labs (the `sessions` collection)
 
-The platform's fixed `sessions` collection is this course's weekly **Scrim**:
-`sessionLabels` = Scrim / Scrims. One per teaching week, twelve in all, dated
-later in the same week as the lecture. A scrim drills that week's decision
-and nothing else — week 2 is a last-hit lobby, week 4 is pulling and stacking
-against the clock, week 9 is a warding exercise on a paused map, week 12 is
-the A4 matches. Each scrim page is short: a three-line `spec:` (what to bring,
-what you do, how you know it went well) and one paragraph. Scrims are where
-the home page's promise of *practice* is kept.
+The platform's fixed `sessions` collection is this course's weekly **Lobby
+Lab**: `sessionLabels` = Lobby Lab / Lobby Labs, while the collection key,
+refs and URL stay `sessions` as the platform requires. *Lab* is the course's
+tutorial slot; *Lobby* is where it is held. One per teaching week, twelve in
+all, on the Thursday of the same week as its Monday lecture — which puts each
+one the day before an assignment deadline in weeks 4, 8 and 11, so the last
+chance to ask a question in person is always in the room.
+
+A Lobby Lab is a different genre from a lecture, not a restatement of it. The
+lecture answers *why*; the Lobby Lab answers *how you know you can do it*.
+Lecture titles are questions, Lobby Lab titles are verb phrases, and each
+Lobby Lab page carries only three things: what to bring, how it runs, and a
+three-line `spec:` a reader can judge from outside. Every Lobby Lab also
+states in a `needs_others` field why it cannot be done alone — someone to
+count your last hits, an opponent contesting the lane, four teammates to call
+to, a rival captain across the draft. A drill with no answer to that is
+homework, not a class.
 
 ---
 
@@ -215,7 +224,7 @@ Candidate `spec/` tests, each protecting a promise the build cannot see:
 7. The Hall of Fame page contains no mark or weight field.
 8. Every number cites patch 7.41f (no other patch string appears anywhere).
 9. No template placeholder artwork remains.
-10. No published lecture, scrim or assessment carries `draft: true` at ship time (written red-first on the Friday, when the stubs are filled).
+10. No published lecture, Lobby Lab or assessment carries `draft: true` at ship time (written red-first once the stubs are filled).
 
 `CLAUDE.md` rule skeleton: one decision per week · abilities ≤ 2, each with a
 rationale · numbers only from data pinned to 7.41f, never from memory ·
@@ -244,12 +253,12 @@ Resolved in planning (2026-09-16):
 - [x] Title: *Welcome to Dota. You Will Lose.*
 - [x] Calendar: the starter's Semester 1 2027 dates, unchanged (§2).
 - [x] Flagship deck: week 2, written by the author.
-- [x] Sessions are weekly Scrims, twelve of them (§3).
+- [x] The `sessions` collection is this course's weekly **Lobby Lab**, twelve of them (§3). The collection key, refs and URL stay `sessions`; only `sessionLabels` changes.
 - [x] Data layer reduced to one small `FACTS.md` (§6).
+- [x] Patch 7.41 removed Facets (confirmed 16 Sep from patch coverage); week 5 teaches the four attributes only.
 
 Still open — pages must not guess at these:
 
-- [ ] Whether patch 7.41 removed Facets (affects week 5's content).
 - [ ] The thirteen official hero slugs, verified one by one.
 - [ ] Hero pool: keep thirteen, or cut week 5 to two heroes.
 - [ ] A1's exact last-hit threshold (published when A1 opens; pinned once the 7.41f data lands).
@@ -262,8 +271,8 @@ Still open — pages must not guess at these:
 | Day | Work |
 |---|---|
 | Wed 16 Sep | This plan; `CLAUDE.md` rules; red spec tests; course record, four assessments, twelve lecture stubs, policies stub, home page |
-| Thu 17 Sep | **Fill the twelve weeks** (the thing the marker reads); verify the thirteen slugs; Hero Pool page; replace the hero and card images (the two hard gates that cannot be deleted) |
-| Fri 18 Sep | Twelve scrims; the teaching cast (`people`) and the two starter portraits gone with it; Hall of Fame page; `FACTS.md` and the figures the weeks need; the `draft: true` check, red first, then green |
+| Thu 17 Sep | **Fill the twelve weeks** (the thing the marker reads); the cast; the Hero Pool page; the twelve Lobby Labs; replace the hero and card images (the two hard gates that cannot be deleted) |
+| Fri 18 Sep | Hall of Fame page; `FACTS.md` and the figures the weeks need; the verified hero slugs; the `draft: true` check, red first, then green. (The twelve Lobby Labs and the cast moved forward into Thursday.) |
 | Sat 19 Sep | The flagship deck (author-written); read non-adjacent weeks at both marking viewports; optional second deck |
 | Sun 20 Sep | `PROCESS.md` (author-written, citing commits); `pnpm check` and `pnpm check:evidence`; deployment verified |
 | Mon 21 Sep 12:00 | Due |
