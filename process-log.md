@@ -118,3 +118,33 @@ drafted from; it is not itself the submission.
   be rewritten rather than fudged.
 - **Citation:**
   [`4e5e46c`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/4e5e46c)
+
+---
+
+- **Date/time:** 2026-09-16, afternoon
+- **Tag:** [harness]
+- **What happened:** `spec/assignment-2.test.ts` already asserts the published
+  Assignment 2 contract. Nothing asserted the promises the course makes about
+  itself — one decision per week, a deck or a stated reason for its absence,
+  assignments that open before they are due.
+- **What I did instead of the obvious thing:** The obvious move is to write
+  these tests once the pages exist, when they can be made green. I wrote them
+  against the untouched starter instead and committed them red, so the commit
+  history carries a red-to-green pair for each promise rather than a green
+  test that has never demonstrated it can fail. Two details were deliberate:
+  the assertions read the built `dist/api/index.json` rather than source
+  frontmatter, so they check what shipped; and the deck assertion is an
+  exclusive or, which catches a lecture that carries both a deck link and a
+  `deck: none` — a state that looks fine in either half of the check alone.
+  I also checked the existing suite first and dropped nothing as duplicate:
+  `assignment-2.test.ts` counts any dated node covering the twelve weeks,
+  while this one requires exactly twelve lecture nodes, which is a different
+  claim.
+- **How I knew it was right:** Ran it and read every failure message. Six red,
+  each for the true reason: no `released` key on assessments, two lectures
+  rather than twelve, no `decision` on either, week 2 carrying neither a deck
+  nor a reason, and no assignment 4 in the API. The one assertion that passed
+  — lecture dates ordered like their week numbers — is genuinely true of the
+  two starter lectures, so it was left alone rather than forced red.
+- **Citation:**
+  [`8de67b7`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/8de67b7)
