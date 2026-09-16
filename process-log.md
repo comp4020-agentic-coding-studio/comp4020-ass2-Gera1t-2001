@@ -862,3 +862,18 @@ drafted from; it is not itself the submission.
   that stops matching passes for the same reason a clean site does.
 - **Citation:**
   [`a4308dc`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/a4308dc)
+
+---
+
+- **Date/time:** 2026-09-18, morning
+- **Tag:** [routine]
+- **What happened:** The policies page opened by restating its own
+  description: the theme renders `description` as a lead paragraph, and the
+  first body sentence said the same thing in different words.
+- **What I did instead of the obvious thing:** Cut the sentence rather than
+  rewriting it into something that says slightly less. The page's job is three
+  rules; a paragraph explaining that a page of rules exists is the kind of
+  filler that reads as padding on a site whose whole argument is that it is
+  not padded.
+- **Citation:**
+  [`049c809`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/049c809)
