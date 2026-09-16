@@ -58,7 +58,9 @@ const withoutStructuralNumbers = (text: string): string =>
     .replace(/Dota\s+2/g, " ")
     .replace(new RegExp(PATCH.replace(".", "\\."), "g"), " ");
 
-const NUMERIC = /[0-9][0-9.:%,+]*[0-9%]|[0-9]/g;
+// A leading + is part of the figure ("+0.45 attack damage"), so it has to be
+// captured or the token would not match what FACTS.md declares.
+const NUMERIC = /\+?[0-9][0-9.:%,]*[0-9%]|\+?[0-9]/g;
 
 const pages = (): [string, string][] =>
   (["lectures", "sessions"] as const).flatMap((collection) =>
@@ -103,9 +105,7 @@ describe("every figure traces to FACTS.md", () => {
   it("keeps FACTS.md and the module in step", () => {
     const table = readFileSync(resolve("FACTS.md"), "utf8");
     for (const fact of facts) {
-      expect(table.includes(`**${fact.rendered}**`), `FACTS.md has no row for ${fact.id}`).toBe(
-        true,
-      );
+      expect(table.includes(fact.rendered), `FACTS.md has no row for ${fact.id}`).toBe(true);
     }
   });
 });

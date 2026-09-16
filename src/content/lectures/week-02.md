@@ -44,9 +44,9 @@ one action.
 are two different activities, and confusing them is the single most expensive
 habit a new player brings to a lane.
 
-**Denying.** Below a health threshold you can kill your own creep, so the
-enemy takes no gold from it at all and only part of the experience. This is
-Dota's distinctive move: refusal made into a positive action.
+**Denying.** Below 50% health you can kill your own creep, so the enemy takes
+no gold from it at all and only 50% of the experience. This is Dota's
+distinctive move: refusal made into a positive action.
 
 Denying also **drags the wave back toward your own tower**, which means this
 week's mechanic is already quietly doing next week's job. You will meet that

@@ -16,8 +16,8 @@ anywhere on the site.
 | **50%** | A creep or other non-hero unit can be denied below half its health | Week 2, *Mechanics* | Denying |
 | **50%** | A denied lane creep gives the enemy half its experience — and no gold at all | Week 2, *Mechanics* | Denying |
 | **1:00** | The first neutral camp spawn of a match | Week 4, *Mechanics* | Neutral camps |
-| **1 minute** | The interval between camp spawns thereafter, on the game clock rather than from when the camp was cleared | Week 4, *Mechanics* | Neutral camps |
-| **4** | The number of camps on the map that can be pulled into a lane: the two small camps, and the large camp inside each main jungle by the off lane | Week 4, *Mechanics* | Neutral camps |
+| **every minute** | The interval between camp spawns thereafter, on the game clock rather than from when the camp was cleared. The page spells this one out rather than writing "every 1 minute" | Week 4, *Mechanics* | Neutral camps |
+| **four** | The number of camps on the map that can be pulled into a lane, spelled out on the page because prose is the point: the two small camps, and the large camp inside each main jungle by the off lane | Week 4, *Mechanics* | Neutral camps |
 | **+1** | Attack damage added by each point of a hero's **primary** attribute, on top of what that attribute already gives | Week 5, *Mechanics* | Attributes |
 | **+0.45** | Attack damage a **universal** hero gets from every point of *any* attribute | Week 5, *Mechanics* | Attributes |
 

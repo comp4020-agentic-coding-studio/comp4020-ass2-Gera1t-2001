@@ -48,11 +48,11 @@ mana, mana regeneration and magic resistance — **not** spell damage, which is
 the thing most people assume it does and the thing it has never done.
 
 **What universal is.** A universal hero turns every point of *any* attribute
-into attack damage, which is why they scale from items that would do nothing
-for a hero with a single primary.
+into +0.45 attack damage, which is why they scale from items that would do
+nothing for a hero with a single primary.
 
 **The line this week turns on.** For a hero whose primary attribute it is,
-each point of that attribute *also* adds attack damage. That is the whole
+each point of that attribute *also* adds +1 attack damage. That is the whole
 argument: the same item, bought by two heroes, is not the same purchase.
 
 **7.41f removed Facets**, so picking a hero is a smaller question than it used

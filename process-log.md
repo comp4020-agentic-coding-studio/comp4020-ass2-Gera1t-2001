@@ -942,3 +942,34 @@ drafted from; it is not itself the submission.
   invented gold figure into week 2 and watching it fail.
 - **Citation:**
   [`7038931`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/7038931)
+
+---
+
+- **Date/time:** 2026-09-18, morning
+- **Tag:** [judgement]
+- **What happened:** Wiring the figures into the sentences that were already
+  there. Five went in; two that `FACTS.md` carries did not.
+- **What I did instead of the obvious thing:** The brief's instruction is that
+  this step sharpens the pages rather than rewriting them, and twice the
+  sharper version was the one without a numeral. "They come every 1 minute
+  after that" is worse English than "every minute", and "only 4 camps" is
+  worse than "only four camps" — small counts belong in words. So those two
+  facts stay adjudicated in `FACTS.md` and render as words, and the module
+  carries an explicit `digits` field that is *absent* for them. That is a real
+  limitation of a digit scan and the module says so in a comment rather than
+  hiding it: a figure spelled as a word is outside what this check can reach.
+- **Two near-misses the wiring produced**, both of which would have been false
+  reds rather than real failures: the token regex did not capture a leading
+  `+`, so `+0.45` would have been read as `0.45` and failed against a table
+  that declares `+0.45`; and `every 1 minute` would have emitted a bare `1`,
+  which is far too permissive a token to ever allow. Fixing the first by
+  capturing the sign and the second by improving the prose is better than
+  widening the allowed set, which is the move that would have quietly made the
+  check useless.
+- **How I knew it was right:** Did not stop at green. Printed what the scanner
+  actually sees on the three pages that gained figures: week 2 yields
+  `["50%","50%"]`, week 4 `["1:00"]`, week 5 `["+0.45","+1"]`. Five tokens,
+  each checked against the table — so the pass is the check working, not the
+  figures being silently excluded by one of the structural patterns.
+- **Citation:**
+  [`1dfb7d7`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/1dfb7d7)

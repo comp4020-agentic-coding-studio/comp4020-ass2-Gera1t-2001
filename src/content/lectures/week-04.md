@@ -39,8 +39,9 @@ rotation with no target trades certain experience for nothing at all.
 
 ## Mechanics
 
-**Camps spawn on the game clock, and only when empty.** Not on a timer that
-starts when you cleared the camp — on the match clock, the same moments for
+**Camps spawn on the game clock, and only when empty.** The first spawn is at
+1:00 and they come every minute after that — not on a timer that starts when
+you cleared the camp, but on the match clock, at the same moments for
 everybody in the game. That is the difference between a rhythm you can plan
 around and one you have to keep rediscovering, and it is why "is there
 anything in the jungle right now" is a question with an answer.
