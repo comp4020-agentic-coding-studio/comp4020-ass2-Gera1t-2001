@@ -110,9 +110,9 @@ Every lecture carries `teachers:` — the assignment is the table in
 
 ---
 
-## Week 5 — Who should I pick — attributes
+## Week 5 — Who should I pick?
 
-- **Decision:** Who should I pick — attributes
+- **Decision:** Who should I pick?
 - **Mechanics:**
   1. The four primary attributes: Strength, Agility, Intelligence, Universal. Your primary attribute decides what each level gives you.
   2. How attributes become combat: Strength into health and regeneration, Agility into attack speed and armour, Intelligence into mana and spell damage. **CHECK (author): confirm this mapping against 7.41.**
@@ -132,9 +132,9 @@ Every lecture carries `teachers:` — the assignment is the table in
 
 ---
 
-## Week 6 — What am I for in this team — roles
+## Week 6 — What am I for in this team?
 
-- **Decision:** What am I for in this team — roles
+- **Decision:** What am I for in this team?
 - **Mechanics:**
   1. Positions one to five describe an **order of resource priority**, not a job description. Position one takes the most gold, position five the least.
   2. The real difference between core and support: a core converts the team's resources into late-game power; a support spends their own time protecting that conversion.
@@ -179,9 +179,9 @@ Every lecture carries `teachers:` — the assignment is the table in
 
 ---
 
-## Week 8 — When should I *not* engage — control
+## Week 8 — When should I not engage?
 
-- **Decision:** When should I *not* engage — control
+- **Decision:** When should I not engage?
 - **Mechanics:**
   1. Kinds of control — stuns, roots, silences, hexes — and **what each one forbids**, which matters more than how long it lasts.
   2. Status effects and dispels: some control can be removed and some cannot, and that decides whether you owe an item slot to a dispel.
@@ -201,9 +201,9 @@ Every lecture carries `teachers:` — the assignment is the table in
 
 ---
 
-## Week 9 — Where did he go — information
+## Week 9 — Where did he go?
 
-- **Decision:** Where did he go — information
+- **Decision:** Where did he go?
 - **Mechanics:**
   1. Fog: what you cannot see is still happening. Dota's default state is that you do not know.
   2. An Observer Ward buys vision; a Sentry Ward buys the **denial** of the enemy's vision. Beginners routinely treat these as one thing.
@@ -223,9 +223,9 @@ Every lecture carries `teachers:` — the assignment is the table in
 
 ---
 
-## Week 10 — Towers or heroes — objectives
+## Week 10 — Towers or heroes?
 
-- **Decision:** Towers or heroes — objectives
+- **Decision:** Towers or heroes?
 - **Mechanics:**
   1. A tower is not only an obstacle: it gives vision, a safe area and gold, and destroying it permanently changes the shape of the map.
   2. Barracks: destroying them permanently weakens the enemy's creep waves — one of the few irreversible gains in the game.
@@ -245,9 +245,9 @@ Every lecture carries `teachers:` — the assignment is the table in
 
 ---
 
-## Week 11 — Who goes first — teamfights and drafting
+## Week 11 — Who goes first?
 
-- **Decision:** Who goes first — teamfights and drafting
+- **Decision:** Who goes first?
 - **Mechanics:**
   1. Initiation and counter-initiation: "who opens" is really "whose combination of abilities pays most while the enemy has not reacted".
   2. Positioning: the three seconds before a fight starts decide most of its outcome.
