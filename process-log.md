@@ -59,3 +59,18 @@ drafted from; it is not itself the submission.
 - **Citation:**
   [`d7b7667`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/d7b7667)
 - **Curated prompt:** `/comp4020:start`
+
+---
+
+- **Date/time:** 2026-09-16, early afternoon
+- **Tag:** [routine]
+- **What happened:** Two commits existed with no log entry, because
+  `/comp4020:start` ran before this repo had a `process-log.md` to write into.
+- **What I did instead of the obvious thing:** Nothing clever — applied the
+  backstop in `CLAUDE.md`'s logging rule, which exists for exactly this case,
+  and wrote both entries against their real hashes rather than starting the
+  log from today and letting the first two commits go unrecorded.
+- **How I knew it was right:** `git log` gave both hashes; each entry cites
+  the one it describes.
+- **Citation:**
+  [`46349d3`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/46349d3)
