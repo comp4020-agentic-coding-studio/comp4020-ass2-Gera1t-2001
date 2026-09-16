@@ -877,3 +877,29 @@ drafted from; it is not itself the submission.
   not padded.
 - **Citation:**
   [`049c809`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/049c809)
+
+---
+
+- **Date/time:** 2026-09-18, morning
+- **Tag:** [harness]
+- **What happened:** The `draft: true` guard, written last because it is the
+  only check in this repo that was green the moment it existed.
+- **What I did instead of the obvious thing:** Said so in the test rather than
+  presenting it as though it had earned its green. A green-on-arrival
+  assertion has never demonstrated it can fail, and writing one without
+  admitting that is how a suite fills up with checks nobody has tested. So I
+  demonstrated it instead: added `draft: true` back to week 7, watched it fail
+  naming `lectures/week-07`, and removed it again.
+- **Why it earns its place anyway:** this flag has no visible failure mode. I
+  checked the built HTML on day 1 — the theme renders no draft badge at all —
+  so a page left marked draft is indistinguishable from a finished one on the
+  site, while the flag still ships in the course API that the
+  programs-and-courses page ingests. A human review cannot catch it, which is
+  exactly when a check is the right tool.
+- **Second assertion, against the guard going blind:** it also pins the node
+  counts it is guarding — twelve lectures, twelve Lobby Labs, four
+  assessments. A filter that stopped matching would pass the draft check for
+  the same reason a clean site does, and that is the failure I have already
+  been caught by twice this week.
+- **Citation:**
+  [`2b66cc9`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/2b66cc9)
