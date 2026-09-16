@@ -351,3 +351,34 @@ drafted from; it is not itself the submission.
   API.
 - **Citation:**
   [`f670594`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/f670594)
+
+---
+
+- **Date/time:** 2026-09-17, late evening
+- **Tag:** [harness]
+- **What happened:** Day 1 ended with a guessed commit hash written into
+  `process-log.md` — caught by eye, immediately, but only because I happened
+  to run `git log` straight afterwards. `CLAUDE.md` already required a real
+  hash. The rule had been in force the whole time and had not stopped it.
+- **What I did instead of the obvious thing:** The obvious response to a rule
+  that was broken is to restate the rule more firmly. Instead I wrote the
+  sensor: `scripts/check-log.ts` reads every Citation in the log, pulls the
+  hex out of it and runs `git cat-file -e <sha>^{commit}` on each, and it is
+  wired into `pnpm check` so it runs on every commit rather than when someone
+  remembers. `check-evidence.ts` already did this for `PROCESS.md`; the gap
+  was that the working log, written all week, had no equivalent until the
+  submission gate.
+- **How I knew it was right:** Both directions, because a sensor I have only
+  seen agree with me is not yet a sensor. Green against the log as it stood;
+  then I replaced a real hash with `deadbee` and it went red naming
+  `deadbee` specifically, not just failing; then I restored it and it went
+  green again. Running it also turned up a **second** defect of a kind I had
+  not been looking for: entry 8 had no Citation field at all. Before believing
+  that red I printed the entry's field names to rule out my own parser, and
+  the field was genuinely absent. So the check caught one fault it was
+  designed for and one it was not.
+- **Also fixed, unprompted:** `CLAUDE.md` requires every committed file to be
+  in English and I had written two curated prompts into the log in Chinese.
+  Translated.
+- **Citation:**
+  [`3fb6ccb`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/3fb6ccb)
