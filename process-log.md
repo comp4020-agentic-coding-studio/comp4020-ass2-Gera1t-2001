@@ -996,3 +996,38 @@ drafted from; it is not itself the submission.
   matched against the table.
 - **Citation:**
   [`17488c5`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/17488c5)
+
+---
+
+- **Date/time:** 2026-09-17, around 01:30
+- **Tag:** [judgement]
+- **What happened:** `docs/brief-diagrams.md` blocks the map overview until
+  "the author has supplied reference images", and separately the brief asks
+  for `currentColor` and the theme's CSS custom properties so the diagram works
+  in both themes. Both instructions needed a call. The reference the author
+  actually supplied is `docs/map-reference.md`, which is text, not images — and
+  it says of itself that it "is the only source the diagrams draw the map
+  from". And an SVG referenced as `<img src>` renders in its own document: it
+  inherits neither `currentColor` nor any `--at-*` property from the page, so
+  the literal instruction would have produced a black-on-black diagram in dark
+  mode.
+- **What I did instead of the obvious thing:** Treated the text reference as
+  the unblock — it is explicit that it is the source, and it settles every
+  element the diagram carries — and drew nothing the file does not state
+  (no jungles, no camps, no furniture; those are week 10's diagram). For the
+  theme, kept `currentColor` and `var(--at-primary, …)` in the markup but gave
+  the SVG its own root `color` and `color-scheme: light dark`, with the theme's
+  own `light-dark(oklch(from …))` expressions as the fallback values. The file
+  is then correct standalone and still picks up real tokens if it is ever
+  inlined.
+- **How I knew it was right:** Rasterised it and looked, three times, at 358px
+  and 520px in both schemes. That is also how I learned the propagation works
+  at all: a light panel and a dark panel in the same harness render the same
+  `<img>` differently, so `color-scheme` does reach into an SVG image. Pass 1
+  had "Radiant base" sitting on top of "Bottom lane" and the second caption
+  line running off the right edge; pass 2 fixed those and widened the
+  outside-the-lanes band, which had been far too thin to make the point the
+  reference insists on; pass 3 moved the "River" label out of the top-lane
+  caption it was colliding with.
+- **Citation:**
+  [`9d30896`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/9d30896)

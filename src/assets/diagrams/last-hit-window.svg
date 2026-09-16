@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" width="720" height="520" role="img" aria-labelledby="lh-title lh-desc">
+  <title id="lh-title">The last-hit window and the deny window</title>
+  <desc id="lh-desc">A chart of one creep's health falling over time as a staircase: each hit takes a bite, and the health is flat in between until the next hit lands. A dashed line marks half health. Two windows are bracketed along the same time axis. The wider one opens where the staircase drops below half health and runs until the creep dies: that is the stretch in which your own creep can be denied. The narrower one is the final step alone, where the creep is low enough that one more attack kills it and the last hit pays. The narrow window sits inside the wide one.</desc>
+  <style>
+    svg {
+      color-scheme: light dark;
+      color: var(--at-text, light-dark(oklch(from #b97d1c 20% .01 h), oklch(from #b97d1c 95% .005 h)));
+      font-family: var(--at-font-body, ui-sans-serif, system-ui, sans-serif);
+    }
+    .axis { fill: none; stroke: currentColor; stroke-opacity: .45; stroke-width: 2; }
+    .half { stroke: currentColor; stroke-opacity: .5; stroke-width: 2; stroke-dasharray: 8 7; }
+    .curve { fill: none; stroke: currentColor; stroke-width: 4; stroke-linejoin: round; }
+    .deny-fill { fill: var(--at-tertiary, #6b6154); fill-opacity: .24; }
+    .hit-fill { fill: var(--at-primary, #b97d1c); fill-opacity: .32; }
+    .deny-mark { fill: none; stroke: var(--at-tertiary, #6b6154); stroke-width: 3; }
+    .hit-mark { fill: none; stroke: var(--at-primary, #b97d1c); stroke-width: 3; }
+    .dead { fill: currentColor; }
+    text { fill: currentColor; }
+    .lbl { font-size: 24px; font-weight: 700; }
+    .ax { font-size: 22px; fill-opacity: .66; }
+    .note { font-size: 21px; fill-opacity: .68; }
+  </style>
+
+  <!-- Windows, drawn under the curve so the staircase reads on top -->
+  <rect class="deny-fill" x="426" y="100" width="192" height="300"/>
+  <rect class="hit-fill" x="570" y="100" width="48" height="300"/>
+
+  <!-- Axes -->
+  <path class="axis" d="M90 100 V400 H666"/>
+  <line class="half" x1="90" y1="250" x2="660" y2="250"/>
+
+  <!-- One creep's health, falling a bite at a time -->
+  <path class="curve" d="M90 100 H138 V121 H186 V145 H234 V163 H282 V190 H330 V214 H378 V238 H426 V268 H474 V295 H522 V322 H570 V355 H618 V400"/>
+  <circle class="dead" cx="618" cy="400" r="6"/>
+
+  <text class="ax" transform="translate(46 250) rotate(-90)" text-anchor="middle">Creep health</text>
+  <text class="ax" x="96" y="242">half health</text>
+  <text class="ax" x="100" y="392">Time →</text>
+  <text class="ax" x="632" y="392">dies</text>
+
+  <!-- The two windows, bracketed on the one axis. The narrow one sits inside
+       the wide one, which is the point: the last hit is a moment you can also
+       spend on your own creep. -->
+  <path class="deny-mark" d="M426 424 V440 H618 V424"/>
+  <text class="lbl" x="408" y="449" text-anchor="end">Your creep can be denied</text>
+
+  <path class="hit-mark" d="M570 472 V488 H618 V472"/>
+  <text class="lbl" x="552" y="497" text-anchor="end">The last hit pays</text>
+
+  <text class="note" x="40" y="80">The hit that counts is a window, not a reflex.</text>
+</svg>
