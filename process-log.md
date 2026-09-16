@@ -319,3 +319,32 @@ drafted from; it is not itself the submission.
   4's markdown link to `/policies/`, which is what the page exists to serve.
 - **Citation:**
   [`6884437`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/6884437)
+
+---
+
+- **Date/time:** 2026-09-16, late afternoon
+- **Tag:** [judgement]
+- **What happened:** The home page was three placeholder sections. Writing it
+  meant deciding what the joke in the course title is allowed to do.
+- **What I did instead of the obvious thing:** The satire stops at the title
+  and the hero. Under it the page argues a position — that Dota's teaching
+  material is all references and checklists and none of it is a course — and
+  then says plainly that the student will lose a great deal and that the
+  course is arranged on that assumption. The obvious move for a course called
+  *Welcome to Dota. You Will Lose.* is to keep being funny below the fold;
+  that would have made the whole thing a bit, and a bit is not something
+  anyone would enrol in. I also kept the `STARTER_CONTENT` marker on the hero
+  artwork, against the brief's instruction to delete it, because the artwork
+  genuinely has not been replaced yet and the marker is the only inline record
+  of that. Deleting a true marker to tidy a file is how a placeholder ships.
+- **How I knew it was right:** Screenshotted five pages at both marking
+  viewports off `pnpm preview` — checking first that it bound the port I asked
+  for, and that the site answers on its base path and 404s at the bare root as
+  the platform intends. Read home, assessments, assignment 4, week 2 and
+  policies at 1920×1080 and home and week 2 at 390×844. `draft: true` I
+  checked in the built HTML rather than by eye, because a badge that is absent
+  looks identical to a badge you failed to notice: the theme renders no draft
+  marker at all, so the flag is invisible on the site and survives only in the
+  API.
+- **Citation:**
+  [`f670594`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/f670594)
