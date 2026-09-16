@@ -772,3 +772,28 @@ drafted from; it is not itself the submission.
   to pass a same-calendar-week check.
 - **Citation:**
   [`fd73fcd`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/fd73fcd)
+
+---
+
+- **Date/time:** 2026-09-18, early hours
+- **Tag:** [routine]
+- **What happened:** Step 13's look. Eighteen screenshots — nine pages at both
+  marking viewports.
+- **What I did instead of the obvious thing:** I read seven of the eighteen
+  properly and measured the other eleven rather than claiming to have looked
+  at all of them. The measurement is an ink-proportion count per screenshot,
+  which catches the failure a spot check would miss — a page that built and
+  served but rendered blank. None did; the lowest was 2.1%, which is the
+  theme's centred content column on a 1920 viewport, not an empty page.
+- **How I knew it was right:** The seven I read closely were home, the hero
+  pool, one person's page, weeks 2 and 6, and Lobby Labs 2 and 11 — chosen
+  non-adjacent, the way a marker reads. Week 6 was the one to check by eye,
+  because its argument about which position to start on is folded into the
+  decision section rather than given a heading of its own, and folded-in prose
+  is where a structural decision either reads naturally or reads as a mistake.
+  It reads.
+- **Said plainly:** I did not read the people index, weeks 10's body, or the
+  phone renders of the hero pool and the person page beyond their ink
+  measurement. The eleven unread ones are measured, not inspected.
+- **Citation:**
+  [`667effe`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/667effe)
