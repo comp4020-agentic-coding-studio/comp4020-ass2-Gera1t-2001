@@ -58,6 +58,15 @@ argument: the same item, bought by two heroes, is not the same purchase.
 **7.41f removed Facets**, so picking a hero is a smaller question than it used
 to be. This week needs attributes and abilities, not branches.
 
+![A map from the four primary attributes on the left to what each one buys on
+the right. Strength leads to maximum health and health regeneration; agility to
+armour and attack speed; intelligence to maximum mana, mana regeneration and
+magic resistance, and not to spell damage; universal to attack damage, from
+every point of any attribute. Strength, agility and intelligence each carry a
+dagger marking the rule underneath: if it is your hero's primary attribute,
+each point of it also adds attack damage, which is why the same item is worth
+different amounts to two different heroes.](../../assets/diagrams/attributes.svg)
+
 ## The resource lens
 
 Attributes are gold's exchange rate. The same item pays different amounts to

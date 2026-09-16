@@ -63,6 +63,17 @@ not a matter of the off-laner being outnumbered or the hero being weaker; the
 neutral resting place of the wave is simply somewhere worse for them, before
 anybody has done anything.
 
+![Two panels, both drawing a lane as a strip with your tower at the left and
+theirs at the right. The first shows the same lane in three states — the wave
+held near your tower, in the middle, and pushed up to their tower — with the
+first marked as the one this week recommends, and arrows underneath showing
+that attacking more pushes the wave toward their tower while denying or
+attacking less pulls it back toward yours. The second shows that the wave's
+resting place is not the lane's middle: on a safe lane you meet it near your
+own tower, in mid the waves meet at the centre of the map, and on an off lane
+you meet it close to the enemy's
+tower.](../../assets/diagrams/creep-equilibrium.svg)
+
 ## The resource lens
 
 Space traded for safety. Holding the lane deliberately gives up map space in

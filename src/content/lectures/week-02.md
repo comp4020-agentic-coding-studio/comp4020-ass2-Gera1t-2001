@@ -61,6 +61,14 @@ purpose to move the lane toward you.
 I take this last hit under the tower" is a question with an answer rather than
 a gamble.
 
+![A chart of one creep's health falling over time as a staircase, each hit
+taking a bite out of it. A dashed line marks half health. Two windows are
+bracketed along the same time axis: a wide one that opens where the staircase
+drops below half health and runs until the creep dies, which is where your own
+creep can be denied, and a narrow one covering the final step alone, where one
+more attack kills and the last hit pays. The narrow window sits inside the wide
+one.](../../assets/diagrams/last-hit-window.svg)
+
 ## The resource lens
 
 Gold is time. Every last hit is a small amount of gold, gold only becomes

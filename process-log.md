@@ -1135,3 +1135,34 @@ drafted from; it is not itself the submission.
   untangle.
 - **Citation:**
   [`1fecfa3`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/1fecfa3)
+
+---
+
+- **Date/time:** 2026-09-17, around 02:25
+- **Tag:** [judgement]
+- **What happened:** The week 10 objectives map has to place every element from
+  `docs/map-reference.md`, and that file contains one contradiction it flags
+  itself: the Tormentors are listed as sitting "on the west and east map
+  borders", each with a Watcher in front — corroborated a second time in the
+  Watcher list — while the same section records that "7.41 moved the Tormentor
+  spawn to the bottom chasm", and tells the reader the two facts "may describe
+  different things" and need the author's confirmation together. `week-10.md`
+  already states the bottom-chasm version on the page.
+- **What I did instead of the obvious thing:** Drew the two Tormentors on the
+  west and east borders, because that is the only claim in the reference that
+  comes with positions, and left the bottom chasm out rather than inventing a
+  location for it. The caption names the patch and the one 7.41f change the
+  reference states without a caveat — Roshan's preference for the top pit.
+  The alternative was to follow the page, which would have meant putting a
+  marker somewhere the reference never locates and detaching the two Watchers
+  that are defined as standing in front of the Tormentors.
+- **How I knew it was right:** Two passes at 358px and 560px in both schemes.
+  Pass 1 had the river band at nearly the same weight as the lanes, now that
+  the lanes are drawn back in grey rather than gold — the board read as four
+  lanes. Pass 2 dropped the band's opacity, restored its dashed centreline, and
+  grew the Watcher dots, which were too small to find at the phone width.
+- **Note for the author:** the page and this diagram now disagree about where
+  the Tormentors are. That is the reference's open question, not a drawing
+  decision, and it needs resolving in one place before week 10 ships.
+- **Citation:**
+  [`d920239`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/d920239)

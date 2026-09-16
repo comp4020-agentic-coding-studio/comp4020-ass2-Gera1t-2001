@@ -44,8 +44,8 @@
 
   <text class="mid" x="360" y="338" text-anchor="middle">Camp occupied</text>
 
-  <text class="row" x="190" y="200" text-anchor="end">Stack window</text>
-  <text class="sub" x="190" y="226" text-anchor="end">empty it in time</text>
+  <text class="row" x="44" y="176">Stack window</text>
+  <text class="sub" x="44" y="202">empty it in time</text>
 
   <text class="row" x="474" y="448">Pull window</text>
   <text class="sub" x="474" y="474">the creeps are there</text>

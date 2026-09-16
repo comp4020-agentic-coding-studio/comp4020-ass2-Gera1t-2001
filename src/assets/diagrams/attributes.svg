@@ -50,7 +50,7 @@
   <line class="link" x1="250" y1="540" x2="416" y2="533"/>
   <rect class="pill" x="50" y="512" width="200" height="56" rx="28"/>
   <text class="attr" x="150" y="549" text-anchor="middle">Universal</text>
-  <text class="qual" x="150" y="592" text-anchor="middle">every point of any attribute</text>
+  <text class="qual" x="52" y="592">every point of any attribute</text>
   <text class="pay" x="430" y="540">Attack damage</text>
 
   <text class="note" x="44" y="648">† If this is your hero's primary attribute, each point of it also</text>

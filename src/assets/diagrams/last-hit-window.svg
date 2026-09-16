@@ -33,7 +33,7 @@
   <path class="curve" d="M90 100 H138 V121 H186 V145 H234 V163 H282 V190 H330 V214 H378 V238 H426 V268 H474 V295 H522 V322 H570 V355 H618 V400"/>
   <circle class="dead" cx="618" cy="400" r="6"/>
 
-  <text class="ax" transform="translate(46 250) rotate(-90)" text-anchor="middle">Creep health</text>
+  <text class="ax" transform="translate(56 250) rotate(-90)" text-anchor="middle">Creep health</text>
   <text class="ax" x="96" y="242">half health</text>
   <text class="ax" x="100" y="392">Time →</text>
   <text class="ax" x="632" y="392">dies</text>
@@ -47,5 +47,5 @@
   <path class="hit-mark" d="M570 472 V488 H618 V472"/>
   <text class="lbl" x="552" y="497" text-anchor="end">The last hit pays</text>
 
-  <text class="note" x="40" y="80">The hit that counts is a window, not a reflex.</text>
+  <text class="note" x="48" y="80">The hit that counts is a window, not a reflex.</text>
 </svg>

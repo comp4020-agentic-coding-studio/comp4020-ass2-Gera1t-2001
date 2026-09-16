@@ -55,6 +55,21 @@ Tormentor to the bottom chasm and changed the Wisdom Shrine experience.**
 **Teleport defence.** One player carrying a scroll is one more defender for
 the whole team, which makes a cheap item into a structural one.
 
+![The same schematic board as week 1 — Radiant bottom-left, Dire top-right,
+three lanes and the river across the other diagonal — with the lanes drawn back
+so the neutral buildings read. Two Roshan pits sit on the river at the
+north-west and south-east corners, each with a Twin Gate beside it and a Watcher
+on its ramp. A Tormentor sits on the west map border and another on the east,
+each with a Watcher in front. Four outposts: one inside each team's primary
+jungle and one beyond each team's safe lane toward the map edge, each of those
+with a Watcher by it. Two more Watchers sit at the west ramp of each primary
+jungle and two more in the outer jungle near each team's tier-two tower. A Lotus
+Pool sits on the west edge toward the north and another on the east edge toward
+the south.](../../assets/diagrams/objectives-map.svg)
+
+*Positions are relative, not to scale. Roshan prefers the top pit in 7.41f and
+moves between the two.*
+
 ## The resource lens
 
 Converting a lead into map. The first nine weeks were about accumulating;

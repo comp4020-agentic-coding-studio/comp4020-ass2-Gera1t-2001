@@ -63,6 +63,16 @@ the other half of what wards do.
 **The courier.** It decouples "I need this item" from "I must go home", which
 is what makes staying in lane a decision rather than an endurance test.
 
+![Two panels. The first draws a camp's cycle as a clockwise loop: a mark at the
+top is the spawn check, which fires on the game clock and does nothing at all
+if anything is still standing in the camp. Around most of the loop the camp is
+occupied, and an outer arc over that stretch is the pull window. A shorter arc
+nested outside its tail, running right up to the next check, is the stack
+window. The second panel contrasts two kinds of camp along an early-to-late
+line: a dry camp is three identical shapes, the same camp all game, while a
+river camp is three shapes that grow, stepping up as the game goes
+on.](../../assets/diagrams/camp-cycle.svg)
+
 ## The resource lens
 
 Time traded for experience. Leaving the lane means giving up a certain share
