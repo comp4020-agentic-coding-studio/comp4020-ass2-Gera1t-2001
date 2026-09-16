@@ -1,0 +1,44 @@
+---
+title: Hero pool
+description:
+  "The thirteen heroes this course teaches with, when each one first appears,
+  and where to read its full kit."
+heroTitle: Hero pool
+---
+
+import { withBase } from "astro-theme-university/url";
+import { heroes, officialUrl, liquipediaUrl } from "../../data/heroes";
+
+This course teaches with thirteen heroes and no more. Dota has well over a
+hundred, and a beginner course that tours them learns a hundred names and no
+decisions; a fixed pool means you meet the same faces from week to week and
+each reappearance is a comparison rather than an introduction. Each week
+teaches at most two abilities, always the ones that answer that week's
+decision — the full kit is on the official page, linked below, because
+reproducing it here would turn a course into an encyclopaedia and Assignment 3
+is where you write the encyclopaedia entry yourself.
+
+<table>
+  <thead>
+    <tr>
+      <th>Hero</th>
+      <th>Role</th>
+      <th>First appears</th>
+      <th>Full kit</th>
+    </tr>
+  </thead>
+  <tbody>
+    {heroes.map((hero) => (
+      <tr>
+        <td>{hero.name}</td>
+        <td>{hero.role}</td>
+        <td><a href={withBase(`/lectures/week-${String(hero.firstWeek).padStart(2, "0")}/`)}>Week {hero.firstWeek}</a></td>
+        <td>
+          <a href={officialUrl(hero)}>Official</a>
+          {" · "}
+          <a href={liquipediaUrl(hero)}>Liquipedia</a>
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table>

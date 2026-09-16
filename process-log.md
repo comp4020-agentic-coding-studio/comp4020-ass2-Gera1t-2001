@@ -410,3 +410,31 @@ drafted from; it is not itself the submission.
   passes that gate.
 - **Citation:**
   [`eb04cfa`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/eb04cfa)
+
+---
+
+- **Date/time:** 2026-09-17, late evening
+- **Tag:** [judgement]
+- **What happened:** The hero pool needs a `slug` for each of thirteen heroes
+  to link out to the official pages, and `CLAUDE.md` forbids writing down a
+  slug that has not been verified against the live site. The author's checked
+  list has not arrived.
+- **What I did instead of the obvious thing:** Two obvious options were both
+  wrong. Guessing the slugs silently would put thirteen plausible-looking
+  links on the site that nothing would ever question. Blocking until the list
+  arrives would idle the whole day over one field. So the module carries the
+  pattern-guess *and* a header saying in terms that the slugs are unverified
+  and are replaced from the author's list before ship, and I flagged Wraith
+  King in particular: its internal name is `skeleton_king`, so it is the one
+  whose public slug most likely does not follow the pattern at all.
+  Alongside that I wrote the assertion that makes the guess safe to hold —
+  every `dota2.com/hero/…` link in the *built* site must use a pool slug — so
+  when the verified list lands, correcting the module corrects the site and
+  the test proves nothing was left behind.
+- **How I knew it was right:** Red for the reason intended: `dragon-knight is
+  in the pool but no lecture names it`, because no week names a hero until
+  steps 4–7. I also checked the link assertion was not passing vacuously — it
+  was, until the hero pool page existed; after it, the built HTML carries
+  thirteen distinct slugs and the assertion is comparing real values.
+- **Citation:**
+  [`9e741fc`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/9e741fc)
