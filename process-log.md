@@ -94,6 +94,14 @@ drafted from; it is not itself the submission.
 - **How I knew it was right:** Checked `docs/` did not already exist before
   renaming, and that both files contain no credentials or personal material
   before committing to a repo that becomes public at the cutoff.
+- **Note added after the fact:** the brief committed here was not the brief as
+  written. It was reviewed first — the agent read both documents and argued
+  with them before executing anything — and four amendments came out of that
+  review: the tone rule, the numbers rule, a fifteen-file step split in two,
+  and the artwork gate's exact file list. Those are recorded in the next
+  commit. The sequence is the point: the plan was argued with, then amended,
+  then executed, and the commit history shows that order rather than a brief
+  handed down and followed.
 - **Citation:**
   [`c1231ee`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/c1231ee)
 
@@ -166,3 +174,39 @@ drafted from; it is not itself the submission.
   record without complaint.
 - **Citation:**
   [`b23935a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/b23935a)
+
+---
+
+- **Date/time:** 2026-09-16, afternoon
+- **Tag:** [judgement]
+- **What happened:** Before executing the day-1 brief, I read it and the
+  course plan and reported on both. Four things came back: the tone rule gave
+  the agent three registers to switch between "as the material demands", which
+  is an invitation to tonal mush; the numbers rule pointed at "the pinned
+  7.41f data file", which is a description rather than a filename; step 5 was
+  a single commit touching fifteen files; and the artwork gate — a hard
+  submission blocker — was scheduled two days out with no list of what it
+  actually checks.
+- **What I did instead of the obvious thing:** Amended the brief and the
+  harness rather than working around either, and did it in its own commit
+  before building anything the amendments affect. `CLAUDE.md` now says satire
+  lives in titles and opening lines while the body stays sincere — which is
+  what the course plan already said about Purge's model, just never written as
+  a rule an agent could be held to. The numbers rule names `FACTS.md`, because
+  a rule that names a file can be checked and a rule that describes one
+  cannot. Step 5 became steps 5 and 6, with the genuinely interdependent part
+  (the deck swap) kept atomic and the ten additive lectures moved out; the two
+  lecture files are now overwritten in place rather than deleted and
+  recreated, so the starter sessions' `related:` edges to `lectures/week-01`
+  and `lectures/week-02` never dangle while the sessions collection is out of
+  scope.
+- **How I knew it was right:** For the artwork gate I did not take the
+  README's summary — I read `scripts/check-evidence.ts` and found the
+  condition is `existsSync(path) && sha256(path) === starterHash` over exactly
+  four named files. So a deleted file passes, which the brief now records
+  along with the four paths. That turns a vague Friday risk into a gate that
+  can be closed deliberately. The dangling-ref concern I checked by reading
+  the starter sessions' frontmatter rather than assuming.
+- **Curated prompt:** "按照你的建议来，三种语气改成讽刺只活在标题和框架，正文
+  一律真诚" — plus the instruction to record that the brief was revised after
+  its own review.
