@@ -1,11 +1,11 @@
 ---
-title: "Who should I pick — attributes"
+title: "Who should I pick?"
 description:
   Strength, agility, intelligence and universal — not flavour categories but
   exchange rates for everything you earn
 week: 5
 date: 2027-03-22
-decision: "Who should I pick — attributes"
+decision: "Who should I pick?"
 teachers:
   - wen-adeyemi
 deck: none

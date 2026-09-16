@@ -1,11 +1,11 @@
 ---
-title: "Who goes first — teamfights and drafting"
+title: "Who goes first?"
 description:
   Initiation, buyback, high ground and a drafting primer — the week the course
   finally lets you have a teamfight
 week: 11
 date: 2027-05-17
-decision: "Who goes first — teamfights and drafting"
+decision: "Who goes first?"
 teachers:
   - grace-nakamura
 deck: none

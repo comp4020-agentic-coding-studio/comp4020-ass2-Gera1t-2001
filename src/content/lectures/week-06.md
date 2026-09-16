@@ -1,11 +1,11 @@
 ---
-title: "What am I for in this team — roles"
+title: "What am I for in this team?"
 description:
   Cores, supports and the numbered positions — a distribution rule for
   experience, and an argument the course has taken a side in
 week: 6
 date: 2027-03-29
-decision: "What am I for in this team — roles"
+decision: "What am I for in this team?"
 teachers:
   - wen-adeyemi
   - nadia-petrova

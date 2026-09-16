@@ -1,11 +1,11 @@
 ---
-title: "When should I *not* engage — control"
+title: "When should I not engage?"
 description:
   Stuns, dispels, spell immunity and evasion — the mechanics that decide a
   fight before anybody presses a button
 week: 8
 date: 2027-04-26
-decision: "When should I *not* engage — control"
+decision: "When should I not engage?"
 teachers:
   - grace-nakamura
 deck: none

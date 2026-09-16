@@ -1,11 +1,11 @@
 ---
-title: "Where did he go — information"
+title: "Where did he go?"
 description:
   Wards, fog and detection — the one resource you spend on so that a decision
   you have not made yet will be better
 week: 9
 date: 2027-05-03
-decision: "Where did he go — information"
+decision: "Where did he go?"
 teachers:
   - wen-adeyemi
 deck: none

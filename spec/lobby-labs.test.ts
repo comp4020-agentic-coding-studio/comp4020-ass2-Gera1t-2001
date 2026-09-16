@@ -100,7 +100,13 @@ describe("the Lobby Labs", () => {
         false,
       );
     }
+
+    // Week 12 is the one exemption, and it is a real one rather than a
+    // convenience: it is the capstone, the week has no decision left to pose
+    // because the answer is the assignment, and its title says so. Every
+    // other week asks the question that week exists to answer.
     for (const lecture of lectures) {
+      if (Number(lecture.meta?.week) === 12) continue;
       expect(lecture.title.trim().endsWith("?"), `${lecture.id} is not titled as a question`).toBe(
         true,
       );

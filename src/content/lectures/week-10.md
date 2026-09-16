@@ -1,11 +1,11 @@
 ---
-title: "Towers or heroes — objectives"
+title: "Towers or heroes?"
 description:
   Buildings, Roshan and the map — how a lead stops being a lead and starts
   being a win
 week: 10
 date: 2027-05-10
-decision: "Towers or heroes — objectives"
+decision: "Towers or heroes?"
 teachers:
   - nadia-petrova
 deck: none
