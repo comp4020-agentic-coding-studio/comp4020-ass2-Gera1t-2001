@@ -832,3 +832,33 @@ drafted from; it is not itself the submission.
   that is only ever found much later.
 - **Citation:**
   [`c57f295`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/c57f295)
+
+---
+
+- **Date/time:** 2026-09-18, morning
+- **Tag:** [harness]
+- **What happened:** The brief asked for the assertion that would have caught
+  the 404 page's dead image reference: every image source in `dist/` resolves
+  to a real file. I wrote it, it went green, and then I re-injected the
+  original bug to check it — and **it stayed green**.
+- **What I did instead of the obvious thing:** The obvious reading of a green
+  test is that the site is clean. This one was green because there was nothing
+  to find: the theme does not emit a broken reference when an image fails to
+  resolve, it warns at build time and renders **no `<img>` at all**. I
+  confirmed that rather than assuming it — rebuilt with the bad path and
+  counted `at-hero-image` in the output: zero on the 404 page, one on the home
+  page. So the assertion the brief specified is real and worth having, but it
+  is the wrong shape for the bug that prompted it, because a dropped image
+  leaves no dangling reference to find.
+- **So I wrote the one that does catch it:** a page that *declares* a hero
+  image must render one. Then re-injected the bug a third time and watched it
+  fail, naming the page. Both assertions stay — the first guards a reference
+  to a deleted file, the second a declaration the build silently dropped, and
+  they are genuinely different failures.
+- **How I knew it was right:** Three states, deliberately: green on the real
+  site, red on the injected bug naming `src/pages/404.md`, green again after
+  restoring. The first assertion also carries a guard against its own
+  vacuity — it fails if it finds no image sources at all, because a matcher
+  that stops matching passes for the same reason a clean site does.
+- **Citation:**
+  [`a4308dc`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/a4308dc)
