@@ -533,3 +533,23 @@ drafted from; it is not itself the submission.
   `firstWeek` that agrees with the week naming it.
 - **Citation:**
   [`9d52396`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/9d52396)
+
+---
+
+- **Date/time:** 2026-09-17, late evening
+- **Tag:** [routine]
+- **What happened:** Weeks 7–9 written from the notes. No collisions this
+  time — the three weeks fit the seven sections without argument.
+- **What I did instead of the obvious thing:** Two places invited padding and
+  did not get it. Week 7's note on TorteDeLini's in-game guides is a
+  recommendation about a third party's work, so it sits at the end of the item
+  section as a note rather than becoming a section of its own with a heading
+  implying the course teaches it. Week 9's "why wards are here and not in week
+  4" is the load-bearing sentence of the week — it is the clearest instance of
+  the course's whole ordering argument — so it went in the item section
+  explicitly rather than being left for the reader to infer.
+- **How I knew it was right:** The hero-pool failure walked from `lich` to
+  `enigma`, so Lich, Sand King and Vengeful Spirit now resolve against the
+  weeks naming them. Contract green across nine un-drafted weeks.
+- **Citation:**
+  [`45f2c11`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/45f2c11)
