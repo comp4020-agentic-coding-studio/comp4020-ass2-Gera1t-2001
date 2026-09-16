@@ -75,20 +75,17 @@ describe("the weekly page contract", () => {
         order,
       );
 
-      // A week that names a hero or an item owes the reader that section.
-      // The converse is deliberately not asserted: week 5 carries an item
-      // section whose content is openly not written yet, and a page that
-      // admits a gap is better than one that hides it by dropping the
-      // heading. Weeks 1 and 12 simply have neither.
-      const required: string[] = SECTIONS.filter(
-        (section) => section !== "This week's hero" && section !== "This week's item",
-      );
-      if (asArray(lecture.meta?.heroes).length > 0) required.push("This week's hero");
-      if (asArray(lecture.meta?.items).length > 0) required.push("This week's item");
-
-      for (const section of required) {
-        expect(headings, `${lecture.id} is missing "${section}"`).toContain(section);
-      }
+      // A hero or item section is present exactly when the week has heroes or
+      // items to put in it. This was briefly relaxed to one direction, while
+      // week 5's item section was an admitted hole with an empty `items`;
+      // that hole is filled, so the strict form is back — a heading with
+      // nothing behind it is now a failure again.
+      const expected = SECTIONS.filter((section) => {
+        if (section === "This week's hero") return asArray(lecture.meta?.heroes).length > 0;
+        if (section === "This week's item") return asArray(lecture.meta?.items).length > 0;
+        return true;
+      });
+      expect(headings, `${lecture.id}'s sections`).toEqual(expected);
     }
   });
 

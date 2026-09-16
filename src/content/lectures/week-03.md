@@ -52,8 +52,16 @@ not the error; unconscious pushing is.
 **Positioning.** Where you stand decides whether the enemy can hit you without
 taking tower damage, and whether creep aggro works for you or against you.
 
-The two sides of the map are not mirror images, and exactly where the waves
-meet is a detail this course pins to 7.41f rather than generalising about.
+**Where the waves meet is not the middle of the lane.** In mid it is: the two
+sides meet at the centre of the map. In a safe lane the meeting point sits
+*closer to the safe-lane team's own tier-1 tower* — which means the off-laner
+across from them meets the wave far from their own tower and close to the
+enemy's.
+
+That asymmetry is the structural reason the off lane is the hard lane. It is
+not a matter of the off-laner being outnumbered or the hero being weaker; the
+neutral resting place of the wave is simply somewhere worse for them, before
+anybody has done anything.
 
 ## The resource lens
 

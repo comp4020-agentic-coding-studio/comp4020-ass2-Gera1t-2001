@@ -39,12 +39,18 @@ rotation with no target trades certain experience for nothing at all.
 
 ## Mechanics
 
-**Camps spawn on a rhythm, and only when empty.** So *when there is something
-in the jungle* is predictable rather than lucky, and predictable things can be
-planned around.
+**Camps spawn on the game clock, and only when empty.** Not on a timer that
+starts when you cleared the camp — on the match clock, the same moments for
+everybody in the game. That is the difference between a rhythm you can plan
+around and one you have to keep rediscovering, and it is why "is there
+anything in the jungle right now" is a question with an answer.
 
 **Pulling.** Drawing neutrals into the creep wave so they clear it for you, or
-so that you take creeps and neutrals at the same time.
+so that you take creeps and neutrals at the same time. **Only four camps on
+the map can be pulled into a lane** — the two small camps, and the large camp
+inside each main jungle by the off lane. Lane creeps ignore neutrals from
+anywhere else, so "pulling" is not a general technique you apply wherever you
+happen to be standing. It is four specific places.
 
 **Stacking.** Pulling a camp out before it checks to respawn, so that a second
 group spawns alongside the first. This is a pure trade of attention for gold —

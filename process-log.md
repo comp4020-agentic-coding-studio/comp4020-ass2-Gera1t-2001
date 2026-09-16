@@ -797,3 +797,38 @@ drafted from; it is not itself the submission.
   measurement. The eleven unread ones are measured, not inspected.
 - **Citation:**
   [`667effe`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/667effe)
+
+---
+
+- **Date/time:** 2026-09-18, morning
+- **Tag:** [judgement]
+- **What happened:** The author's notes moved after day 2 began, adding two
+  reference files that are now the only source for the board and for denies,
+  lane creeps, camps and attributes. Auditing five points against the built
+  pages, **all five were wrong**, and one of them was a real factual error
+  that had shipped: week 5 told students that intelligence gives spell damage.
+  It does not — it gives maximum mana, mana regeneration and magic resistance.
+  That page was written at 00:03 and corrected at 00:59, so it was wrong for
+  under an hour and was never public, but it was wrong in exactly the way this
+  course tells students not to be: I wrote a plausible mechanic from general
+  knowledge because it sounded right.
+- **What I did instead of the obvious thing:** Audited each of the five
+  against the actual page text rather than against my memory of writing it.
+  That matters more than it sounds: I would have reported week 3's equilibrium
+  and week 4's camps as "already covered", because I remembered writing about
+  both. Reading them showed week 3 carried a hedge sentence that deliberately
+  declined to state the fact, and week 4 said camps spawn "on a rhythm"
+  without saying the rhythm is the game clock — which is the entire teachable
+  point. Two of the five were pages that *looked* correct from memory.
+- **The relaxed assertion is back.** Week 5's empty item section had been the
+  reason the section contract asserted only one direction. The section is
+  filled now, so the strict "present exactly when the week has heroes or
+  items" form is restored, and I proved it bites by adding an item heading to
+  week 1 — which has none — and watching it fail before putting it back.
+- **Also carried:** the Desktop copy had forked before the lecture retitle, so
+  the re-sync arrived carrying a revert of it. Re-applied rather than
+  accepted: the retitle was an explicit author decision and the spec asserts
+  it, and a sync silently undoing a committed decision is the kind of thing
+  that is only ever found much later.
+- **Citation:**
+  [`c57f295`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/c57f295)

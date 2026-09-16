@@ -17,7 +17,12 @@ heroes:
   - phantom-assassin
   - zeus
 abilities: []
-items: []
+items:
+  - Iron Branch
+  - Circlet
+  - Gauntlets of Strength
+  - Slippers of Agility
+  - Mantle of Intelligence
 tutorial: "§1 — try a hero"
 ---
 
@@ -37,10 +42,18 @@ the game that every ability costs mana and you are a strength hero.
 **The four primary attributes.** Strength, agility, intelligence and
 universal. Your primary attribute decides what each level actually gives you.
 
-**How attributes become combat.** Strength into health and regeneration,
-agility into attack speed and armour, intelligence into mana and spell damage.
+**How attributes become combat.** Strength buys maximum health and health
+regeneration. Agility buys armour and attack speed. Intelligence buys maximum
+mana, mana regeneration and magic resistance — **not** spell damage, which is
+the thing most people assume it does and the thing it has never done.
 
-**What universal is**, and why it exists at all as a fourth option.
+**What universal is.** A universal hero turns every point of *any* attribute
+into attack damage, which is why they scale from items that would do nothing
+for a hero with a single primary.
+
+**The line this week turns on.** For a hero whose primary attribute it is,
+each point of that attribute *also* adds attack damage. That is the whole
+argument: the same item, bought by two heroes, is not the same purchase.
 
 **7.41f removed Facets**, so picking a hero is a smaller question than it used
 to be. This week needs attributes and abilities, not branches.
@@ -69,10 +82,15 @@ attribute, not what makes them individually good.
 
 ## This week's item
 
-This section is not written yet. The course's attribute items are pinned to
-7.41f, and 7.41f removed some of the components older guides still recommend,
-so naming one from memory would be exactly the mistake this course tells
-students not to make. It is settled when the facts file lands.
+**The small attribute items**, which is what a beginner actually buys before
+anything else exists: **Iron Branch** and **Circlet** give a little of every
+attribute, while **Gauntlets of Strength**, **Slippers of Agility** and
+**Mantle of Intelligence** give more of one.
+
+Buy the same one on two different heroes and it is worth different amounts to
+each. That is not a quirk of the item — it is the mechanic above, showing its
+face in the shop for the first time. Week 7 is where you start spending on
+purpose; this week you only need to see the exchange rate exist.
 
 ## After this week you can…
 
