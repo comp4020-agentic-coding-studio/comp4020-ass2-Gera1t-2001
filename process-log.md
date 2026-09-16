@@ -252,3 +252,32 @@ drafted from; it is not itself the submission.
   amended brief says they should.
 - **Citation:**
   [`26cf061`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/26cf061)
+
+---
+
+- **Date/time:** 2026-09-16, afternoon
+- **Tag:** [judgement]
+- **What happened:** The original brief made the twelve lectures and the deck
+  swap a single commit, on the grounds that the build's link checker rejects a
+  link to a deck that does not exist, so the deck and the lectures pointing at
+  it have to land together.
+- **What I did instead of the obvious thing:** That reasoning is right about
+  the deck and wrong about the other ten weeks. I split it: this commit does
+  the deck swap and weeks 1 and 2 — the genuinely interdependent part — and
+  the ten additive lectures follow separately. A fifteen-file commit is the
+  least readable thing in a history that carries 45% of the mark, and it
+  would have hidden the deck decision inside a pile of new pages. The second
+  refinement mattered more: the two lecture files are **overwritten in place**
+  rather than deleted and recreated, because the starter's sessions carry
+  `related:` edges to `lectures/week-01` and `lectures/week-02` and the
+  sessions collection is out of scope today. Delete-then-create would have
+  left those refs dangling in the intermediate state.
+- **How I knew it was right:** `git status` showed `M` on both lecture files
+  rather than `D` plus `A`, which is the difference the refs depend on. The
+  build's ref resolver and link checker both passed, and astromotion accepted
+  the one-slide deck stub. The suite went from six red to two, and the two
+  remaining — "exactly twelve lectures" and the twelve-week coverage check —
+  are precisely the ten weeks not yet written.
+- **Curated prompt:** "停一下，对于 step 5，你按照你给出的建议来"
+- **Citation:**
+  [`bf9cfc0`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/bf9cfc0)
