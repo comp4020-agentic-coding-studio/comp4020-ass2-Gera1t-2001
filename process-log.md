@@ -1107,3 +1107,31 @@ drafted from; it is not itself the submission.
   dead stretch that does not exist.
 - **Citation:**
   [`74125e5`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/74125e5)
+
+---
+
+- **Date/time:** 2026-09-17, around 02:10
+- **Tag:** [judgement]
+- **What happened:** The brief for week 5's attribute map says to take the
+  mapping from `docs/weeks.md` week 5 and to draw whatever a `CHECK` marks and
+  flag it. There is no longer a `CHECK` on that mapping — the author resolved
+  it, and week 5's notes now carry the corrected version (Intelligence buys
+  mana, mana regeneration and magic resistance, explicitly *not* spell damage)
+  in agreement with `docs/mechanics-reference.md`. The week 5 `CHECK` still in
+  the notes is on week 3's Wraith King ability, which this diagram does not
+  touch.
+- **What I did instead of the obvious thing:** The tying rule — each point of
+  your hero's *primary* attribute also adds attack damage — is what the
+  reference says the diagram "has to carry", and the obvious way to carry it is
+  a second set of lines from Strength, Agility and Intelligence down to Attack
+  damage. Drawn, that crosses every other line on the page and turns a
+  reference diagram into a knot. Used a dagger on the three attribute pills and
+  one footnote instead. The brief's own instruction for this one is that
+  clarity beats cleverness, and four extra lines would have been the cleverer
+  and less usable drawing.
+- **How I knew it was right:** One pass was enough here, checked at 358px and
+  560px in both schemes — the bipartite layout orders each attribute's targets
+  in a contiguous band, so no two links cross and there was nothing to
+  untangle.
+- **Citation:**
+  [`1fecfa3`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/1fecfa3)

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 862" width="720" height="862" role="img" aria-labelledby="om-title om-desc">
+  <title id="om-title">The neutral buildings on the 7.41f board</title>
+  <desc id="om-desc">The same schematic board as week one — Radiant's base at the bottom-left, Dire's at the top-right, three lanes, and the river across the other diagonal — with the lanes drawn back so the neutral buildings read. Two Roshan pits sit on the river at the north-west and south-east corners, each with a Twin Gate beside it and a Watcher on its ramp. A Tormentor sits on the west map border and another on the east, each with a Watcher in front of it. Four outposts: one inside each team's primary jungle, and one beyond each team's safe lane toward the map edge, each of those with a Watcher by it. Two more Watchers sit at the west ramp of each primary jungle, and two more in the outer jungle near each team's tier-two tower. A Lotus Pool sits on the west edge toward the north and another on the east edge toward the south. Roshan prefers the top pit in 7.41f, and moves between the two.</desc>
+  <style>
+    svg {
+      color-scheme: light dark;
+      color: var(--at-text, light-dark(oklch(from #b97d1c 20% .01 h), oklch(from #b97d1c 95% .005 h)));
+      --halo: var(--at-bg, light-dark(oklch(from #b97d1c 99.4% .004 h), oklch(from #b97d1c 12% .008 h)));
+      font-family: var(--at-font-body, ui-sans-serif, system-ui, sans-serif);
+    }
+    .board { fill: var(--at-bg-alt, light-dark(oklch(from #b97d1c 96.5% .006 h), oklch(from #b97d1c 15% .01 h))); stroke: currentColor; stroke-opacity: .22; stroke-width: 2; }
+    .lane { fill: none; stroke: currentColor; stroke-opacity: .45; stroke-width: 13; stroke-linecap: round; stroke-linejoin: round; }
+    .river-band { stroke: var(--at-tertiary, #6b6154); stroke-opacity: .18; stroke-width: 44; }
+    .river-line { stroke: var(--at-tertiary, #6b6154); stroke-opacity: .5; stroke-width: 2.5; stroke-dasharray: 10 9; }
+    .base { fill: currentColor; fill-opacity: .55; }
+
+    .g-rosh  { fill: var(--at-primary, #b97d1c); stroke: var(--halo); stroke-width: 3; }
+    .g-gate  { fill: var(--halo); stroke: var(--at-primary, #b97d1c); stroke-width: 4; }
+    .g-torm  { fill: var(--at-secondary, #8a5c13); stroke: var(--halo); stroke-width: 3; }
+    .g-out   { fill: var(--at-tertiary, #6b6154); stroke: var(--halo); stroke-width: 3; }
+    .g-lotus { fill: var(--halo); stroke: currentColor; stroke-opacity: .85; stroke-width: 3.5; }
+    .g-watch { fill: currentColor; fill-opacity: .88; stroke: var(--halo); stroke-width: 2.5; }
+
+    text { fill: currentColor; }
+    .side { font-size: 22px; font-weight: 700; fill-opacity: .75; }
+    .key { font-size: 22px; }
+    .note { font-size: 20px; fill-opacity: .7; }
+  </style>
+
+  <defs>
+    <pattern id="om-hatch" width="15" height="15" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="15" stroke="currentColor" stroke-opacity=".16" stroke-width="2.5"/>
+    </pattern>
+    <clipPath id="om-board"><rect x="60" y="40" width="600" height="600"/></clipPath>
+  </defs>
+
+  <!-- The same board as week 1, with the lanes drawn back -->
+  <rect class="board" x="60" y="40" width="600" height="600"/>
+  <path d="M60 40 H660 V640 H60 Z M165 165 H555 V555 H165 Z" fill="url(#om-hatch)" fill-rule="evenodd"/>
+  <g clip-path="url(#om-board)">
+    <line class="river-band" x1="60" y1="40" x2="660" y2="640"/>
+    <line class="river-line" x1="60" y1="40" x2="660" y2="640"/>
+  </g>
+  <path class="lane" d="M165 555 V165 H555"/>
+  <path class="lane" d="M165 555 H555 V165"/>
+  <path class="lane" d="M165 555 L555 165"/>
+  <circle class="base" cx="165" cy="555" r="17"/>
+  <circle class="base" cx="555" cy="165" r="17"/>
+  <text class="side" x="165" y="600" text-anchor="middle">Radiant</text>
+  <text class="side" x="555" y="130" text-anchor="middle">Dire</text>
+
+  <!-- Roshan pits: the two river corners. Twin Gates beside them. -->
+  <circle class="g-rosh" cx="116" cy="96" r="13"/>
+  <circle class="g-rosh" cx="600" cy="580" r="13"/>
+  <path class="g-gate" d="M180 65 L193 78 L180 91 L167 78 Z"/>
+  <path class="g-gate" d="M540 589 L553 602 L540 615 L527 602 Z"/>
+
+  <!-- Tormentors: west and east map borders -->
+  <polygon class="g-torm" points="82,327 94,349 70,349"/>
+  <polygon class="g-torm" points="638,327 650,349 626,349"/>
+
+  <!-- Outposts: one in each primary jungle, one beyond each safe lane -->
+  <rect class="g-out" x="199" y="459" width="22" height="22" rx="3"/>
+  <rect class="g-out" x="459" y="289" width="22" height="22" rx="3"/>
+  <rect class="g-out" x="309" y="587" width="22" height="22" rx="3"/>
+  <rect class="g-out" x="389" y="95" width="22" height="22" rx="3"/>
+
+  <!-- Lotus Pools: west edge toward the north, east edge toward the south -->
+  <circle class="g-lotus" cx="88" cy="200" r="10"/>
+  <circle class="g-lotus" cx="632" cy="480" r="10"/>
+
+  <!-- Watchers -->
+  <circle class="g-watch" cx="170" cy="128" r="7.5"/>
+  <circle class="g-watch" cx="550" cy="552" r="7.5"/>
+  <circle class="g-watch" cx="132" cy="340" r="7.5"/>
+  <circle class="g-watch" cx="588" cy="340" r="7.5"/>
+  <circle class="g-watch" cx="268" cy="600" r="7.5"/>
+  <circle class="g-watch" cx="452" cy="104" r="7.5"/>
+  <circle class="g-watch" cx="196" cy="424" r="7.5"/>
+  <circle class="g-watch" cx="445" cy="320" r="7.5"/>
+  <circle class="g-watch" cx="112" cy="470" r="7.5"/>
+  <circle class="g-watch" cx="608" cy="212" r="7.5"/>
+
+  <text class="note" x="60" y="676">Patch 7.41f. Schematic — positions are relative, not to scale.</text>
+  <text class="note" x="60" y="700">Roshan prefers the top pit in 7.41f, and moves between the two.</text>
+
+  <circle class="g-rosh" cx="78" cy="737" r="13"/>
+  <text class="key" x="104" y="745">Roshan pit</text>
+  <rect class="g-out" x="389" y="726" width="22" height="22" rx="3"/>
+  <text class="key" x="426" y="745">Outpost</text>
+
+  <path class="g-gate" d="M78 770 L91 783 L78 796 L65 783 Z"/>
+  <text class="key" x="104" y="791">Twin gate</text>
+  <circle class="g-watch" cx="400" cy="783" r="7.5"/>
+  <text class="key" x="426" y="791">Watcher</text>
+
+  <polygon class="g-torm" points="78,816 90,838 66,838"/>
+  <text class="key" x="104" y="837">Tormentor</text>
+  <circle class="g-lotus" cx="400" cy="829" r="10"/>
+  <text class="key" x="426" y="837">Lotus pool</text>
+</svg>
