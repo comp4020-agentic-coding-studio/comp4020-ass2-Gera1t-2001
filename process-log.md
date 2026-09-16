@@ -304,3 +304,18 @@ drafted from; it is not itself the submission.
   are the two that went green, which is the pair worth citing.
 - **Citation:**
   [`58930f1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/58930f1)
+
+---
+
+- **Date/time:** 2026-09-16, late afternoon
+- **Tag:** [routine]
+- **What happened:** The policies page was the starter's, and three rules from
+  the plan had nowhere to live — assignment 4's page links to them.
+- **What I did instead of the obvious thing:** One sentence per rule and
+  nothing else. A policies page invites padding about extensions and integrity
+  that the course does not yet have a position on, and an invented policy is
+  worse than a short page.
+- **How I knew it was right:** The build's link checker resolves assignment
+  4's markdown link to `/policies/`, which is what the page exists to serve.
+- **Citation:**
+  [`6884437`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/6884437)

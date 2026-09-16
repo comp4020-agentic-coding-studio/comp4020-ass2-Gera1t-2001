@@ -4,7 +4,7 @@ import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import heroImage from "../assets/images/hero-home.avif";
 import { courseMeta } from "../course-config";
-import { sessionLabels, siteConfig } from "../site-config";
+import { siteConfig } from "../site-config";
 
 // STARTER_CONTENT: replace the hero artwork and its alt text below, then
 // remove this comment.
@@ -21,29 +21,58 @@ import { sessionLabels, siteConfig } from "../site-config";
     {courseMeta.tags.map((tag) => <li>{tag}</li>)}
   </ul>
 
-  <!-- STARTER_CONTENT: replace the authored page below, then remove this comment. -->
-  <h2>What you will do</h2>
+  <h2>What this course is</h2>
   <p>
-    Say what a student spends their time on — the making, reading, arguing or
-    measuring that fills the weeks. Name the artefact they walk out with.
+    Dota 2 has produced an enormous amount of teaching material and almost none
+    of it is a course. Purge's guide is a reference. The wiki is a reference.
+    Valve's in-game tutorial is a checklist you complete once and never open
+    again. All of them are good at what they are, and not one of them has an
+    order, a workload, or anything you have to hand in.
+  </p>
+  <p>
+    This is the same material arranged into twelve weeks. Each week is built
+    around one decision a new player actually runs into — should I hit this
+    creep, when should I leave the lane, who goes first — and the mechanics
+    are taught as the tools that answer that week's decision rather than as a
+    list of things the game contains. One lens runs underneath all twelve:
+    everything you do here spends something, and what you have to spend is
+    gold, experience, time, space and information.
   </p>
 
   <h2>Who it is for</h2>
   <p>
-    Say who this is aimed at and what they need to already know. Be specific
-    enough that someone can rule themselves in or out without emailing you.
+    People who have never played a MOBA. There are no prerequisites beyond
+    owning the game and no assumption that you have played anything like it. If
+    you are arriving from League of Legends, week 1 carries a short bridging
+    passage on what transfers and what quietly does not, and after that you are
+    with everyone else.
+  </p>
+  <p>
+    You will lose a great deal, especially early, and the course is built on
+    the assumption that you will. Losing is not the problem. Losing without
+    being able to name the decision that cost you the game is the problem, and
+    most of what you hand in is arranged around closing that gap.
   </p>
 
   <h2>Where to go next</h2>
   <CardGrid columns={2}>
-    <Card title={sessionLabels.plural} href="/sessions/">
-      <p>The weekly schedule and what happens in each teaching session.</p>
+    <Card title="Lectures" href="/lectures/">
+      <p>
+        Twelve weeks, twelve decisions, in the order a player learns to make
+        them rather than the order the game presents them.
+      </p>
     </Card>
     <Card title="Assessment" href="/assessments/">
-      <p>What is marked, what it is worth, and when it is due.</p>
+      <p>
+        Four assignments and no exam, ending in a drafted best-of-three against
+        another team from the course.
+      </p>
     </Card>
-    <Card title="People" href="/people/">
-      <p>Who teaches the course and how to reach them.</p>
+    <Card title="Policies" href="/policies/">
+      <p>
+        Teams and captains, the Hall of Fame that carries no marks, and the
+        patch every figure on this site is pinned to.
+      </p>
     </Card>
   </CardGrid>
 </ContentLayout>
