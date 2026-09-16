@@ -18,6 +18,12 @@ week you can…* Weeks 1 and 12 have no hero or item section.
 Every lecture carries `teachers:` — the assignment is the table in
 `docs/people.md`.
 
+Two reference files settle facts these notes depend on:
+`docs/map-reference.md` (the board) and `docs/mechanics-reference.md`
+(denies, lane creeps, camps, attributes). **Where a note and a reference
+disagree, the reference wins** — it was compiled from current sources, the
+notes were not.
+
 ---
 
 ## Week 1 — Why can't I even beat the bots?
@@ -49,7 +55,8 @@ Every lecture carries `teachers:` — the assignment is the table in
 - **Decision:** Should I hit this creep?
 - **Mechanics:**
   1. Last-hitting: only the final blow pays. Dealing damage and earning gold are two different things.
-  2. Denying: below a health threshold you can kill your own creep, so the enemy gets no gold and a reduced share of the experience. This is Dota's distinctive move — refusal made into a positive action.
+  2. Denying: below a health threshold you can kill your own creep, so the enemy gets **no gold at all** and only part of the experience. This is Dota's distinctive move — refusal made into a positive action. (Thresholds and shares are in `docs/mechanics-reference.md`; they go on the page when `FACTS.md` lands, not before.)
+  2b. Denying also **drags the wave back toward your own tower** — so week 2's mechanic is already doing week 3's job, and the page should say so.
   3. Creep aggro: attacking an enemy hero pulls nearby enemy creeps onto you. This is not a punishment; it is a tool you can use on purpose to move the lane toward you.
   4. Tower aggro: a tower's targeting priority is predictable, so "can I take this last hit under the tower" is a question with an answer, not a gamble.
 - **Resource lens (gold = time):** every last hit is a small amount of gold, and gold only becomes items, and items only pay off over time. Ten missed creeps is not a small number of coins — it is your key item arriving minutes late, and in those minutes the enemy is using theirs on you.
@@ -83,7 +90,7 @@ Every lecture carries `teachers:` — the assignment is the table in
   - name one attack you should not have made
 - **The mistake this week fixes:** standing at the front of the creep wave. It looks like participating; it is taking creep aggro and enemy spells at once, and pushing the lane.
 - **deck_reason:** Creep equilibrium is one diagram's worth of idea; the drawing on this page does more than a deck would.
-- **OPEN (author):** 7.41 moved the lane creep meeting point toward the off lane, so the two sides are not symmetrical. Decide whether the page says so.
+- **Where the wave meets, and why it matters** (from `docs/map-reference.md`): mid meets at the centre of the map; on a **safe lane** the meeting point sits closer to the safe-lane team's own tier-1 tower, and therefore on an **off lane** it sits far from the off-laner's tower and close to the enemy's. Say this on the page: it is the structural reason the off lane is the hard lane, and it makes "hold the wave near your tower" a different job depending on which lane you are standing in. No figures — the asymmetry is a shape, not a distance.
 
 ---
 
@@ -91,8 +98,9 @@ Every lecture carries `teachers:` — the assignment is the table in
 
 - **Decision:** When should I leave the lane?
 - **Mechanics:**
-  1. Neutral camps spawn on a fixed rhythm, and only when the camp is empty — so *when there is something in the jungle* is predictable.
-  2. Pulling: drawing neutrals into the creep wave so they clear it for you, or so you take creeps and neutrals at once.
+  1. Neutral camps spawn on a fixed rhythm on the **game clock**, not on a timer from when you cleared them, and only when nothing is standing in the camp — so *when there is something in the jungle* is predictable. A camp even shows a particle just before it tries.
+  1b. **The river camps grow up.** Dry camps stay the same all game; the flooded camps in the river evolve upward as the game goes on, so the jungle at minute thirty is not the jungle at minute five. (Detail in `docs/mechanics-reference.md`.)
+  2. Pulling: drawing neutrals into the creep wave so they clear it for you, or so you take creeps and neutrals at once. **Only four camps on the map can be pulled into a lane** — the two small camps and the large camp in each main jungle by the off lane; lane creeps ignore neutrals from anywhere else. Say this: it turns "pulling" from a vague idea into four specific places.
   3. Stacking: pulling the camp out before it checks to respawn, so a second group spawns. **This is a pure trade of attention for gold — no risk, only focus.**
   4. Blocking: placing a ward so a camp cannot spawn at all. Week 9 returns for wards' other half.
   5. The courier: it decouples "I need this item" from "I must go home".
@@ -115,13 +123,15 @@ Every lecture carries `teachers:` — the assignment is the table in
 - **Decision:** Who should I pick?
 - **Mechanics:**
   1. The four primary attributes: Strength, Agility, Intelligence, Universal. Your primary attribute decides what each level gives you.
-  2. How attributes become combat: Strength into health and regeneration, Agility into attack speed and armour, Intelligence into mana and spell damage. **CHECK (author): confirm this mapping against 7.41.**
+  2. How attributes become combat, from `docs/mechanics-reference.md`: Strength into maximum health and health regeneration; Agility into armour and attack speed; Intelligence into maximum mana, mana regeneration and magic resistance — **not** spell damage, which an earlier draft of these notes got wrong. Universal turns every point of any attribute into attack damage.
+  2b. The rule that ties the week together: **for a hero whose primary attribute it is, each point of that attribute also adds attack damage.** This is why the same item is worth different amounts to different heroes — week 5's whole argument in one line.
   3. What Universal is and why it exists.
   4. 7.41 removed Facets, so picking a hero is a smaller question than it was: this week needs attributes and abilities, not branches.
 - **Resource lens (attributes are gold's exchange rate):** the same item pays different amounts to different heroes, because the primary attribute sets what your gold turns into. This is the groundwork for week 7.
 - **Before the lecture:** Valve tutorial §1 — try a hero.
 - **Heroes:** Sven (Strength), Phantom Assassin (Agility), Zeus (Intelligence). **No abilities are taught this week, deliberately** — the subject is attributes, not kits, and each hero is a clean sample of one attribute. Students read the full kits on the official pages. Say this decision on the page: it is also why the two-abilities rule is satisfied here without contrivance.
-- **Item:** **OPEN (author):** name two or three attribute items that exist in 7.41 and that a beginner actually buys. (7.41 removed Circlet of Nobility and Ring of Basilius, so older examples no longer hold.) Until named, the page says the section is settled when the data file lands.
+- **Item:** the small attribute items, from `docs/mechanics-reference.md`: **Iron Branch** (a little of everything, which is why it is in almost every starting kit), **Circlet** (a little more of everything), and the attribute-specific pair a beginner meets first, **Gauntlets of Strength** and **Mantle of Intelligence**. Why: they are the cheapest place to feel the exchange rate — the same handful of points is worth a different amount depending on who buys them.
+  (Correction: an earlier note here said 7.41 removed Circlet of Nobility. It did not; that came from a garbled automated summary of the patch notes.)
 - **OPEN (author):** whether Purge's list of heroes a beginner should avoid appears here as a counter-example, and if so with a line making clear the course borrows its criteria, not its roster.
 - **After this week you can:**
   - look at a hero you have never played and infer from the primary attribute roughly how they work
@@ -288,12 +298,13 @@ Every lecture carries `teachers:` — the assignment is the table in
 
 ## Still open, in one place
 
-- Week 3: whether the page mentions 7.41's shifted lane meeting point.
+- Week 3: settled — the meeting-point asymmetry is stated, from `docs/map-reference.md`.
 - Week 4: whether splitting wards across weeks 4 and 9 reads naturally.
-- Week 5: two or three attribute items that exist in 7.41; whether Purge's avoid-list appears.
+- Week 5: settled — the mapping and the items come from `docs/mechanics-reference.md`. Still open: whether Purge's avoid-list appears.
 - Week 11: the exact Captains Mode phase order — deferred to the data file; the page teaches the concepts and states no order until then.
 - Weeks 6 and 12 carry `PROPOSED` text: usable today, the author's to replace.
 - Weeks 3, 7: confirm the Wraith King and Lich ability names and current forms.
+- Week 5's attribute mapping: settled and corrected — no longer a `CHECK`.
 - Week 6: confirm the two ability choices, or swap them.
 - Week 8: confirm Glimmer Cape is unchanged in 7.41.
 - Week 9: confirm the "wards belong in week 9" reasoning.

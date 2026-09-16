@@ -156,9 +156,11 @@ period, moves `endDate` and the data-integrity test with it.)
 - **needs_others:** one student gets three data points; the class gets
   thirty, and "the same item is worth different amounts" only holds up with a
   sample. The session's product is one shared table.
-- **PROPOSED:** the three heroes are the week's three — Sven, Phantom
-  Assassin, Zeus. The item is whichever attribute item week 5 settles on when
-  the data file lands; until then the page says the tutor names it on the day.
+- **Settled:** the three heroes are the week's three — Sven (Strength),
+  Phantom Assassin (Agility), Zeus (Intelligence) — and the item is a
+  **Circlet**, because it gives the same points of every attribute to all
+  three. Identical stats, visibly different value: that is the whole lab in
+  one purchase.
 
 ## Lobby Lab 6 — Watch one player (week 6)
 
