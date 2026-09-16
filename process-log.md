@@ -1166,3 +1166,37 @@ drafted from; it is not itself the submission.
   decision, and it needs resolving in one place before week 10 ships.
 - **Citation:**
   [`d920239`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/d920239)
+
+---
+
+- **Date/time:** 2026-09-17, around 02:35
+- **Tag:** [harness]
+- **What happened:** Wiring the six diagrams into their weeks surfaced a
+  failure mode none of the standalone renders could show. At the 390px
+  viewport the theme bleeds a content image about 20px past each side of the
+  window, so roughly the first 34 units of a 720-unit viewBox are cut off on a
+  phone and nowhere else. Week 4's "Stack window / empty it in time" label read
+  as "ack window / mpty it in time" on the built page while looking perfect in
+  my own harness at the same 358px width.
+- **What I did instead of the obvious thing:** Having found one, I derived the
+  cut-off from two measured points in the render, predicted which of the other
+  five were at risk, fixed those — and then went and looked at the remaining
+  three anyway rather than shipping on the arithmetic. That caught a second
+  real one: week 5's "every point of any attribute" was rendering as "very
+  point of any attribute". The model was right about where the boundary was and
+  still wrong about who crossed it, because I had been estimating text widths
+  rather than measuring them all along.
+- **Also verified:** that the site's dark toggle actually reaches inside an
+  `<img>`-embedded SVG. A first probe — injecting `data-theme="dark"` into the
+  built HTML — came back light, which looked like the technique failing. It was
+  not: the theme's init script rewrites `data-theme` from `localStorage` on
+  load, so the injection was overwritten before first paint. Seeding
+  `at-theme=dark` in `localStorage` instead and re-shooting the real page shows
+  the diagram in its dark palette. Worth the second attempt, because the first
+  result was a false red that would have had me redesign a technique that works.
+- **Rule this adds:** a diagram embedded as an image needs a safe margin of
+  about 5% of its viewBox width on the left and right, because the phone
+  viewport is the only place that margin is consumed, and it is the one
+  viewport the author cannot see from a standalone render.
+- **Citation:**
+  [`496f579`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/496f579)

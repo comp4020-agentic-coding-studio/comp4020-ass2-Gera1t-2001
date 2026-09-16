@@ -4,13 +4,21 @@
 // meets the same faces repeatedly rather than a new name every week, and so
 // that no page has to explain a hero twice.
 //
-// SLUGS ARE UNVERIFIED. Every `slug` below is this hero's name lowercased
-// with spaces removed — a guess at the shape, not a checked value. The
-// author's verified list has not arrived yet, and `CLAUDE.md` forbids writing
-// down an unverified slug as though it were settled. These are replaced from
-// that list before ship. Wraith King is the one most likely to be wrong: its
-// internal name is `skeleton_king`, so its public slug may not follow the
-// pattern at all.
+// SLUGS VERIFIED against the rendered official site on 17 September 2026.
+// All thirteen were checked two ways, because an HTTP 200 from dota2.com
+// proves nothing — the JavaScript shell returns 200 for any path at all, and
+// `/hero/definitelynotarealhero` comes back the same 46,681 bytes as a real
+// hero. So: the slugs were harvested from the 127 hero links on the rendered
+// `/heroes` index, and each of the thirteen pages was then loaded in a real
+// browser and its displayed hero name read back.
+//
+// The guesses all turned out right, which is only worth trusting because the
+// check was shown to fail on things it should fail on. Two of the 127 official
+// slugs do *not* follow lowercase-remove-spaces — `anti-mage` keeps its hyphen
+// and `nature'sprophet` its apostrophe — so the convention was not a given;
+// loading `/hero/antimage` renders no hero name at all. Wraith King was the
+// one flagged as most likely wrong, since its internal name is
+// `skeleton_king`; its public slug is nevertheless `wraithking`.
 
 export interface Hero {
   readonly id: string;
