@@ -611,3 +611,47 @@ drafted from; it is not itself the submission.
   step 12 without an author decision. Flagged rather than quietly weakened.
 - **Citation:**
   [`ae0d779`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/ae0d779)
+
+---
+
+- **Date/time:** 2026-09-18, early hours
+- **Tag:** [judgement]
+- **What happened:** Step 8's artwork. An Opus subagent produced three
+  concepts and ranked them 3 > 1 > 2 for small-size legibility. I rendered all
+  three at both sizes before reading its ranking as advice, and the ranking
+  was wrong about its own top pick's rival: concept 1, the safe "three lanes"
+  reading, collapses into a single thick diagonal smear at card size — the
+  three lanes' curvatures are too close to survive the reduction. Concept 2
+  held up better than predicted.
+- **What I did instead of the obvious thing:** Chose concept 2 — twelve stems,
+  each forking into a branch taken and a branch abandoned, three of them
+  dropping and forking the other way. It draws the course's actual spine
+  (twelve decisions, each with a road not taken, and three deliberate
+  reorderings against the obvious sequence) rather than the map, which the
+  course is explicitly not about. Refined it before shipping: the abandoned
+  branch went from 13px to 22px, because at card width 13px is nearly gone;
+  a ground band was added to stop an ascending series floating; and the three
+  dips were deepened so the reordering reads rather than looks like noise.
+- **The interesting part — a screenshot that lied.** The first render of the
+  finished home page showed no hero title at all. Rather than start moving CSS
+  around, I took a second, independent reading: a CDP probe reporting computed
+  styles said the `h1` was present, white, `opacity: 1`, `visibility: visible`,
+  with the theme's dark scrim behind it. Two readings disagreeing means one
+  tool is lying, so I got a third — a 1440-wide capture showed the title
+  perfectly legible — and a fourth: two fresh 1920 captures, measured by
+  counting bright pixels in the title region, both returned 11.23%. Identical,
+  and that is the white text. The original capture was a one-off false
+  negative, almost certainly the screenshot racing the theme's `hero-fade-up`
+  animation. Had I trusted it I would have "fixed" a page that was never
+  broken.
+- **Also found by looking:** `src/pages/404.md` still pointed at the deleted
+  `hero-home.avif`. Nothing in `pnpm check` failed on it — the theme warns and
+  drops the image rather than erroring — so a 404 page with no artwork would
+  have shipped silently.
+- **On the card:** Astro refuses to re-encode an SVG source
+  (`dangerouslyProcessSVG` is off), and an `og:image` has to be raster anyway
+  because scrapers do not render SVG. So `card.svg` is the committed source
+  and `card.png` is rasterised from it by a one-off script that was deleted
+  rather than committed, per the brief.
+- **Citation:**
+  [`323d1d1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/323d1d1)

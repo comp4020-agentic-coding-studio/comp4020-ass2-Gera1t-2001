@@ -2,19 +2,16 @@
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
-import heroImage from "../assets/images/hero-home.avif";
+import heroImage from "../assets/images/hero-home.svg";
 import { courseMeta } from "../course-config";
 import { siteConfig } from "../site-config";
-
-// STARTER_CONTENT: replace the hero artwork and its alt text below, then
-// remove this comment.
 ---
 
 <ContentLayout
   title={`${courseMeta.code}: ${courseMeta.title}`}
   description={courseMeta.description}
   heroImage={heroImage}
-  heroImageAlt="A lecture theatre reduced to flat gold and black shapes, rows of seats sweeping past the frame, in a two-ink risograph print"
+  heroImageAlt="Twelve gold stems rising left to right, each forking into a thick branch and a thin one, with three of the twelve dropping lower and forking the other way — a two-ink print of twelve decisions and the branch not taken at each"
   {...siteConfig}
 >
   <ul class="course-tags" aria-label="Course tags">

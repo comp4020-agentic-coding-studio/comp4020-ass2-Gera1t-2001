@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="246 0 2069 1086" width="1200" height="630" role="img">
+  <title>Twelve decisions, each with the branch not taken</title>
+  <defs>
+    <pattern id="grain" width="7" height="7" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="3" r="1" fill="#6b6154"/>
+    </pattern>
+  </defs>
+  <rect width="2560" height="1086" fill="#fdfcfa"/>
+
+  <!-- ground: weights the lower third so the composition does not float -->
+  <rect x="0" y="980" width="2560" height="106" fill="#6b6154" opacity="0.13"/>
+  <rect x="0" y="974" width="2560" height="10" fill="#6b6154" opacity="0.5"/>
+
+  <!-- the arc through the twelve decision points -->
+  <polyline fill="none" stroke="#6b6154" stroke-width="7" stroke-dasharray="26 18"
+    stroke-linecap="round" points="0,890 130,850 330,730 530,790 730,660 930,600 1130,650 1330,520 1530,465 1730,405 1930,450 2130,380 2330,310 2560,270"/>
+
+  <!-- branches not taken -->
+  <path fill="none" stroke="#8a5c13" stroke-width="22" stroke-linecap="round" opacity="0.75" d="M130 850l-82 -150 M330 730l-82 -150 M530 790l82 -150 M730 660l-82 -150 M930 600l-82 -150 M1130 650l82 -150 M1330 520l-82 -150 M1530 465l-82 -150 M1730 405l-82 -150 M1930 450l82 -150 M2130 380l-82 -150 M2330 310l-82 -150"/>
+
+  <!-- stems -->
+  <path fill="none" stroke="#b97d1c" stroke-width="30" stroke-linecap="butt" d="M130 980V850 M330 980V730 M530 980V790 M730 980V660 M930 980V600 M1130 980V650 M1330 980V520 M1530 980V465 M1730 980V405 M1930 980V450 M2130 980V380 M2330 980V310"/>
+
+  <!-- branches taken, bronze plate misregistered under gold -->
+  <g style="mix-blend-mode:multiply">
+    <path fill="none" stroke="#8a5c13" stroke-width="52" stroke-linecap="round"
+      opacity="0.55" transform="translate(14,10)" d="M130 850l88 -210 M330 730l88 -210 M530 790l-88 -210 M730 660l88 -210 M930 600l88 -210 M1130 650l-88 -210 M1330 520l88 -210 M1530 465l88 -210 M1730 405l88 -210 M1930 450l-88 -210 M2130 380l88 -210 M2330 310l88 -210"/>
+    <path fill="none" stroke="#b97d1c" stroke-width="52" stroke-linecap="round" d="M130 850l88 -210 M330 730l88 -210 M530 790l-88 -210 M730 660l88 -210 M930 600l88 -210 M1130 650l-88 -210 M1330 520l88 -210 M1530 465l88 -210 M1730 405l88 -210 M1930 450l-88 -210 M2130 380l88 -210 M2330 310l88 -210"/>
+  </g>
+
+  <rect width="2560" height="1086" fill="url(#grain)" opacity="0.13"/>
+</svg>
