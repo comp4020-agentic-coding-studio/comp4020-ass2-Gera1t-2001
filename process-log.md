@@ -438,3 +438,30 @@ drafted from; it is not itself the submission.
   thirteen distinct slugs and the assertion is comparing real values.
 - **Citation:**
   [`9e741fc`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/9e741fc)
+
+---
+
+- **Date/time:** 2026-09-17, late evening
+- **Tag:** [harness]
+- **What happened:** Writing the weekly-page contract, I had it read each
+  lecture's body from `dist/api/index.json`, the way every other spec test in
+  this repo reads the built API. The heading assertion passed. It should not
+  have — no week has section headings yet.
+- **What I did instead of the obvious thing:** Checked the passing test
+  instead of moving on, because the day-1 harness notes say a false green is
+  the dangerous one and nothing triggers suspicion about it. The API does not
+  emit `body` at all: every lecture was being handed `""`, `headingsOf("")`
+  returned `[]`, and for a draft-gated suite with no finished weeks that looks
+  exactly like success. So the contract now reads frontmatter from the API,
+  which is what shipped, and headings from the source markdown — and the test
+  says why in a comment, because the built HTML was the other candidate and it
+  is worse: the theme adds an `<h2>Related</h2>` of its own, so asserting
+  against the rendered page would be asserting about the theme.
+- **How I knew it was right:** Demonstrated it responds to a deliberate
+  change rather than just agreeing with me. Removed `draft: true` from week 3,
+  and the contract immediately bit in three places — no sections, no tutorial
+  section, no teachers — naming week 3 each time. Restored the flag and the
+  suite went back to green. That is the difference between a gate that is
+  vacuous by design and one that is broken.
+- **Citation:**
+  [`e5c4041`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/e5c4041)
