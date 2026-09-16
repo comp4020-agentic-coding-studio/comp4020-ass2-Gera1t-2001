@@ -148,3 +148,21 @@ drafted from; it is not itself the submission.
   two starter lectures, so it was left alone rather than forced red.
 - **Citation:**
   [`8de67b7`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/8de67b7)
+
+---
+
+- **Date/time:** 2026-09-16, afternoon
+- **Tag:** [routine]
+- **What happened:** The course record was still the template placeholder —
+  "Course Title Goes Here", a description about nothing, `tags: ["replace me"]`.
+- **What I did instead of the obvious thing:** Nothing unusual; transcribed the
+  record from `docs/course-plan.md` §1 and removed the `STARTER_CONTENT`
+  marker. The only judgement was keeping the allocated code digits and setting
+  the level digit to 1, because the course is written for people who have
+  never played a MOBA and the level should say so.
+- **How I knew it was right:** The schema enforces an 80–300 character
+  description and a code whose first digit matches `level`; I measured the
+  description at 214 characters before building, and the build parsed the
+  record without complaint.
+- **Citation:**
+  [`b23935a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/b23935a)
