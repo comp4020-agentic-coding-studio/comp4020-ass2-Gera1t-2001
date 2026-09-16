@@ -281,3 +281,26 @@ drafted from; it is not itself the submission.
 - **Curated prompt:** "停一下，对于 step 5，你按照你给出的建议来"
 - **Citation:**
   [`bf9cfc0`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/bf9cfc0)
+
+---
+
+- **Date/time:** 2026-09-16, late afternoon
+- **Tag:** [routine]
+- **What happened:** Ten of the twelve weeks still had no page, and the
+  lectures index described a template rather than a course.
+- **What I did instead of the obvious thing:** Wrote each week's paragraph
+  from its decision outward and made each one say why it sits where it sits in
+  the sequence, rather than describing what it covers. That constraint is what
+  stops twelve stubs being interchangeable: a paragraph that explains why
+  control comes before vision cannot be moved to another week without becoming
+  false. Several weeks earned a specific `deck_reason` rather than the brief's
+  boilerplate — week 8's says the slot is being held for a possible second
+  deck, which is honest, and week 5's says a table on a slide is a table
+  nobody reads.
+- **How I knew it was right:** Both suites green, 11 of 11, and I read the
+  built API rather than trusting the runner: twelve lecture nodes, weeks 1
+  through 12 with no repeats, twelve distinct decisions, exactly one lecture
+  linking a deck, weights 10+20+30+40. The two assertions that had been red
+  are the two that went green, which is the pair worth citing.
+- **Citation:**
+  [`58930f1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/58930f1)
