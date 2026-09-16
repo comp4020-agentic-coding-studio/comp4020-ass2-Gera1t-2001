@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" width="720" height="900" role="img" aria-labelledby="cc-title cc-desc">
+  <title id="cc-title">A neutral camp's cycle, and how the jungle changes over a game</title>
+  <desc id="cc-desc">The top panel draws a camp's cycle as a clockwise loop. A mark at the top of the loop is the spawn check, which fires on the game clock rather than from when you cleared the camp, and which does nothing at all if anything is still standing in the camp. Around most of the loop the camp is occupied, and an outer arc over that stretch is the pull window, when the creeps are there to be pulled. A shorter arc, nested outside the tail of the pull window and running right up to the next check, is the stack window: empty the camp in time and the check adds a second group instead of nothing. The lower panel contrasts two kinds of camp along an early-to-late timeline. A dry camp is drawn as three identical shapes: it is the same camp all game. A river camp is drawn as three shapes that grow: it steps up as the game goes on, so the loop is not the same loop later in a match.</desc>
+  <style>
+    svg {
+      color-scheme: light dark;
+      color: var(--at-text, light-dark(oklch(from #b97d1c 20% .01 h), oklch(from #b97d1c 95% .005 h)));
+      font-family: var(--at-font-body, ui-sans-serif, system-ui, sans-serif);
+    }
+    .ring { fill: none; stroke: currentColor; stroke-opacity: .26; stroke-width: 11; }
+    .flow { fill: currentColor; fill-opacity: .4; }
+    .pull { fill: none; stroke: var(--at-tertiary, #6b6154); stroke-opacity: .85; stroke-width: 8; stroke-linecap: round; }
+    .stack { fill: none; stroke: var(--at-primary, #b97d1c); stroke-width: 9; stroke-linecap: round; }
+    .tick { stroke: var(--at-primary, #b97d1c); stroke-width: 5; }
+    .tick-dot { fill: var(--at-primary, #b97d1c); }
+    .rule { stroke: currentColor; stroke-opacity: .2; stroke-width: 2; }
+    .axis { stroke: currentColor; stroke-opacity: .3; stroke-width: 3; stroke-linecap: round; }
+    .camp { fill: var(--at-tertiary, #6b6154); }
+    .camp-river { fill: var(--at-primary, #b97d1c); }
+    text { fill: currentColor; }
+    .ph { font-size: 26px; font-weight: 700; }
+    .row { font-size: 24px; font-weight: 700; }
+    .mid { font-size: 24px; font-weight: 700; }
+    .dim { fill-opacity: .6; font-weight: 400; }
+    .sub { font-size: 21px; fill-opacity: .72; }
+    .note { font-size: 21px; fill-opacity: .68; }
+  </style>
+
+  <!-- Panel A — one camp, one cycle -->
+  <text class="ph" x="44" y="48">Stacking is a window inside a cycle</text>
+
+  <text class="row" x="360" y="100" text-anchor="middle">The spawn check</text>
+  <text class="sub" x="360" y="126" text-anchor="middle">fires on the game clock, not on when you cleared it</text>
+
+  <circle class="ring" cx="360" cy="330" r="112"/>
+  <polygon class="flow" points="-10,-9 10,-9 0,13" transform="translate(457 386) rotate(30)"/>
+  <polygon class="flow" points="-10,-9 10,-9 0,13" transform="translate(263 386) rotate(150)"/>
+
+  <path class="pull" d="M412 187.1 A152 152 0 1 1 308 187.1"/>
+  <path class="stack" d="M180.3 281.8 A186 186 0 0 1 334.1 145.8"/>
+
+  <line class="tick" x1="360" y1="140" x2="360" y2="242"/>
+  <circle class="tick-dot" cx="360" cy="218" r="10"/>
+
+  <text class="mid" x="360" y="338" text-anchor="middle">Camp occupied</text>
+
+  <text class="row" x="190" y="200" text-anchor="end">Stack window</text>
+  <text class="sub" x="190" y="226" text-anchor="end">empty it in time</text>
+
+  <text class="row" x="474" y="448">Pull window</text>
+  <text class="sub" x="474" y="474">the creeps are there</text>
+
+  <text class="note" x="44" y="512">A check finds the camp empty, or it does nothing at all.</text>
+  <text class="note" x="44" y="536">Empty it in time and the next check adds a second group.</text>
+
+  <line class="rule" x1="44" y1="570" x2="676" y2="570"/>
+
+  <!-- Panel B — and the jungle itself is not fixed -->
+  <text class="ph" x="44" y="616">The loop is not the same loop later on</text>
+
+  <text class="row" x="44" y="660">Dry camp<tspan class="dim"> — the same camp all game</tspan></text>
+  <line class="axis" x1="60" y1="716" x2="660" y2="716"/>
+  <polygon class="camp" points="138,716 182,716 160,682"/>
+  <polygon class="camp" points="338,716 382,716 360,682"/>
+  <polygon class="camp" points="538,716 582,716 560,682"/>
+
+  <text class="row" x="44" y="768">River camp<tspan class="dim"> — steps up as the game goes on</tspan></text>
+  <line class="axis" x1="60" y1="840" x2="660" y2="840"/>
+  <polygon class="camp-river" points="140,840 180,840 160,812"/>
+  <polygon class="camp-river" points="334,840 386,840 360,798"/>
+  <polygon class="camp-river" points="528,840 592,840 560,780"/>
+
+  <text class="sub" x="60" y="872">early</text>
+  <text class="sub" x="660" y="872" text-anchor="end">late</text>
+</svg>

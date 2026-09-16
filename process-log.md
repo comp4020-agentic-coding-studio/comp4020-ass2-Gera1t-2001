@@ -1055,3 +1055,29 @@ drafted from; it is not itself the submission.
   label off the deny bracket it was sitting on.
 - **Citation:**
   [`b087cce`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/b087cce)
+
+---
+
+- **Date/time:** 2026-09-17, around 01:50
+- **Tag:** [judgement]
+- **What happened:** Week 3's brief asks for two things in one drawing — three
+  states of a lane with an arrow for what moves the wave, and the asymmetry
+  that `docs/map-reference.md` settles, where a safe lane's meeting point sits
+  near the safe-laner's own tower and an off lane's therefore does not. Drawn
+  as one picture those fight each other: the first is about a wave moving, the
+  second about where it rests before anyone moves it.
+- **What I did instead of the obvious thing:** Split it into two stacked panels
+  that share one idiom — every lane is a strip with *your* tower at the left
+  and theirs at the right — rather than inventing a second visual language for
+  the second idea. Reusing the axis is what lets the second panel land: the
+  reader already knows what left and right mean, so "safe lane, mid, off lane"
+  with the marker at three different places reads as one fact rather than
+  three pictures.
+- **How I knew it was right:** Two passes at 358px and 560px in both schemes.
+  Pass 1 clipped the second panel's heading off the right edge and ran the
+  "Mid" row label into the tower glyph, because I had estimated text widths
+  rather than measured them; pass 2 shortened the three offending strings and
+  opened up the second panel's row pitch, which had been tight enough that a
+  row label touched the strip above it.
+- **Citation:**
+  [`29068a8`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/29068a8)
