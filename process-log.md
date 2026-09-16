@@ -751,3 +751,24 @@ drafted from; it is not itself the submission.
   pairwise distinct.
 - **Citation:**
   [`965c05a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/965c05a)
+
+---
+
+- **Date/time:** 2026-09-18, early hours
+- **Tag:** [routine]
+- **What happened:** Lobby Labs 9–12 completed the set and every suite went
+  green: 26 of 26.
+- **What I did instead of the obvious thing:** Week 12's lab is dated the
+  Tuesday rather than the Thursday every other week uses, and the page says so
+  and says why — match day on the Thursday would leave the review due at noon
+  the next morning. The tempting alternative was to let the exception pass
+  without comment, since no reader would count backwards and notice. A course
+  that quietly moves its own schedule teaches something it does not intend to.
+- **How I knew it was right:** Read the built API back rather than trusting
+  the green: twelve sessions, twelve pairwise-distinct `needs_others`, twelve
+  with exactly three spec lines, zero lab titles ending in a question mark,
+  and every lab exactly three days after its lecture — except week 12's, at
+  one day, which is the stated exception rather than a mistake that happened
+  to pass a same-calendar-week check.
+- **Citation:**
+  [`fd73fcd`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/fd73fcd)
