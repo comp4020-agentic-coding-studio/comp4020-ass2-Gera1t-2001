@@ -42,7 +42,7 @@ agility into attack speed and armour, intelligence into mana and spell damage.
 
 **What universal is**, and why it exists at all as a fourth option.
 
-**7.41 removed Facets**, so picking a hero is a smaller question than it used
+**7.41f removed Facets**, so picking a hero is a smaller question than it used
 to be. This week needs attributes and abilities, not branches.
 
 ## The resource lens
@@ -70,7 +70,7 @@ attribute, not what makes them individually good.
 ## This week's item
 
 This section is not written yet. The course's attribute items are pinned to
-7.41f, and 7.41 removed some of the components older guides still recommend,
+7.41f, and 7.41f removed some of the components older guides still recommend,
 so naming one from memory would be exactly the mistake this course tells
 students not to make. It is settled when the facts file lands.
 

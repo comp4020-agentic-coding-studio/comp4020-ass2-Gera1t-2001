@@ -553,3 +553,32 @@ drafted from; it is not itself the submission.
   weeks naming them. Contract green across nine un-drafted weeks.
 - **Citation:**
   [`45f2c11`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/45f2c11)
+
+---
+
+- **Date/time:** 2026-09-18, just after midnight
+- **Tag:** [judgement]
+- **What happened:** Weeks 10–12 finished the set, and the suite went from one
+  known red to fully green. That transition is the moment a false green would
+  be invisible, because "everything passes" is exactly what a broken gate
+  looks like when the gate is `draft`.
+- **What I did instead of the obvious thing:** Read the built API back rather
+  than trusting the runner: twelve lectures, **zero still carrying `draft`**,
+  so the contract is biting on all twelve rather than skipping them; thirteen
+  of thirteen pool heroes named by a week whose number matches their
+  `firstWeek`; abilities per week 0·1·1·1·0·2·1·1·1·1·1·0, which is week 5's
+  deliberate zero and week 6 at the two-ability ceiling, not an average that
+  happens to look right. Then I audited something no test covers yet:
+  `CLAUDE.md` allows exactly one patch string on the site, and I had written a
+  bare `7.41` twice in week 5 — copied from the notes, which use the short
+  form in prose. Both corrected to `7.41f`. `course-plan.md` §8 lists that as
+  a check worth writing; it is not written yet, and until it is, this class of
+  error is only caught by looking.
+- **Also deliberate:** week 12 names no hero, and the page says why — for the
+  opposite reason to week 1. In week 1 it did not matter who you picked; in
+  week 12 the heroes are the five your team drafted, and defending that choice
+  is part of the assignment. Two weeks with an identical empty field and
+  opposite reasons is the kind of thing that stops twelve pages reading as one
+  template.
+- **Citation:**
+  [`139aeba`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/139aeba)
