@@ -582,3 +582,32 @@ drafted from; it is not itself the submission.
   template.
 - **Citation:**
   [`139aeba`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/139aeba)
+
+---
+
+- **Date/time:** 2026-09-18, just after midnight
+- **Tag:** [harness]
+- **What happened:** Named the Lobby Labs and wrote their contract, red first.
+  Five of the six assertions went red for the reason intended — two starter
+  sessions where twelve labs belong. The sixth went red for a reason I had not
+  expected: `labs.md` proposes "session titles are not questions while lecture
+  titles are" as a machine-checkable proxy for the two-genre rule, and seven
+  of the twelve lecture titles are not questions. They come from
+  `course-plan.md` §3 and `weeks.md`, so they are the author's own text.
+- **What I did instead of the obvious thing:** Two quick fixes were available
+  and I took neither. Rewriting the seven titles into questions would have
+  edited the course's own material to satisfy a test — precisely backwards,
+  and the titles are author-written. Dropping the lecture half of the
+  assertion would have left a check that looks like it protects the two-genre
+  rule while only ever testing one genre. So the assertion stands as written,
+  red, and the decision goes to the author with the facts attached: weeks 5,
+  6, 8, 9, 10 and 11 are questions with a topic appended after an em dash, and
+  week 12 is not a question at all.
+- **How I knew it was right:** Printed all twelve titles with their pass/fail
+  rather than reasoning from the one failure vitest happened to report first —
+  the runner named week 5, but the real shape of the problem is seven weeks in
+  two distinct patterns, which is a different decision from a single typo.
+- **Still red, deliberately:** this assertion will not go green at the end of
+  step 12 without an author decision. Flagged rather than quietly weakened.
+- **Citation:**
+  [`ae0d779`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/ae0d779)
