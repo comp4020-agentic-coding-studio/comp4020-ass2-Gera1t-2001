@@ -1081,3 +1081,29 @@ drafted from; it is not itself the submission.
   row label touched the strip above it.
 - **Citation:**
   [`29068a8`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/29068a8)
+
+---
+
+- **Date/time:** 2026-09-17, around 02:00
+- **Tag:** [judgement]
+- **What happened:** Week 4's brief asks the camp diagram to carry a "pull
+  window" and a "stack window" as arcs on one loop. But `docs/mechanics-reference.md`
+  gives no pull timing at all — it is one of the figures `FACTS.md` deliberately
+  does not carry — so there is no honest way to draw the pull window as a
+  short, precisely-placed arc.
+- **What I did instead of the obvious thing:** Drew the pull window as what the
+  reference actually supports: the whole stretch in which the camp is occupied
+  and the creeps are therefore there to pull. The stack window is then a
+  shorter arc nested *outside* the tail of it, running up to the next check.
+  Nesting rather than abutting them is the substantive choice — two arcs side
+  by side would say the two windows are alternatives, and the sentence the week
+  is built on is that stacking is a window *inside* a cycle. Invented precision
+  would have been the easier drawing and the wrong one.
+- **How I knew it was right:** Two passes at 358px and 560px in both schemes.
+  Pass 1 put the loop's two direction arrowheads on the horizontal midline,
+  where they collided with the "Camp occupied" label at the centre; pass 2
+  moved them to the lower diagonals and extended the stack arc so it reaches
+  the check instead of stopping short of it, which had left a gap implying a
+  dead stretch that does not exist.
+- **Citation:**
+  [`74125e5`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/74125e5)
