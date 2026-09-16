@@ -207,9 +207,12 @@ drafted from; it is not itself the submission.
   along with the four paths. That turns a vague Friday risk into a gate that
   can be closed deliberately. The dangling-ref concern I checked by reading
   the starter sessions' frontmatter rather than assuming.
-- **Curated prompt:** "按照你的建议来，三种语气改成讽刺只活在标题和框架，正文
-  一律真诚" — plus the instruction to record that the brief was revised after
+- **Curated prompt:** "Go with your suggestions — change the three-registers
+  rule to: satire lives only in the titles and the framing, the body is always
+  sincere" — plus the instruction to record that the brief was revised after
   its own review.
+- **Citation:**
+  [`26cf061`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/26cf061)
 
 ---
 
@@ -278,7 +281,7 @@ drafted from; it is not itself the submission.
   the one-slide deck stub. The suite went from six red to two, and the two
   remaining — "exactly twelve lectures" and the twelve-week coverage check —
   are precisely the ten weeks not yet written.
-- **Curated prompt:** "停一下，对于 step 5，你按照你给出的建议来"
+- **Curated prompt:** "Hold on — for step 5, go with the suggestion you made."
 - **Citation:**
   [`bf9cfc0`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/bf9cfc0)
 
