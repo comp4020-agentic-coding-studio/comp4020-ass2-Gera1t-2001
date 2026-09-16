@@ -465,3 +465,36 @@ drafted from; it is not itself the submission.
   vacuous by design and one that is broken.
 - **Citation:**
   [`e5c4041`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/e5c4041)
+
+---
+
+- **Date/time:** 2026-09-17, late evening
+- **Tag:** [judgement]
+- **What happened:** Weeks 1–3 written from `docs/weeks.md`. Week 1 has no
+  hero and no item, and the notes say to explain that absence rather than let
+  it read as an oversight — but the contract written in the previous commit
+  forbids a *This week's hero* heading on a week whose `heroes` is empty.
+- **What I did instead of the obvious thing:** The line that explains why no
+  hero is named went into *This week's decision* rather than into a section of
+  its own. Adding an eighth heading would have satisfied the note and broken
+  the contract; adding an empty hero section would have satisfied both and
+  told the reader nothing. The same question came up for "the mistake this
+  week fixes", which the notes carry for every week and which is not one of
+  the seven sections: it reads as the closing move of the decision section, so
+  that is where it sits, consistently, in all three weeks.
+- **How I knew it was right:** The contract went from vacuous to biting in the
+  same commit, which is the check worth having: three weeks un-drafted, and
+  the suite still green means `bodyOf` genuinely found seven headings in weeks
+  2 and 3 and five in week 1 — a broken reader would have returned nothing and
+  failed. The hero-pool failure moved from `dragon-knight` to `lion`, so
+  Dragon Knight and Wraith King are now named and their `firstWeek` values
+  agree with the weeks that name them. Read the built API back to confirm
+  `draft=false`, teachers, heroes, abilities and items on all three rather
+  than trusting the runner.
+- **Open, deliberately unwritten:** week 3's note asks whether the page should
+  say that 7.41 moved the lane creep meeting point. That is an `OPEN`, so the
+  page says only that the two sides are not mirror images and that where the
+  waves meet is pinned to 7.41f rather than generalised — one honest sentence,
+  and nothing claimed that the author has not decided.
+- **Citation:**
+  [`2b17a9c`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/2b17a9c)

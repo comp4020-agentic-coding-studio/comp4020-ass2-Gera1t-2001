@@ -6,20 +6,86 @@ description:
 week: 1
 date: 2027-02-22
 decision: "Why can't I even beat the bots?"
+teachers:
+  - wen-adeyemi
 deck: none
 deck_reason:
-  Week 1 is a map and a vocabulary; both belong on a page the student can
-  return to mid-game, not on slides they see once.
-draft: true
+  Week one hands over a map and a vocabulary; one diagram and a paragraph do
+  that better than slides. The week that needs visual work is week 2.
+heroes: []
+abilities: []
+items: []
+tutorial: "§1 — This is Dota, basic mechanics, looking around"
 ---
 
-A new player's first real question is not about Dota, it is about themselves:
-the bots are meant to be the easy version, and they are still winning. This
-week answers it by showing you the shape of the match you have been losing —
-three lanes, one building that actually ends the game, and a win condition
-with far less to do with winning fights than you would guess from watching
-one. It comes first because every decision in the eleven weeks after it is a
-decision about where to spend something, and you cannot reason about spending
-until you know what the board is for. Players arriving from League of Legends
-get a short bridging passage here and then join everyone else; the map is not
-the thing that will catch you out.
+## This week's decision
+
+You install the game, you finish the tutorial, you queue against the bots, and
+the bots win. The reason is not that they are quick. It is that they are
+playing a different game from you: they take their last hits, they buy on
+time, and they move as a group, while you are crossing the map looking for a
+fight. That contrast — deciding against reacting — is the first one this
+course draws, and the eleven weeks after it are all elaborations of it.
+
+The mistake this week fixes is treating Dota as a fighting game, and so
+spending the whole match hunting fights. Most of what you actually do is
+collect gold and experience. Fights happen to protect that, or to interrupt
+theirs.
+
+No hero is named this week, deliberately. Right now it does not matter who you
+pick: heroes only start to differ once you know what you are competing for.
+Week 5 comes back to it.
+
+## Mechanics
+
+**How a match ends.** Five players are not trying to kill each other. They are
+trying to destroy the Ancient in the enemy base, and kills are a means to that
+rather than the object of the exercise. Every game you have lost so far ended
+with a building falling, not with a scoreline.
+
+**The geography.** Three lanes and two jungles. Mid is the shortest lane,
+which is why the player there reaches things first. The safe and the off lane
+are not mirror images for the two sides, and that asymmetry is the reason the
+same lane is a different job depending on which side you are on.
+
+**Creeps are the economy, not the scenery.** They are the main source of gold
+and experience in the game, rather than obstacles standing between you and a
+fight. Week 2 is about nothing else.
+
+**Why the bots beat you.** They do three unglamorous things consistently: they
+last-hit, they buy on time, and they move together. None of those is a
+reaction. All of them are decisions made in advance.
+
+### If you are coming from League of Legends
+
+Skip this if you have never played a MOBA — nothing below is needed to follow
+the course. If you have, three differences will catch you out before anything
+else does.
+
+**Denying.** You can kill your own creeps to keep the enemy from the
+experience. There is no equivalent in League, and it changes the whole feel of
+a lane: refusal is a positive action here.
+
+**No recall.** The teleport scroll costs gold, has a cooldown and takes time
+to channel. Going home is an expense, and you will budget for it.
+
+**The courier.** Items come to you, which means "go home to shop" and "stay in
+lane" are two separate decisions rather than one.
+
+## The resource lens
+
+Every choice in Dota spends one of five things to buy another: gold,
+experience, time, space and information. Twelve weeks, and one of those trades
+examined each week. Keep the list somewhere you can see it — by week 12 you
+will be filling in the cells yourself.
+
+## Before the lecture
+
+Valve's in-game tutorial, section 1 — This is Dota, basic mechanics, looking
+around.
+
+## After this week you can…
+
+- say how a game of Dota is won without using the word "kill"
+- point out the three lanes, both jungles and the Roshan pit on the minimap
+- name which of the five resources you lost your last game on
