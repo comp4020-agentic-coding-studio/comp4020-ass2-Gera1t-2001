@@ -62,12 +62,33 @@ const headingsOf = (body: string): string[] =>
 describe("the weekly page contract", () => {
   it("carries the seven sections in order, and only those", () => {
     for (const lecture of finished) {
-      const expected = SECTIONS.filter((section) => {
-        if (section === "This week's hero") return asArray(lecture.meta?.heroes).length > 0;
-        if (section === "This week's item") return asArray(lecture.meta?.items).length > 0;
-        return true;
-      });
-      expect(headingsOf(bodyOf(lecture.id)), `${lecture.id}'s sections`).toEqual(expected);
+      const headings = headingsOf(bodyOf(lecture.id));
+
+      // No heading outside the seven, and never out of order.
+      for (const heading of headings) {
+        expect(SECTIONS as readonly string[], `${lecture.id} has an unknown section`).toContain(
+          heading,
+        );
+      }
+      const order = headings.map((heading) => SECTIONS.indexOf(heading as (typeof SECTIONS)[number]));
+      expect([...order].sort((a, b) => a - b), `${lecture.id}'s sections are out of order`).toEqual(
+        order,
+      );
+
+      // A week that names a hero or an item owes the reader that section.
+      // The converse is deliberately not asserted: week 5 carries an item
+      // section whose content is openly not written yet, and a page that
+      // admits a gap is better than one that hides it by dropping the
+      // heading. Weeks 1 and 12 simply have neither.
+      const required: string[] = SECTIONS.filter(
+        (section) => section !== "This week's hero" && section !== "This week's item",
+      );
+      if (asArray(lecture.meta?.heroes).length > 0) required.push("This week's hero");
+      if (asArray(lecture.meta?.items).length > 0) required.push("This week's item");
+
+      for (const section of required) {
+        expect(headings, `${lecture.id} is missing "${section}"`).toContain(section);
+      }
     }
   });
 

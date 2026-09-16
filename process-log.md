@@ -498,3 +498,38 @@ drafted from; it is not itself the submission.
   and nothing claimed that the author has not decided.
 - **Citation:**
   [`2b17a9c`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/2b17a9c)
+
+---
+
+- **Date/time:** 2026-09-17, late evening
+- **Tag:** [judgement]
+- **What happened:** Weeks 4–6 hit two collisions between the contract written
+  in step 3 and what the notes actually ask for. Week 5's item section is an
+  acknowledged hole — the attribute items are pinned to 7.41f and 7.41 removed
+  some of the components older guides still name — so the page owes the reader
+  a sentence saying so, while `items` is legitimately empty. The contract said
+  the item heading appears *exactly* when `items` is non-empty, which would
+  have forced me to delete the admission. Week 6 carries a substantial
+  argument about which position a beginner should start on, and the seven
+  fixed sections have no slot for it.
+- **What I did instead of the obvious thing:** For week 5 I changed the
+  contract rather than the page. Naming an item from memory to fill the
+  section is precisely the mistake this course tells students not to make, and
+  dropping the heading would have hidden the gap instead of declaring it — so
+  the rule is now "a week that names a hero or an item owes the reader that
+  section", with the converse deliberately not asserted and the reason written
+  into the test. For week 6 I changed the page rather than the contract: the
+  argument folded into *This week's decision*, because an eighth heading would
+  have broken a structure that exists to stop twelve weeks drifting into
+  twelve different shapes, and the course's position on where to start is part
+  of answering what you are for.
+- **How I knew it was right:** Loosening a test is the moment it stops being
+  evidence, so I demonstrated the weakened version still bites, in both
+  directions: appended a bogus `## A section that should not exist` to week 6
+  and it failed naming that heading; then swapped *Mechanics* above *This
+  week's decision* and it failed naming the ordering; restored, and green
+  except the known hero-pool red. The hero-pool failure also walked forward
+  from `lion` to `lich`, so every hero through week 6 now resolves with a
+  `firstWeek` that agrees with the week naming it.
+- **Citation:**
+  [`9d52396`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/9d52396)
