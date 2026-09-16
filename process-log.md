@@ -730,3 +730,24 @@ drafted from; it is not itself the submission.
   suite that has stopped looking.
 - **Citation:**
   [`94024e6`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/94024e6)
+
+---
+
+- **Date/time:** 2026-09-18, early hours
+- **Tag:** [routine]
+- **What happened:** Lobby Labs 5–8, written with the block-scalar frontmatter
+  the week 3 failure forced. No parser trouble this time, which was the point
+  of changing the shape rather than the sentence.
+- **What I did instead of the obvious thing:** Lab 6 is the one that could
+  most easily have restated its lecture — week 6 is roles, and a lab page
+  about roles would be the lecture again with a heading swapped. It is a
+  replay-watching drill instead, where each student follows one position and
+  the class reassembles the game from five partial accounts, and the page
+  never explains what a position is. That is the two-genre rule doing actual
+  work rather than being asserted about.
+- **How I knew it was right:** "expected 8 to be 12" — the count is the only
+  thing still red, so the five substantive assertions are passing against
+  eight real labs, including the one that requires all `needs_others` to be
+  pairwise distinct.
+- **Citation:**
+  [`965c05a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/965c05a)
