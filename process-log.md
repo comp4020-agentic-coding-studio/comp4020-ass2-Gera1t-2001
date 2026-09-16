@@ -1031,3 +1031,27 @@ drafted from; it is not itself the submission.
   caption it was colliding with.
 - **Citation:**
   [`9d30896`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/9d30896)
+
+---
+
+- **Date/time:** 2026-09-17, around 01:40
+- **Tag:** [routine]
+- **What happened:** The week 2 window diagram came out of pass 1 with a solid
+  black triangle covering the whole plot. The cause was one missing property:
+  the axis was drawn as a single path, `M90 100 V400 H666`, and SVG fills an
+  open path by closing it — so the L-shaped axis filled itself into a triangle
+  with the default black. In dark mode the fill stayed black, which is what
+  named it: `currentColor` would have gone near-white there.
+- **What I did instead of the obvious thing:** Nothing clever — `fill: none` on
+  `.axis`. Logging it anyway because the failure is the exact shape CLAUDE.md
+  warns about: the file is valid SVG, it would pass any typecheck, lint or
+  spec suite, and the only place the fault existed was the render. There was
+  no test that could have caught it and writing one would be writing a
+  renderer.
+- **How I knew it was right:** Four passes at 358px and 620px in both schemes.
+  Pass 2 cleared the triangle; pass 3 moved both window labels to the left of
+  their brackets, which used the empty bottom-left of the chart instead of
+  stacking everything into the crowded right corner; pass 4 moved the "Time"
+  label off the deny bracket it was sitting on.
+- **Citation:**
+  [`b087cce`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/b087cce)

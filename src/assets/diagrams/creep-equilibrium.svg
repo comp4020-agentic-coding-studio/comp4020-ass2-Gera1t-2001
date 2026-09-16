@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 868" width="720" height="868" role="img" aria-labelledby="ce-title ce-desc">
+  <title id="ce-title">Creep equilibrium, and why the same lane is a different job from each end</title>
+  <desc id="ce-desc">Two panels, both drawn as lanes running left to right with your tower at the left end and the enemy tower at the right. The first panel shows the same lane in three states: the wave held near your tower, the wave in the middle, and the wave pushed up to their tower. The first of the three is marked as the one week three recommends for a beginner, because the escape is short and the enemy support is far away. Arrows underneath show what moves the wave: attacking more pushes it toward their tower, denying or attacking less pulls it back toward yours. The second panel shows that the resting place of the wave is not the middle of the lane. On a safe lane you meet the wave near your own tower; in mid the waves meet at the centre of the map; on an off lane you meet it close to the enemy tower. Safe and off are the same lane seen from its two ends.</desc>
+  <style>
+    svg {
+      color-scheme: light dark;
+      color: var(--at-text, light-dark(oklch(from #b97d1c 20% .01 h), oklch(from #b97d1c 95% .005 h)));
+      font-family: var(--at-font-body, ui-sans-serif, system-ui, sans-serif);
+    }
+    .lane { stroke: currentColor; stroke-opacity: .28; stroke-width: 7; stroke-linecap: round; }
+    .tower { fill: currentColor; fill-opacity: .62; }
+    .wave { fill: var(--at-primary, #b97d1c); }
+    .pick { fill: var(--at-primary, #b97d1c); fill-opacity: .1; }
+    .rule { stroke: currentColor; stroke-opacity: .2; stroke-width: 2; }
+    .arrow { fill: none; stroke: var(--at-secondary, #8a5c13); stroke-width: 4; stroke-linecap: round; }
+    .head { fill: var(--at-secondary, #8a5c13); }
+    text { fill: currentColor; }
+    .ph { font-size: 26px; font-weight: 700; }
+    .row { font-size: 24px; font-weight: 700; }
+    .dim { fill-opacity: .6; font-weight: 400; }
+    .sub { font-size: 21px; fill-opacity: .72; }
+    .ax { font-size: 21px; fill-opacity: .6; }
+    .note { font-size: 21px; fill-opacity: .68; }
+  </style>
+
+  <!-- Panel A — the three states, and what moves between them -->
+  <text class="ph" x="44" y="48">Where the wave sits, and what moves it</text>
+  <text class="ax" x="90" y="86" text-anchor="middle">your tower</text>
+  <text class="ax" x="630" y="86" text-anchor="middle">their tower</text>
+
+  <rect class="pick" x="44" y="100" width="632" height="100" rx="12"/>
+
+  <text class="row" x="60" y="128">Held near your tower<tspan class="dim"> — recommended</tspan></text>
+  <line class="lane" x1="90" y1="158" x2="630" y2="158"/>
+  <rect class="tower" x="79" y="140" width="22" height="36" rx="4"/>
+  <rect class="tower" x="619" y="140" width="22" height="36" rx="4"/>
+  <rect class="wave" x="176" y="147" width="48" height="22" rx="11"/>
+  <text class="sub" x="60" y="192">Short escape, and far from their support.</text>
+
+  <text class="row" x="60" y="246">In the middle</text>
+  <line class="lane" x1="90" y1="276" x2="630" y2="276"/>
+  <rect class="tower" x="79" y="258" width="22" height="36" rx="4"/>
+  <rect class="tower" x="619" y="258" width="22" height="36" rx="4"/>
+  <rect class="wave" x="336" y="265" width="48" height="22" rx="11"/>
+
+  <text class="row" x="60" y="334">Pushed to their tower</text>
+  <line class="lane" x1="90" y1="364" x2="630" y2="364"/>
+  <rect class="tower" x="79" y="346" width="22" height="36" rx="4"/>
+  <rect class="tower" x="619" y="346" width="22" height="36" rx="4"/>
+  <rect class="wave" x="496" y="353" width="48" height="22" rx="11"/>
+
+  <line class="arrow" x1="372" y1="416" x2="594" y2="416"/>
+  <polygon class="head" points="594,405 618,416 594,427"/>
+  <line class="arrow" x1="348" y1="416" x2="126" y2="416"/>
+  <polygon class="head" points="126,405 102,416 126,427"/>
+  <text class="sub" x="102" y="450">You deny, or attack less</text>
+  <text class="sub" x="618" y="450" text-anchor="end">You attack more</text>
+
+  <line class="rule" x1="44" y1="484" x2="676" y2="484"/>
+
+  <!-- Panel B — the resting place is not the middle, and not the same at both ends -->
+  <text class="ph" x="44" y="534">The waves do not meet in the lane's middle</text>
+
+  <text class="row" x="60" y="580">Safe lane<tspan class="dim"> — you meet it near your own tower</tspan></text>
+  <line class="lane" x1="90" y1="612" x2="630" y2="612"/>
+  <rect class="tower" x="79" y="594" width="22" height="36" rx="4"/>
+  <rect class="tower" x="619" y="594" width="22" height="36" rx="4"/>
+  <rect class="wave" x="206" y="601" width="48" height="22" rx="11"/>
+
+  <text class="row" x="60" y="666">Mid<tspan class="dim"> — the waves meet at the map's centre</tspan></text>
+  <line class="lane" x1="90" y1="698" x2="630" y2="698"/>
+  <rect class="tower" x="79" y="680" width="22" height="36" rx="4"/>
+  <rect class="tower" x="619" y="680" width="22" height="36" rx="4"/>
+  <rect class="wave" x="336" y="687" width="48" height="22" rx="11"/>
+
+  <text class="row" x="60" y="752">Off lane<tspan class="dim"> — you meet it close to their tower</tspan></text>
+  <line class="lane" x1="90" y1="784" x2="630" y2="784"/>
+  <rect class="tower" x="79" y="766" width="22" height="36" rx="4"/>
+  <rect class="tower" x="619" y="766" width="22" height="36" rx="4"/>
+  <rect class="wave" x="466" y="773" width="48" height="22" rx="11"/>
+
+  <text class="note" x="44" y="828">Safe and off are the same lane, seen from its two ends.</text>
+  <text class="note" x="44" y="852">The off-laner's wave rests where it suits them least.</text>
+</svg>
