@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 720" width="680" height="720" role="img" aria-labelledby="mo-title mo-desc">
+  <title id="mo-title">The shape of the Dota board</title>
+  <desc id="mo-desc">A schematic square board. The Radiant base sits at the bottom-left corner and the Dire base at the top-right. Three lanes join them: a mid lane running straight along the diagonal between the two bases, and a top lane and a bottom lane that each run the long way round along two edges of the board. A river crosses the other diagonal, from the top-left corner to the bottom-right, cutting the mid lane at the centre. A wide hatched band of ground lies outside the lanes on all four sides. The bottom lane is Radiant's safe lane and Dire's off lane; the top lane is the reverse.</desc>
+  <style>
+    svg {
+      color-scheme: light dark;
+      color: var(--at-text, light-dark(oklch(from #b97d1c 20% .01 h), oklch(from #b97d1c 95% .005 h)));
+      font-family: var(--at-font-body, ui-sans-serif, system-ui, sans-serif);
+    }
+    .board { fill: var(--at-bg-alt, light-dark(oklch(from #b97d1c 96.5% .006 h), oklch(from #b97d1c 15% .01 h))); stroke: currentColor; stroke-opacity: .22; stroke-width: 2; }
+    .lane { fill: none; stroke: var(--at-primary, #b97d1c); stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; }
+    .river-band { stroke: var(--at-tertiary, #6b6154); stroke-opacity: .34; stroke-width: 46; }
+    .river-line { stroke: var(--at-tertiary, #6b6154); stroke-opacity: .55; stroke-width: 2.5; stroke-dasharray: 10 9; }
+    .base { fill: var(--at-primary, #b97d1c); stroke: var(--at-bg, light-dark(oklch(from #b97d1c 99.4% .004 h), oklch(from #b97d1c 12% .008 h))); stroke-width: 4; }
+    text { fill: currentColor; }
+    .name { font-size: 28px; font-weight: 700; }
+    .lane-name { font-size: 26px; font-weight: 700; }
+    .role { font-size: 21px; fill-opacity: .72; }
+    .zone { font-size: 21px; fill-opacity: .6; }
+    .note { font-size: 18px; fill-opacity: .68; }
+  </style>
+
+  <defs>
+    <pattern id="mo-hatch" width="15" height="15" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="15" stroke="currentColor" stroke-opacity=".2" stroke-width="2.5"/>
+    </pattern>
+    <clipPath id="mo-board"><rect x="40" y="40" width="600" height="600"/></clipPath>
+  </defs>
+
+  <!-- The board, and the ground that is not lane -->
+  <rect class="board" x="40" y="40" width="600" height="600"/>
+  <path d="M40 40 H640 V640 H40 Z M145 145 H535 V535 H145 Z" fill="url(#mo-hatch)" fill-rule="evenodd"/>
+
+  <!-- The river: the other diagonal, crossing mid at the centre of the board -->
+  <g clip-path="url(#mo-board)">
+    <line class="river-band" x1="40" y1="40" x2="640" y2="640"/>
+    <line class="river-line" x1="40" y1="40" x2="640" y2="640"/>
+  </g>
+
+  <!-- Three lanes, both bases -->
+  <path class="lane" d="M145 535 V145 H535"/>
+  <path class="lane" d="M145 535 H535 V145"/>
+  <path class="lane" d="M145 535 L535 145"/>
+  <circle class="base" cx="145" cy="535" r="19"/>
+  <circle class="base" cx="535" cy="145" r="19"/>
+
+  <text class="name" x="46" y="600">Radiant base</text>
+  <text class="name" x="634" y="100" text-anchor="end">Dire base</text>
+
+  <text class="lane-name" x="300" y="192" text-anchor="middle">Top lane</text>
+  <text class="role" x="300" y="224" text-anchor="middle">Dire safe · Radiant off</text>
+
+  <text class="lane-name" x="340" y="502" text-anchor="middle">Bottom lane</text>
+  <text class="role" x="340" y="470" text-anchor="middle">Radiant safe · Dire off</text>
+
+  <text class="lane-name" transform="translate(444 272) rotate(-45)" text-anchor="middle">Mid lane</text>
+  <text class="role" transform="translate(585 585) rotate(45)" text-anchor="middle">River</text>
+  <text class="zone" transform="translate(92 340) rotate(-90)" text-anchor="middle">Ground outside the lanes</text>
+
+  <text class="note" x="40" y="676">Schematic — the shape of the board, not to scale.</text>
+  <text class="note" x="40" y="701">Mid is the short way across; top and bottom go the long way round.</text>
+</svg>

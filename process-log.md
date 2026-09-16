@@ -973,3 +973,26 @@ drafted from; it is not itself the submission.
   figures being silently excluded by one of the structural patterns.
 - **Citation:**
   [`1dfb7d7`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/1dfb7d7)
+
+---
+
+- **Date/time:** 2026-09-17, around 01:15
+- **Tag:** [routine]
+- **What happened:** The seven adjudicated figures went from `FACTS.md` into
+  weeks 2, 4 and 5, and the digit scanner in `spec/facts.test.ts` was tightened
+  to match. The entry above, cited against `1dfb7d7`, was written while this
+  work was still uncommitted and describes its reasoning — the two rows that
+  stay spelled out as words, and the two near-miss false reds in the scanner.
+  This entry exists so the commit that shipped that work carries a citation of
+  its own rather than being folded into its predecessor's.
+- **What I did instead of the obvious thing:** Kept `rendered` and a new
+  optional `digits` field separate in `src/data/facts.ts`, instead of forcing
+  every fact into a numeral so the scanner could see it. "every minute" and
+  "four camps" read better as prose, and an absent `digits` states the scan's
+  reach honestly rather than widening the allowed token set until the check
+  means nothing.
+- **How I knew it was right:** `pnpm check` green, and the scanner's actual
+  output was printed per page rather than trusted — five tokens found, each
+  matched against the table.
+- **Citation:**
+  [`17488c5`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/17488c5)
