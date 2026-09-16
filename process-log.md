@@ -382,3 +382,31 @@ drafted from; it is not itself the submission.
   Translated.
 - **Citation:**
   [`3fb6ccb`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/3fb6ccb)
+
+---
+
+- **Date/time:** 2026-09-17, late evening
+- **Tag:** [judgement]
+- **What happened:** Replacing the starter cast broke the build immediately:
+  `TypeError: Cannot read properties of undefined (reading 'id')` while
+  rendering `/sessions/01-getting-started/`. The two starter sessions carry
+  `teachers:` references to the two people I had just deleted, and the brief
+  does not replace those sessions until step 10.
+- **What I did instead of the obvious thing:** I did not delete the dangling
+  `teachers:` field, which was the quickest way back to green, and I did not
+  rewrite the two sessions early. I repointed each reference at the teacher
+  `docs/people.md` actually assigns to that week — week 1 to Wen, week 2 to
+  Hana. That keeps the data true rather than merely valid, and the files are
+  rewritten wholesale in step 10 anyway. I also left both files'
+  `STARTER_CONTENT` markers in place, against the standing "remove the marker
+  in any file you touch" rule, because I repaired a reference rather than
+  replaced content: the marker still describes the file accurately, and
+  removing a true marker to satisfy a rule about tidiness is how a placeholder
+  ships.
+- **How I knew it was right:** Read the two files' frontmatter to confirm the
+  diagnosis before changing anything rather than inferring it from the error,
+  then `pnpm check` green and `pnpm check:evidence` down two image lines —
+  the two portraits went with the entries that owned them, and a deleted file
+  passes that gate.
+- **Citation:**
+  [`eb04cfa`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/eb04cfa)
