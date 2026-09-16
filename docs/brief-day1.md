@@ -53,20 +53,18 @@ what step 4 names.
    (`git remote -v` shows `comp4020-ass2-…`). If it is not, stop and say so.
 2. `pnpm install`, then `pnpm check`. Record whether the untouched starter is
    green. If it is red, stop and report the failure before anything else.
-3. `/comp4020:start` already made commits (the `CLAUDE.md` merge and
+3. The two planning files may have been copied in under a folder named
+   `prompt docs/`. If so, `git mv "prompt docs" docs` — the path every
+   reference below uses is `docs/`.
+4. `/comp4020:start` already made commits (the `CLAUDE.md` merge and
    `spec/assignment-2.test.ts`). If `process-log.md` has no entry for each of
    them, write those entries now — the backstop in `CLAUDE.md`'s logging rule
    — citing each commit's real hash from `git log`.
-4. These two files started life in a folder called `prompt docs`. Rename it:
-   `git mv "prompt docs" docs` (or a plain `mv` while they are still
-   untracked). Every path in this brief assumes `docs/`.
-5. Commit both: `Add course plan and day-1 brief`. Log it as `[judgement]`,
-   and say in the entry that this brief was itself revised after the agent
-   reviewed it — the tone rule, the numbers rule, the step 5/6 split and the
-   step 9 paths below are all amendments made in response to that review.
-   The point of recording it is that the brief is evidence: a marker should be
-   able to see that the plan was argued with before it was executed, not
-   handed down and followed.
+5. Copy `docs/course-plan.md` and this file into the repo under `docs/` if
+   they are not already there. Commit: `Add course plan and day-1 brief`.
+   Log this commit as `[judgement]`: the brief was revised after the agent's
+   own review of the schedule (content before data, artwork before the last
+   day, step 5 split, tone rule tightened, a draft check added for Friday).
 
 ## Step 1 — Harness: course rules in `CLAUDE.md`
 
@@ -87,9 +85,9 @@ and cite the commit.
   The full kit is an external link to the official hero page; ability text is
   never copied onto the site. A3 is where the full breakdown happens, by the
   student.
-- **Numbers come only from `FACTS.md`, never from memory.** Until that file
-  exists, pages state no figures at all. The only patch string that may appear
-  anywhere on the site is `7.41f`.
+- **Numbers come only from `FACTS.md`, pinned to 7.41f, never from memory.**
+  Until that file exists, pages state no figures at all. The only patch string
+  that may appear anywhere on the site is `7.41f`.
 - **In-house visuals only.** No Valve artwork, no screenshots unless the
   trade-off is written up in `PROCESS.md`. Every starter placeholder image is
   replaced or removed before shipping.
@@ -104,11 +102,11 @@ and cite the commit.
   assignments carries marks; the Hall of Fame carries none.
 - **Hero slugs are verified against the live official site before use.** An
   unverified slug is not written down anywhere.
-- **Satire lives in the titles and the opening line; the body is always
-  sincere.** The course's name is the joke and the framing may carry it; the
-  prose underneath teaches straight. Never the generic-encyclopaedia register
-  either — if a paragraph could sit on any course's site, rewrite it or delete
-  it.
+- **Satire lives in titles and framing lines only; body prose is sincere.**
+  The course title, a week's title and a one-line lead may joke. The paragraph
+  under them coaches or explains, plainly. Never the generic-encyclopaedia
+  register: if a paragraph could sit on any course's site, rewrite it or
+  delete it.
 - **Twelve weeks that repeat one another is the failure to avoid.** A weekly
   page is written from its decision outward; the fixed section headings are
   the same, the content under them is not interchangeable.
@@ -198,40 +196,54 @@ marked in a sentence of prose instead. No `related:` today — the build fails
 on a ref to a lecture that does not exist yet, and the lectures arrive in
 step 5, which adds the edges from its side.
 
-Body of each page, in this order: `## The brief` (the task as a blockquote,
-then one or two paragraphs on what a strong response looks like), `## What you
-submit`, `## How it is marked` (prose; omit for A4, which renders its table).
+The page shape follows the one COMP4020's own assignment pages use (the
+site runs on the same theme, so the rendered result will look like a sibling
+of https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/assessments/assignment-1/
+by construction). Borrow the **structure**, never the sentences — the marker
+wrote those pages and will recognise his own prose with the nouns swapped.
+
+Body of each page, in this order:
+
+- `## The brief` — the task as a one-sentence blockquote, then one or two
+  paragraphs on what a strong response looks like and the judgement it is
+  testing. For A2 name Day9's replay reviews as the model of the form; for A3
+  say the guide should be usable by a stranger in a lobby, not a wiki entry.
+- `## What you submit` — the artefact and its format, and any evidence that
+  goes with it (A1: the screenshot and what must be visible in it; A2: the
+  report and the replay ID; A3: the guide; A4: the team review, the
+  individual reflection, and the match result).
+- `## How it is marked` — today, one or two sentences. Band descriptors
+  (the HD / D–Cr / P / N shape COMP4020 uses) are the author's to write and
+  arrive on Friday; do not invent them. Omit the heading for A4, which
+  renders its criteria table from frontmatter.
+- `## Key dates` — two lines: *Opens:* week N · *Due:* the date. No feedback
+  date; that decision has not been made.
+
 A4's page must state the team formation rule, the tutor-as-coach rule and the
 captain rule from the plan's policies list, and must link to the policies
 page with a markdown link. A1 says the threshold is published when the
 assignment opens; it does not state one.
 
 Then rewrite `src/pages/assessments/index.mdx`: keep the frontmatter shape;
-replace the body with two short paragraphs — that the course has four
-assignments and no exam, and that the weights rise as the semester goes
-because each assignment builds on the last — followed by `<AssessmentsGrid />`.
+replace the body with one opening sentence in the pattern "Four assignments
+carry the whole course between them, and there is no exam", one short
+paragraph that the weights rise through the semester because each assignment
+builds on the last (last-hitting → reading a replay → writing a guide →
+playing and reviewing a real match), and a pointer sentence to the policies
+page for the rules that apply to all four — followed by `<AssessmentsGrid />`.
 Do not restate weights or dates in prose; the grid renders them.
 
 `pnpm check`. Commit: `Replace starter assessments with the four assignments`.
 
-## Step 5 — The deck swap, and weeks 1 and 2
+## Step 5 — The deck stub and weeks 1–2
 
-Originally one large step covering all twelve lectures. Split in two after
-review: the only genuine interdependency is the deck, and a single commit
-touching fifteen files is the least legible commit in a history that carries
-45% of the mark. This step is the interdependent core; step 6 is purely
-additive. Both build green.
-
-What forces this step to be atomic: the starter's week 1 lecture links
-`/decks/week-01/`, the week 2 lecture will link `/decks/week-02/`, and the
-build's link checker rejects a link to a deck that does not exist. So the deck
-swap and the two lectures that point at the decks land together.
-
-**Overwrite `week-01.md` and `week-02.md` in place — do not delete and
-recreate them.** The starter's sessions carry `related:` edges to
-`lectures/week-01` and `lectures/week-02`, and the sessions collection is out
-of scope today, so those refs must never stop resolving. Keeping the filenames
-means they never do.
+Two commits for the lectures, because one commit that deletes two pages,
+creates twelve, swaps the deck and rewrites the index is the hardest commit
+in the history to read, and this history is 45% of the mark. The only real
+dependency is the deck: the starter week 1 lecture links `/decks/week-01/`,
+the new week 2 lecture links `/decks/week-02/`, and the build's link checker
+rejects a link to a deck that does not exist. So the deck swap and weeks 1–2
+land together; weeks 3–12 follow on their own.
 
 **The deck stub.** Delete `src/decks/week-01.deck.mdx`. Create
 `src/decks/week-02.deck.mdx` with frontmatter `title: Should I hit this
@@ -243,8 +255,9 @@ by the course author and replaces this file when it is ready. If the build
 fails because the astromotion integration needs something more, report the
 exact error and stop — do not work around it.
 
-**The lectures.** Rewrite `src/content/lectures/week-01.md` and `week-02.md`
-in place. Frontmatter per file:
+**Weeks 1 and 2.** Replace the contents of `src/content/lectures/week-01.md`
+and `week-02.md` (same filenames, so the ids and the starter session's
+`related:` edge keep resolving). Frontmatter per file:
 
 ```yaml
 title: <the week's decision, as a question, from the plan's §3 table>
@@ -257,33 +270,28 @@ deck_reason: This week's material is a page and a practice task; nothing in it n
 draft: true
 ```
 
-Exception: `week-02.md` omits `deck`/`deck_reason` and instead has
-`slides: /decks/week-02/`, and gets `related: [assessments/assignment-1]`.
+`week-02.md` omits `deck`/`deck_reason` and instead has
+`slides: /decks/week-02/` and `related: [assessments/assignment-1]`. No
+`teachers:` today — drop the starter's.
 
-No `teachers:` today. Body of each stub: **one paragraph**, two to four
-sentences, saying what decision the week is about and why it comes at this
-point in the sequence (the plan's §3 table and the "Where the course
-disagrees with Valve" note give you the reasoning for week 2). No section
-headings yet, no hero, no item, no numbers.
+Body of each stub: **one paragraph**, two to four sentences, saying what
+decision the week is about and why it comes at this point in the sequence
+(the plan's §3 table and the "Where the course disagrees with Valve" note
+give the reasoning for week 2). No section headings yet, no hero, no item, no
+numbers.
 
-`pnpm check`. Still red — ten lectures are missing, and that is step 6's job.
-Report which assertions remain red and confirm the build itself is clean.
-Commit: `Swap the starter deck for the week 2 stub`.
+`pnpm check` (the twelve-lecture assertions stay red; nothing else should
+change colour). Commit: `Replace the starter deck and lectures for weeks 1–2`.
 
-## Step 6 — The remaining ten lectures
+## Step 6 — Weeks 3–12
 
-Purely additive: nothing here is referenced by anything that already exists,
-so this step cannot break a link.
+Create `week-03.md` … `week-12.md` with the same frontmatter shape. Week
+12's title is `Capstone: the best-of-three` and its `decision` is the same
+string. `week-11.md` gets `related: [assessments/assignment-4]`.
 
-Create `week-03.md` … `week-12.md`, same frontmatter shape as step 5's
-`week-01.md` (all of them `deck: none` with a `deck_reason`, all `draft:
-true`). Week 12's title is `Capstone: the best-of-three` and its `decision` is
-the same string. `week-11.md` gets `related: [assessments/assignment-4]`.
-
-Same body rule: one paragraph each, two to four sentences, written from that
-week's decision outward. **Twelve paragraphs that could not be swapped between
-weeks** — this is the single thing the brief is most concerned about, and the
-one a marker notices fastest.
+Same body rule: one paragraph each, two to four sentences, from the decision
+outward, with the reasoning for its place in the sequence (week 11's is the
+Valve note). Twelve paragraphs that could not be swapped between weeks.
 
 Rewrite `src/pages/lectures/index.mdx`'s body: one sentence that the course
 runs one decision per week for twelve weeks, and that the order is the order
@@ -292,7 +300,7 @@ in which a player learns to decide, not the order of Valve's tutorial. Then
 
 `pnpm check`. **Both spec suites should now be green** — `assignment-2` and
 `course-structure`. If any assertion is still red, report it; do not weaken a
-test to make it pass. Commit: `Add the remaining ten lecture stubs`.
+test to make it pass. Commit: `Add lecture stubs for weeks 3–12`.
 
 ## Step 7 — Policies stub
 
@@ -336,24 +344,12 @@ anything that looks wrong; change nothing without a go-ahead. Say plainly what
 was and was not looked at.
 
 Then run `pnpm check:evidence` **for information only** — it is expected to
-be red today (untouched artwork, untouched sessions/people markers, the
-template `PROCESS.md`). Report its output verbatim so tomorrow's list is
-exact. No commit for this step unless the process log needs one.
-
-**The artwork gate, written out so tomorrow is not a surprise.** For an
-`ass2` repo, `check:evidence` hashes exactly four starter files and fails on
-any that still match the shipped image:
-
-- `src/assets/images/card.png` — the link-preview card, named by
-  `socialImage:` in `src/site-config.ts`
-- `src/assets/images/hero-home.avif` — the home page hero, imported by
-  `src/pages/index.astro`
-- `src/content/people/idris-fenn.avif`
-- `src/content/people/marisol-quaye.avif`
-
-The check is `existsSync(path) && sha256(path) === starterHash`, so **deleting
-a file passes it just as well as replacing one**. Dropping a portrait along
-with the person it belonged to is a design decision, and so is an image-free
-treatment; neither is a shortcut. This matters for the schedule: the artwork
-gate can be closed on the day the placeholder people are replaced, without
-waiting on any drawing getting made.
+be red today. The known reds: the four starter images it hashes
+(`src/assets/images/card.png`, `src/assets/images/hero-home.avif`,
+`src/content/people/idris-fenn.avif`, `src/content/people/marisol-quaye.avif`
+— a deleted file passes, so the two portraits go with the starter people on
+Friday and only the hero and card need new artwork, on Thursday), the
+`STARTER_CONTENT` markers still in `sessions/`, `people/` and the hero-image
+comment, and the template `PROCESS.md`. Report its output verbatim and say
+whether anything is red that is not on that list. No commit for this step
+unless the process log needs one.

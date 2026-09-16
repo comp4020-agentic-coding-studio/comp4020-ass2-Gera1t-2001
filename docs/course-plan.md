@@ -20,8 +20,8 @@ built. Items still open are listed at the end, not guessed at in pages.
 | Audience | Assumed to have never played a MOBA. Players with League of Legends or other MOBA experience get an optional bridging passage in week 1, nothing more |
 | Spine (primary) | **The twelve decisions a new player runs into.** One decision per week; each week's mechanics are taught as the tools that answer that week's decision |
 | Lens (secondary) | **Resource economics** — gold, experience, time, space, information. A running analytical lens across all twelve weeks, and the thing a player keeps refining after the basics |
-| Tone | Three registers, switched as the material demands: sincere coaching, academic explanation, satire. The model is Purge's *Welcome to Dota, You Suck* — satirical title, sincere content |
-| Patch anchor | **7.41f.** The course teaches the stable mechanics of the major version; every number on the site comes from the pinned data file, never from memory |
+| Tone | **Satire lives in the title, the week titles and the framing lines; the body prose is sincere** — coaching or plain explanation, whichever the material needs. The model is Purge's *Welcome to Dota, You Suck*: the joke is on the cover, the content is not joking |
+| Patch anchor | **7.41f.** The course teaches the stable mechanics of the major version; every number on the site comes from `FACTS.md`, a small pinned facts file, never from memory |
 | Term | Semester 1, 2027. Teaching starts Monday 22 February 2027 and ends Friday 28 May 2027; a two-week break follows week 6 |
 
 ### Why this course exists (the pitch, for the home page)
@@ -104,8 +104,24 @@ Fixed sections every week's page carries, in this order:
   are non-adjacent by design.
 - Every other lecture declares in frontmatter `deck: none` with a non-empty
   `deck_reason`. Absence is a stated decision, not an omission.
-- Decks use the starter's astromotion format. A deck is a lecture, not a copy
-  of the week page: fewer words, more pictures, one judgement per slide.
+- Decks use the starter's astromotion format (`src/decks/<name>.deck.mdx`,
+  markdown with `---` between slides). A deck is a lecture, not a copy of the
+  week page: fewer words, more pictures, one judgement per slide.
+- **Decks are written by the course author.** The agent's part is plumbing
+  only: a title-only stub so links and checks stay green, then adding the
+  finished file, building it and checking every slide at both marking
+  viewports.
+
+### Scrims (the `sessions` collection)
+
+The platform's fixed `sessions` collection is this course's weekly **Scrim**:
+`sessionLabels` = Scrim / Scrims. One per teaching week, twelve in all, dated
+later in the same week as the lecture. A scrim drills that week's decision
+and nothing else — week 2 is a last-hit lobby, week 4 is pulling and stacking
+against the clock, week 9 is a warding exercise on a paused map, week 12 is
+the A4 matches. Each scrim page is short: a three-line `spec:` (what to bring,
+what you do, how you know it went well) and one paragraph. Scrims are where
+the home page's promise of *practice* is kept.
 
 ---
 
@@ -157,8 +173,11 @@ Vengeful Spirit, Enigma, Tidehunter.
 ## 6. Data and artwork policy
 
 - **Data is free to use.** Hero stats, item prices and ability numbers are
-  facts. Source: OpenDota constants and Liquipedia, pinned to 7.41f, through
-  the three-layer architecture `content/source/` → `FACTS.md` → typed module.
+  facts. Source: OpenDota constants and Liquipedia, pinned to 7.41f. The
+  course keeps **one small `FACTS.md`** holding only the figures a page
+  actually states — likely a dozen or two — each with its source, plus a
+  typed constants module pages read from. The full three-layer pipeline was
+  planned and cut: the marker reads the twelve weeks, not a data layer.
 - **Visuals are made in-house.** SVG diagrams: creep equilibrium, pull timing,
   attribute-to-stat mapping, a LoL ↔ Dota comparison table, and so on. The
   site deploys publicly under CC BY-NC-SA; `check:evidence` inspects artwork
@@ -188,7 +207,7 @@ Vengeful Spirit, Enigma, Tidehunter.
 Candidate `spec/` tests, each protecting a promise the build cannot see:
 
 1. Every lecture's frontmatter has exactly one `decision`; no two weeks share one.
-2. Every hero and item mentioned exists in the 7.41f data file; the hero pool is a fixed list with no duplicates; every hero mention links to a verified official slug.
+2. The hero pool is a fixed list with no duplicates; every hero mention links to a verified official slug.
 3. Each week mentions ≤ 2 hero abilities, each with a *why this week* line.
 4. Every week has an "After this week you can…" section.
 5. Assessment weights sum to exactly 100; each assessment opens before it is due; A4 is due after the week that teaches Captains Mode drafting (week 11).
@@ -196,6 +215,7 @@ Candidate `spec/` tests, each protecting a promise the build cannot see:
 7. The Hall of Fame page contains no mark or weight field.
 8. Every number cites patch 7.41f (no other patch string appears anywhere).
 9. No template placeholder artwork remains.
+10. No published lecture, scrim or assessment carries `draft: true` at ship time (written red-first on the Friday, when the stubs are filled).
 
 `CLAUDE.md` rule skeleton: one decision per week · abilities ≤ 2, each with a
 rationale · numbers only from data pinned to 7.41f, never from memory ·
@@ -212,6 +232,7 @@ commit.
 - Three "attribute hero showcase" weeks were split into one case-study hero per week, to avoid twelve weeks that repeat one another.
 - One deck only, with `deck_reason` turning each absence into a commitment.
 - Data and visuals handled separately for copyright.
+- The build agent's own review of the schedule (Wed 16 Sep): it argued the plan put a data layer ahead of the twelve weeks the marker actually reads, that artwork is a hard gate not a finish, and that nothing checked `draft: true` off. Accepted, with the draft check deferred to Friday so the suite stays readable in between.
 - The ≤ 2 abilities rule: it stops an agent generating encyclopaedic slop; the full breakdown is A3's job.
 
 ---
@@ -222,7 +243,9 @@ Resolved in planning (2026-09-16):
 
 - [x] Title: *Welcome to Dota. You Will Lose.*
 - [x] Calendar: the starter's Semester 1 2027 dates, unchanged (§2).
-- [x] Flagship deck: week 2.
+- [x] Flagship deck: week 2, written by the author.
+- [x] Sessions are weekly Scrims, twelve of them (§3).
+- [x] Data layer reduced to one small `FACTS.md` (§6).
 
 Still open — pages must not guess at these:
 
@@ -230,7 +253,6 @@ Still open — pages must not guess at these:
 - [ ] The thirteen official hero slugs, verified one by one.
 - [ ] Hero pool: keep thirteen, or cut week 5 to two heroes.
 - [ ] A1's exact last-hit threshold (published when A1 opens; pinned once the 7.41f data lands).
-- [ ] What the `sessions` collection is called in this course (it is fixed by the platform and must exist) and what happens in one.
 - [ ] The teaching cast (`people`): who convenes, who tutors.
 
 ---
@@ -240,8 +262,11 @@ Still open — pages must not guess at these:
 | Day | Work |
 |---|---|
 | Wed 16 Sep | This plan; `CLAUDE.md` rules; red spec tests; course record, four assessments, twelve lecture stubs, policies stub, home page |
-| Thu 17 Sep | Pull the 7.41f data; verify slugs; `ARCHITECTURE.md`; Hero Pool page; settle open items |
-| Fri 18 Sep | Fill the twelve weeks; Hall of Fame page; sessions and people; in-house SVGs; replace all starter artwork |
-| Sat 19 Sep | The flagship deck; read non-adjacent weeks at both marking viewports; optional second deck |
+| Thu 17 Sep | **Fill the twelve weeks** (the thing the marker reads); verify the thirteen slugs; Hero Pool page; replace the hero and card images (the two hard gates that cannot be deleted) |
+| Fri 18 Sep | Twelve scrims; the teaching cast (`people`) and the two starter portraits gone with it; Hall of Fame page; `FACTS.md` and the figures the weeks need; the `draft: true` check, red first, then green |
+| Sat 19 Sep | The flagship deck (author-written); read non-adjacent weeks at both marking viewports; optional second deck |
 | Sun 20 Sep | `PROCESS.md` (author-written, citing commits); `pnpm check` and `pnpm check:evidence`; deployment verified |
 | Mon 21 Sep 12:00 | Due |
+
+Reordered on Wednesday after the build agent's review: content before data,
+artwork before the last day.
