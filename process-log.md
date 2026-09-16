@@ -210,3 +210,45 @@ drafted from; it is not itself the submission.
 - **Curated prompt:** "按照你的建议来，三种语气改成讽刺只活在标题和框架，正文
   一律真诚" — plus the instruction to record that the brief was revised after
   its own review.
+
+---
+
+- **Date/time:** 2026-09-16, afternoon
+- **Tag:** [routine]
+- **What happened:** The starter shipped two placeholder assessments, one of
+  them called "final project". The course has four assignments and no exam.
+- **What I did instead of the obvious thing:** Wrote each brief as a page with
+  a reader rather than a specification — each opens with the task as a
+  blockquote and then spends most of its length on what separates a strong
+  response from a complete one, because that is the part a student cannot get
+  from the marking criteria. A1 states no threshold: the figure is pinned to
+  the patch and the course keeps its numbers in one place, so the page says
+  when the number will appear instead of inventing one. A4 is the only
+  assessment carrying a `marking:` block, because it is the only one with
+  parts that can come apart.
+- **How I knew it was right:** The build validated the schema, including the
+  rule that `marking.criteria` weights sum to 100 within an assessment — A4's
+  62.5 / 25 / 12.5 is the plan's 25 / 10 / 5 split of forty marks, expressed as
+  the schema requires. The link checker passed A4's markdown link to the
+  policies page, which is the one internal link written today.
+- **Citation:**
+  [`97d9594`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/97d9594)
+
+---
+
+- **Date/time:** 2026-09-16, afternoon
+- **Tag:** [judgement]
+- **What happened:** Committing the four amended rules and the split step, so
+  the plan in the repo matches what was about to be built rather than what was
+  originally written.
+- **What I did instead of the obvious thing:** Amended `docs/brief-day1.md`
+  itself rather than only `CLAUDE.md`. The brief is committed evidence; if it
+  had gone on saying "three registers as the material demands" while the
+  harness said something else, the two would have disagreed in the repo and a
+  marker reading both would have had no way to tell which one the work
+  followed.
+- **How I knew it was right:** `pnpm typecheck` clean; the amendments are
+  prose, so the real check is the next two commits behaving the way the
+  amended brief says they should.
+- **Citation:**
+  [`26cf061`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/26cf061)

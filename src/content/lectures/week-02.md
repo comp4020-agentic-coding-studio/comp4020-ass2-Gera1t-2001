@@ -1,23 +1,24 @@
 ---
-title: Second lecture
+title: "Should I hit this creep?"
 description:
-  Week 2 — the first substantive material, and the run-up to the first review
+  Last-hitting, denying and the two kinds of aggro — the first decision small
+  enough to practise on your own
 week: 2
 date: 2027-03-01
-teachers:
-  - idris-fenn
+decision: "Should I hit this creep?"
+slides: /decks/week-02/
 related:
-  - sessions/02-first-review
   - assessments/assignment-1
+draft: true
 ---
 
-<!-- STARTER_CONTENT: replace this lecture, then remove this comment. -->
-
-Replace this page. It exists so the lectures listing sorts by week and the
-related block has more than one edge to draw.
-
-## Outline
-
-- the first substantive material, and where it shows up in practice
-- what the first review is looking for
-- reading before next week
+Gold does not arrive on a schedule in this game. It arrives when you take it
+off a creep that is about to die, while someone on the other side is trying to
+take it first and can also deny it to you outright — which is the part that
+has no equivalent in most games people arrive here from. This is week 2 rather
+than week 6 because Valve's own tutorial puts last-hitting third, after
+teamfighting, and that ordering describes what a player needs to survive their
+first match rather than what they need in order to start deciding. It is also
+the only decision in the course you can practise alone in a lobby with nothing
+trying to kill you, which is exactly what the first assignment asks you to go
+and do.

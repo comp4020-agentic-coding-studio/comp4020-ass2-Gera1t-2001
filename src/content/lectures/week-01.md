@@ -1,30 +1,25 @@
 ---
-title: Opening lecture
+title: "Why can't I even beat the bots?"
 description:
-  The first lecture — what the course is, why it is shaped this way, and what
-  happens in week 1
+  The shape of a match — three lanes, one building that matters, and a win
+  condition that is not the one you assume
 week: 1
 date: 2027-02-22
-teachers:
-  - marisol-quaye
-slides: /decks/week-01/
-related:
-  - sessions/01-getting-started
+decision: "Why can't I even beat the bots?"
+deck: none
+deck_reason:
+  Week 1 is a map and a vocabulary; both belong on a page the student can
+  return to mid-game, not on slides they see once.
+draft: true
 ---
 
-<!-- STARTER_CONTENT: replace this lecture, then remove this comment. -->
-
-Replace this page. A lecture entry says what was covered and links to the pages
-that own the detail, so the lecture stays short and nothing is explained twice.
-
-The `related:` ref above is a graph edge: it renders on this page and on the
-session's, so declare a connection once, on whichever side is convenient.
-
-The page renders its `slides:` link automatically. Decks are markdown too,
-under `src/decks/`; the path is part of the lecture's API metadata.
-
-## Outline
-
-- what the course is for
-- how the weeks are shaped
-- what to do before the first session
+A new player's first real question is not about Dota, it is about themselves:
+the bots are meant to be the easy version, and they are still winning. This
+week answers it by showing you the shape of the match you have been losing —
+three lanes, one building that actually ends the game, and a win condition
+with far less to do with winning fights than you would guess from watching
+one. It comes first because every decision in the eleven weeks after it is a
+decision about where to spend something, and you cannot reason about spending
+until you know what the board is for. Players arriving from League of Legends
+get a short bridging passage here and then join everyone else; the map is not
+the thing that will catch you out.
