@@ -684,3 +684,49 @@ drafted from; it is not itself the submission.
   this once — go ahead and edit the docs yourself."
 - **Citation:**
   [`96b771e`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/96b771e)
+
+---
+
+- **Date/time:** 2026-09-18, early hours
+- **Tag:** [routine]
+- **What happened:** The artwork commit itself — hero SVG, rasterised card,
+  both starter images gone, `404.md` repointed. Its reasoning is in the entry
+  above; this entry exists because the rule is one per commit with no
+  exceptions, including for a commit whose thinking has already been written
+  down.
+- **How I knew it was right:** `check:evidence` lost all four image lines, and
+  the new `card.png` hashes differently from the starter's tracked hash, which
+  is what that gate actually compares.
+- **Citation:**
+  [`ca6ee49`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/ca6ee49)
+
+---
+
+- **Date/time:** 2026-09-18, early hours
+- **Tag:** [routine]
+- **What happened:** The page half of the retitle, plus week 12's exemption in
+  the test.
+- **How I knew it was right:** The title assertion went green and the other
+  five stayed red — the change did what it was aimed at and moved nothing
+  else.
+- **Citation:**
+  [`94024e6`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/94024e6)
+
+---
+
+- **Date/time:** 2026-09-18, early hours
+- **Tag:** [routine]
+- **What happened:** Lobby Labs 1–4. The build failed on week 3's frontmatter:
+  `Holding a lane is adversarial: you need an opponent…` — a colon and a space
+  inside an unquoted YAML scalar, which the parser reads as a mapping.
+- **What I did instead of the obvious thing:** Rephrasing the sentence would
+  have fixed this file and left the next eight exposed, and quoting it would
+  have moved the trap to the first apostrophe. Converted every `needs_others`
+  to a folded block scalar (`>-`) instead, which is immune to colons, quotes
+  and dashes alike — the remaining eight labs are written the same way.
+- **How I knew it was right:** Six red became one, and the one is "expected 4
+  to be 12". The other five assertions are now passing against four real
+  labs rather than skipping, which is the difference between progress and a
+  suite that has stopped looking.
+- **Citation:**
+  [`94024e6`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/94024e6)
