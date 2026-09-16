@@ -74,3 +74,25 @@ drafted from; it is not itself the submission.
   the one it describes.
 - **Citation:**
   [`46349d3`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/46349d3)
+
+---
+
+- **Date/time:** 2026-09-16, early afternoon
+- **Tag:** [judgement]
+- **What happened:** The course plan and the day-1 build brief had been
+  written by hand, outside the repo, in a folder called `prompt docs`. The
+  brief refers to them throughout as `docs/course-plan.md`.
+- **What I did instead of the obvious thing:** They could reasonably have
+  stayed outside the repo — they are working documents, not part of the site,
+  and this course keeps transcripts out of repos that later flip public. I
+  committed them instead, renamed to `docs/`. The reason is evidential: a
+  course plan whose commit predates every page it describes is the strongest
+  available corroboration that the course was designed rather than generated,
+  and Assignment 2 weights legibility of process above the artefact itself.
+  The same file also gives the agent a single source of truth to be held to,
+  which is what the harness rule added next depends on.
+- **How I knew it was right:** Checked `docs/` did not already exist before
+  renaming, and that both files contain no credentials or personal material
+  before committing to a repo that becomes public at the cutoff.
+- **Citation:**
+  [`c1231ee`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/c1231ee)

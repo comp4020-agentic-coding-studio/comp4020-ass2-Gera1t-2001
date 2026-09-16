@@ -253,3 +253,40 @@ asked:
    red → green).
 4. Verify every citation resolves before finishing --- run
    `pnpm check:evidence` and fix any broken links.
+
+## Course rules (SLOP1904)
+
+`docs/course-plan.md` is the source of truth for the course. A page that
+disagrees with it is wrong; if the plan needs to change, change the plan first
+and cite the commit.
+
+- **One decision per week.** Every lecture's frontmatter carries exactly one
+  `decision`, and no two weeks share one. Mechanics are taught as the tools
+  that answer that week's decision, not as a topic list.
+- **At most two abilities per week**, each with a one-line *why this week*.
+  The full kit is an external link to the official hero page; ability text is
+  never copied onto the site. A3 is where the full breakdown happens, by the
+  student.
+- **Numbers come only from the pinned 7.41f data file, never from memory.**
+  Until that file exists, pages state no figures at all. The only patch string
+  that may appear anywhere on the site is `7.41f`.
+- **In-house visuals only.** No Valve artwork, no screenshots unless the
+  trade-off is written up in `PROCESS.md`. Every starter placeholder image is
+  replaced or removed before shipping.
+- **A deck is a lecture, not a page copy**: fewer words, more pictures, one
+  judgement per slide. A lecture without a deck says so in frontmatter
+  (`deck: none` with a non-empty `deck_reason`).
+- **Decks are written by the course author, not the agent.** The agent may
+  create a title-only stub so the build and the deck-link check stay green,
+  fix a syntax error the author asks about, and verify slides in a browser.
+  It does not write, expand or "improve" slide content.
+- **Assessment weights sum to exactly 100.** Nothing outside the four
+  assignments carries marks; the Hall of Fame carries none.
+- **Hero slugs are verified against the live official site before use.** An
+  unverified slug is not written down anywhere.
+- **Tone**: sincere coaching, academic explanation, or satire — whichever the
+  material needs. Never the generic-encyclopaedia register. If a paragraph
+  could sit on any course's site, rewrite it or delete it.
+- **Twelve weeks that repeat one another is the failure to avoid.** A weekly
+  page is written from its decision outward; the fixed section headings are
+  the same, the content under them is not interchangeable.
