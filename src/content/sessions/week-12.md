@@ -36,7 +36,8 @@ the fairness of the assignment rests on it.
 **This week meets on the Tuesday, not the Thursday.** If match day were the
 Thursday, the review would be due at noon the next day; the Tuesday leaves
 three days to write it. One week not falling on a Thursday is the price, and
-we would rather say so than quietly move a deadline.
+if a date on this page changes, the reason for the change will be on this
+page too.
 
 The last stretch, in the room: each team writes down three decision points as
 the seed of their review.
