@@ -4,7 +4,7 @@ import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import heroImage from "../assets/images/hero-home.svg";
 import { courseMeta } from "../course-config";
-import { siteConfig } from "../site-config";
+import { sessionLabels, siteConfig } from "../site-config";
 ---
 
 <ContentLayout
@@ -27,13 +27,18 @@ import { siteConfig } from "../site-config";
     order, a workload, or anything you have to hand in.
   </p>
   <p>
-    This is the same material arranged into twelve weeks. Each week is built
-    around one decision a new player actually runs into — should I hit this
-    creep, when should I leave the lane, who goes first — and the mechanics
-    are taught as the tools that answer that week's decision rather than as a
-    list of things the game contains. One lens runs underneath all twelve:
-    everything you do here spends something, and what you have to spend is
-    gold, experience, time, space and information.
+    This is the same material arranged into twelve teaching weeks, one
+    lecture and one {sessionLabels.singular} each, running across Semester 1
+    2027. A {sessionLabels.singular} is this course's Thursday tutorial — a
+    real match, not a discussion section — where the lecture's decision
+    becomes something you did in a game rather than something you can
+    explain. Each week is built around one decision a new player actually
+    runs into — should I hit this creep, when should I leave the lane, who
+    goes first — and the mechanics are taught as the tools that answer that
+    week's decision rather than as a list of things the game contains. One
+    lens runs underneath all twelve: everything you do here spends
+    something, and what you have to spend is gold, experience, time, space
+    and information.
   </p>
 
   <h2>Who it is for</h2>
@@ -59,10 +64,28 @@ import { siteConfig } from "../site-config";
         them rather than the order the game presents them.
       </p>
     </Card>
+    <Card title={sessionLabels.plural} href="/sessions/">
+      <p>
+        The Thursday match for each week's decision — twelve of them, one a
+        week, each with its own pass condition.
+      </p>
+    </Card>
     <Card title="Assessment" href="/assessments/">
       <p>
-        Four assignments and no exam, ending in a drafted best-of-three against
-        another team from the course.
+        Four assignments and no exam — 10, 20, 30 and 40 percent — ending in a
+        drafted best-of-three against another team from the course.
+      </p>
+    </Card>
+    <Card title="Heroes" href="/heroes/">
+      <p>
+        The pool this course actually teaches from, one hero per week it
+        introduces one, linked to the official page for the rest of the kit.
+      </p>
+    </Card>
+    <Card title="People" href="/people/">
+      <p>
+        Who teaches which week, and who coaches your team for Assignment 4's
+        best-of-three.
       </p>
     </Card>
     <Card title="Policies" href="/policies/">

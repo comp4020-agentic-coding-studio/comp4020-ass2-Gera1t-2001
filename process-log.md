@@ -1323,29 +1323,46 @@ drafted from; it is not itself the submission.
 - **Date/time:** 2026-09-19, around 13:15
 - **Tag:** [routine]
 - **What happened:** `docs/weeks.md` gave replacement "After this week
-  you can…" lines for weeks 2, 3, 4 and 5, fixing both the week 4/5
-  lecture-lab duplicate and an earlier week 2/3 mismatch in the same
-  update. Applying weeks 2–5's lines in one step meant the week 2/3 fix
-  in D3's brief was already satisfied before D3 started.
-- **What I did instead of the obvious thing:** Read D3's own two bullets
-  in full and diffed the current site against `docs/weeks.md` rather than
-  assuming there was work left, and found the weeks 2/3 outcome text
-  already matched the notes exactly. The only remaining diff was week 7's
-  "consumables and the teleport scroll are not spending; they are
-  infrastructure", which restates week 10's "makes a cheap item into a
-  structural one" using the same example item — applied the notes'
-  replacement framing ("bought for what they let you keep doing, not for
-  what they add") to week 7 only, and left week 10's structural framing
-  alone since D3 says it owns that argument.
-  Also added the D2 test proving the sensor would have caught the actual
-  week 4/5 bug (a known-bad control fixture), not only that it is silent
-  on the pages as they stand today.
+  you can…" lines for weeks 2, 3, 4 and 5, fixing the week 4/5
+  lecture-lab duplicate D2 was scoped to. D2 also asked for a test and a
+  check of the other eight weeks.
+- **What I did instead of the obvious thing:** Wrote a word-overlap test
+  (`spec/lecture-outcomes.test.ts`) calibrated with a known-bad control
+  fixture — the actual week 4/5 lines, kept as a literal string, not read
+  from git history — so the test proves it would have caught that bug,
+  not merely that it is silent on today's already-fixed pages. Checked
+  the remaining eight weeks by hand rather than trusting the mechanical
+  test alone, since a line can fail the "knowledge, not activity" rule by
+  form without sharing vocabulary with its lab's spec; reported weeks 7,
+  9, 11, 12 as activity/overlap issues and week 8 as a softer borderline
+  case, without inventing replacement text for any of them.
+- **How I knew it was right:** `pnpm check` green (42 pages, 36 tests, 0
+  typecheck errors); the control assertions in the test fail if the
+  threshold or stemming is loosened enough to have missed the real bug.
+- **Citation:**
+  [`3fddd23`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/3fddd23)
+
+---
+
+- **Date/time:** 2026-09-19, around 13:18
+- **Tag:** [routine]
+- **What happened:** D3 asked to fix a week 2/3 outcome-line mismatch and
+  a week 7/10 duplicate (both weeks used the teleport scroll to make the
+  identical "an item is not spending, it is infrastructure" argument).
+- **What I did instead of the obvious thing:** Diffed the current site
+  against `docs/weeks.md` before touching anything, and found the week
+  2/3 mismatch already gone — applying D2's weeks 2–5 replacement lines
+  in one step had fixed it as a side effect, so there was nothing left to
+  swap. Applied the notes' replacement framing for the teleport scroll
+  ("bought for what they let you keep doing, not for what they add") to
+  week 7 only, and left week 10's structural framing alone since D3 says
+  week 10 owns that argument.
 - **How I knew it was right:** Grepped both weeks' rendered mechanics
   sections for "infrastructure"/"structural" before and after to confirm
   only week 7's copy changed. `pnpm check` green (42 pages, 36 tests, 0
   typecheck errors).
 - **Citation:**
-  [`3fddd23`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/3fddd23)
+  [`18202de`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/18202de)
 
 ---
 
@@ -1362,9 +1379,12 @@ drafted from; it is not itself the submission.
   being due — the notes' fix is about order, not omission. Reworded week
   7's "graduated" line into a sincere statement of the same fact (the
   disagreement is the point of the week, and by then it has reasons).
+  Two further lines (Lobby Lab 8 and 12) were close enough to the
+  satire/sincerity line to be reported for the author to decide instead
+  of changed here.
 - **How I knew it was right:** Re-read both pages end to end after
   editing to confirm "How you know it went well" no longer ends on a
   joke and the Hall of Fame fact still appears once. `pnpm check` green
   (42 pages, 36 tests, 0 typecheck errors).
 - **Citation:**
-  [`18202de`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/18202de)
+  [`3f51e81`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/3f51e81)
