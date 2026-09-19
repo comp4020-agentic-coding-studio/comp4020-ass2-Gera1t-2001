@@ -1200,3 +1200,63 @@ drafted from; it is not itself the submission.
   viewport the author cannot see from a standalone render.
 - **Citation:**
   [`496f579`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/496f579)
+
+---
+
+- **Date/time:** 2026-09-17, around 02:30
+- **Tag:** [harness]
+- **What happened:** Thirteen `dota2.com/hero/<slug>` links were unverified
+  guesses. The brief's warning held exactly: `/hero/definitelynotarealhero`
+  returns **HTTP 200 with the same 46,681 bytes** as a real hero page, and the
+  raw HTML contains no hero name at all, so `curl` can never distinguish a real
+  slug from a fictional one. A rendering browser was mandatory.
+- **What I did instead of the obvious thing:** The first real-browser attempt
+  produced a null that looked like the technique failing — the nav rendered,
+  no JS errors, no failed requests, and the hero area stayed empty for 30
+  seconds on every slug I tried. The tempting read was "dota2.com does not
+  render headless". It was the precondition, not the sensor: I had been
+  navigating to `/hero/antimage`, and the official slug is `anti-mage`. Every
+  page I had "tested" was a nonexistent one. I found that by rendering the
+  `/heroes` index instead, which came back with 127 hero links and their
+  displayed names — the site's own hrefs, which is better evidence than my
+  reading of any single page.
+- **Two sensors, because one agreeing with me proves nothing.** All thirteen
+  guesses matched, which is the shape of a false green. So: the checker was run
+  against six deliberately wrong inputs and reported a failure for every one;
+  and each of the thirteen pages was then loaded individually and its
+  *displayed* name read back, against a control slug (`antimage`) that renders
+  no name. The convention was genuinely not a given — 2 of the 127 official
+  slugs break lowercase-remove-spaces (`anti-mage`, `nature'sprophet`), so the
+  thirteen being right was a fact about the pool, not about the rule.
+- **How I knew it was right:** 13/13 pages displayed the expected hero name
+  with a body of ~2,000–2,600 characters; the control displayed nothing and
+  returned 236 characters. `pnpm check` green, including the existing guard
+  that the site links only to slugs the pool knows.
+- **Citation:**
+  [`f49a8ce`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/f49a8ce)
+
+---
+
+- **Date/time:** 2026-09-19, around 12:35
+- **Tag:** [routine]
+- **What happened:** `docs/course-plan.md`, `docs/labs.md`, and `docs/weeks.md`
+  carried uncommitted edits sitting in the working tree since Wednesday
+  evening — the author's own corrections after an adversarial review found
+  repeated Lobby Lab devices and lecture/lab outcome lines duplicated across
+  pages. No agent session had made or logged them.
+- **What I did instead of the obvious thing:** The backstop rule (log a
+  `(no commit)` entry when a session ends with uncommitted work) does not
+  apply here — no agent session produced or ended holding this diff; the
+  author edited the notes directly, outside any session. Rather than force a
+  `(no commit)` entry that misattributes the work, committed the three files
+  on their own, with a message naming the author as the source and stating
+  that no new content was written in the commit.
+- **How I knew it was right:** Reviewed `git diff` for each of the three
+  files before staging — every hunk was a notes-only correction (retitled
+  decisions, a "Quantities are set on the day" convention added once to
+  `labs.md` instead of per-lab, de-duplicated lecture outcomes) matching what
+  `docs/start-here.md` described. Confirmed `process-log.md`,
+  `docs/brief-day2-3.md`, and `docs/start-here.md` were left out of the
+  staged set. `pnpm check` still green after the commit.
+- **Citation:**
+  [`590b419`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/590b419)

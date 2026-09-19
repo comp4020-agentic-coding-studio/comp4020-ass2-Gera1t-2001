@@ -64,9 +64,10 @@ every team fields five and every team has an opponent. A tutor also joins each
 team as a coach: they will answer questions, tell you when a plan is
 unworkable, and decline to make your decisions for you.
 
-The winning side's most valuable player goes on the course's Hall of Fame.
-This carries no marks and is not part of this assignment — see the
-[policies page](/policies/) for that rule and the others that apply here.
+The winning side's most valuable player goes on the course's
+[Hall of Fame](/hall-of-fame/). This carries no marks and is not part of this
+assignment — see the [policies page](/policies/) for that rule and the others
+that apply here.
 
 ## What you submit
 
