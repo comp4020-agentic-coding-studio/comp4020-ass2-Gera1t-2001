@@ -1317,3 +1317,32 @@ drafted from; it is not itself the submission.
   0 typecheck errors) after the edits.
 - **Citation:**
   [`6e936cd`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/6e936cd)
+
+---
+
+- **Date/time:** 2026-09-19, around 13:15
+- **Tag:** [routine]
+- **What happened:** `docs/weeks.md` gave replacement "After this week
+  you can…" lines for weeks 2, 3, 4 and 5, fixing both the week 4/5
+  lecture-lab duplicate and an earlier week 2/3 mismatch in the same
+  update. Applying weeks 2–5's lines in one step meant the week 2/3 fix
+  in D3's brief was already satisfied before D3 started.
+- **What I did instead of the obvious thing:** Read D3's own two bullets
+  in full and diffed the current site against `docs/weeks.md` rather than
+  assuming there was work left, and found the weeks 2/3 outcome text
+  already matched the notes exactly. The only remaining diff was week 7's
+  "consumables and the teleport scroll are not spending; they are
+  infrastructure", which restates week 10's "makes a cheap item into a
+  structural one" using the same example item — applied the notes'
+  replacement framing ("bought for what they let you keep doing, not for
+  what they add") to week 7 only, and left week 10's structural framing
+  alone since D3 says it owns that argument.
+  Also added the D2 test proving the sensor would have caught the actual
+  week 4/5 bug (a known-bad control fixture), not only that it is silent
+  on the pages as they stand today.
+- **How I knew it was right:** Grepped both weeks' rendered mechanics
+  sections for "infrastructure"/"structural" before and after to confirm
+  only week 7's copy changed. `pnpm check` green (42 pages, 36 tests, 0
+  typecheck errors).
+- **Citation:**
+  [`3fddd23`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/3fddd23)

@@ -41,9 +41,10 @@ components and never completing anything at all.
 assembled rather than selected, which is why an item you are halfway through
 is already doing something for you.
 
-**Consumables and the teleport scroll are not spending; they are
-infrastructure.** They buy time on the map and the ability to be somewhere
-else, which is a different kind of purchase from a damage item.
+**Consumables and the teleport scroll are bought for what they let you keep
+doing, not for what they add.** The regeneration keeps you in the lane you are
+already in; the scroll means a lane is never lost just because you are not
+standing in it.
 
 **The logic of a build.** Solve staying alive, then solve damage, then solve
 whatever the enemy has aimed specifically at you.
