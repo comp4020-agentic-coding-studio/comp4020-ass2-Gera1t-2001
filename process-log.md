@@ -1473,3 +1473,25 @@ drafted from; it is not itself the submission.
   the pre-D1 session template blurb to confirm both are actually gone.
 - **Citation:** (no commit — review pass only; site reviewed as of
   `8e5e6df`)
+
+---
+
+- **Date/time:** 2026-09-19, mid-afternoon
+- **Tag:** [judgement]
+- **What happened:** D8 ruled on two of D7's open items together: Lobby Lab
+  8's "five is this course's unit" line stays as written (a joke about the
+  game, not the university), but Lobby Lab 12's "we would rather say so than
+  quietly move a deadline" implies some other institution quietly moves
+  deadlines — a sideswipe the course had already disclaimed elsewhere.
+- **What I did instead of the obvious thing:** Rather than softening the
+  comparison or hedging it, dropped the comparison entirely and left only the
+  course's own commitment, in the author's own suggested shape: "if a date on
+  this page changes, the reason for the change will be on this page too."
+  Made no edit to Lobby Lab 8 at all, since the ruling was to leave it
+  unchanged.
+- **How I knew it was right:** Read the full sentence before and after in
+  context to confirm the surrounding clause about the Tuesday/Thursday
+  tradeoff was untouched, then rendered the built page at 1920×1080 and
+  390×844 and read the new sentence in place.
+- **Citation:**
+  [`a34d918`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/a34d918)
