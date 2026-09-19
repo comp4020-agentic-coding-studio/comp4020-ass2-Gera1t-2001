@@ -37,6 +37,16 @@ Two consequences the pages must honour:
   class.
 - **Every `spec:` line is judgeable from outside.** Observable actions, never
   "understands X".
+- **Quantities are set on the day, and the site says so once.** Where a drill
+  needs a round length, a number of wards, a team size, the tutor sets it in
+  the room. State that **once, on the Lobby Labs index page**, as a course
+  convention. An individual lab then simply says the tutor sets it — with **no
+  explanation attached**. Five pages each explaining their own silence in the
+  same sentence shape is exactly the repetition this file exists to prevent.
+- **"Say it out loud" is used in exactly two labs**, 8 and 10, where being
+  heard by teammates and punished by opponents *is* the mechanism. Everywhere
+  else the evidence a student produces is written, counted, drawn or played.
+  A device used in half the labs is not a device, it is a tic.
 
 ## The schedule
 
@@ -117,9 +127,8 @@ period, moves `endDate` and the data-integrity test with it.)
 - **needs_others:** holding a lane is adversarial. You need an opponent who
   is also trying to hold it before the wave moves at all; bots do not teach
   this.
-- **PROPOSED:** the round length is announced by the tutor at the start; the
-  page does not fix a number, because the drill is about where the wave ends
-  up, not how long it took.
+- **Quantity:** the tutor sets the round length. No explanation on the page —
+  the index states the convention.
 
 ## Lobby Lab 4 — Stack against the clock (week 4)
 
@@ -181,23 +190,25 @@ period, moves `endDate` and the data-integrity test with it.)
   demonstration of its form — here you learn what a review looks like; A2 is
   you doing one. **Say this on the page**, or students will not see that the
   two are connected.
-- **PROPOSED:** the replay is chosen by the tutor and published with the
-  week's materials, so the page names no specific match. This keeps the page
-  correct across semesters, which a named match would not be.
+- **Quantity:** the tutor chooses the replay and publishes it with the week's
+  materials.
 
 ## Lobby Lab 7 — Build along (week 7)
 
 - **Bring:** a hero you have never played, and the in-game recommended build.
 - **How it runs:** one bot match, following the guide **exactly, changing
-  nothing**. Before every purchase, say out loud "I am buying X because Y".
-  The tutor listens and only interrupts when a reason plainly does not hold.
+  nothing**. Write the build order down before the game starts, then mark each
+  item as you buy it and write one word beside it for what it is for. Bring
+  the marked-up list to the tutor at the end; the disagreements are the
+  lesson.
 - **spec:**
   - you followed one build guide for a whole game without changing it
-  - you gave a reason for every item that was not "the guide said so"
-  - you named at least one place you wanted to deviate, and how
-- **needs_others:** saying the reason out loud needs a listener. Thinking it
-  and being heard saying it are different strengths of test — the same reason
-  a crit works.
+  - every item on your written order carries a word for what it does
+  - you marked at least one place you wanted to deviate, and what you would
+    have bought instead
+- **needs_others:** a build order you wrote alone is a build order you agree
+  with. Handing it to somebody who has played the hero is the only way to find
+  out which of your one-word reasons were wrong.
 
 ## Lobby Lab 8 — Hold the stun (week 8)
 
@@ -215,9 +226,8 @@ period, moves `endDate` and the data-integrity test with it.)
   intent only means anything with teammates present, and an opponent who will
   punish bad timing.
 - **Note on the page:** A2 is due at noon tomorrow.
-- **PROPOSED:** five-versus-five, because five is this course's unit and
-  Assignment 4 is played that way. **Author to sanity-check whether calling
-  intent out loud is too awkward to actually play.**
+- **Quantity:** five a side. **Author to sanity-check whether calling intent
+  out loud is too awkward to actually play.**
 
 ## Lobby Lab 9 — Cross the map unseen (week 9)
 
@@ -233,10 +243,9 @@ period, moves `endDate` and the data-integrity test with it.)
   - on attack, you can say how you went around a ward or walked into it
 - **needs_others:** a ward's value only shows when somebody is trying to
   avoid it. Warding for yourself, you never find out whether it worked.
-- **PROPOSED:** the tutor sets the number of wards on the day; the page fixes
-  no figure. **Author to confirm a custom lobby can be set up this way** — if
-  not, the fallback is reviewing a replay's global vision instead, and the
-  page should describe whichever one is real.
+- **Quantity:** the tutor sets the number of wards. **Author to confirm a
+  custom lobby can be set up this way** — if not, the fallback is reviewing a
+  replay's global vision, and the page describes whichever one is real.
 
 ## Lobby Lab 10 — Call the objective (week 10)
 

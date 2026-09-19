@@ -18,6 +18,13 @@ week you can…* Weeks 1 and 12 have no hero or item section.
 Every lecture carries `teachers:` — the assignment is the table in
 `docs/people.md`.
 
+**"After this week you can…" is knowledge, not activity.** The Lobby Lab's
+`spec` records what a student *did* in the room; the lecture's outcomes
+record what they can now *judge, name or predict*. If a line could appear on
+either page, it belongs on the lab and the lecture needs a different one.
+Weeks 4 and 5 shipped with the same line on both pages; do not let it happen
+again.
+
 Two reference files settle facts these notes depend on:
 `docs/map-reference.md` (the board) and `docs/mechanics-reference.md`
 (denies, lane creeps, camps, attributes). **Where a note and a reference
@@ -64,9 +71,9 @@ notes were not.
 - **Hero:** Dragon Knight — *Dragon Blood*. Why this week: it turns "don't die" into passive income. The armour and regeneration buy you the right to make a few mistakes and still be standing in the lane. A beginner's worst enemy in lane is not the opponent, it is going home too early.
 - **Item:** Tango and Iron Branch (the starting kit). Why: neither makes you stronger; both extend how long you can stay. From day one the logic of a starting kit should be "how do I get five more minutes here", not "how do I deal ten more damage".
 - **After this week you can:**
-  - take your share of the creeps in a bot game, reliably
-  - deny at least once, and say what you refused the enemy
-  - say why you pressed attack on one creep and not on the next
+  - say what one creep is worth in time rather than in gold
+  - explain what a deny takes from the enemy, and what it does to the wave
+  - name the three things that happen at once when you hold down the attack key
 - **The mistake this week fixes:** holding down the attack key. It misses last hits, pushes the lane, and pulls creep aggro onto you — three errors in one action.
 - **Deck:** this week carries the course's one deck, `/decks/week-02/`. Written by the author.
 
@@ -85,9 +92,9 @@ notes were not.
 - **Hero:** Wraith King — *Vampiric Spirit*. Why this week: it is the ability-shaped answer to "how do I stay in this lane longer" — lifesteal lets you trade health for last hits, and the skeletons give you some control over the wave. Set it beside week 2's Dragon Blood: two solutions to the same problem, and that comparison belongs on the page. **CHECK (author): confirm the ability name and its current form in 7.41.**
 - **Item:** Magic Wand. Why: it is the first item that reads the enemy. Its charges come from the enemy spending spells, so it turns "what is the enemy doing" into a resource you can bank. Week 9's information lens shows its face here for the first time.
 - **After this week you can:**
-  - hold the wave in front of your tower on purpose, and say why you want it there
-  - push the wave before you go home
-  - name one attack you should not have made
+  - say where the wave will settle on a given lane before it gets there, and why the two sides differ
+  - give a reason to push that is not "I want the tower"
+  - explain why the off lane is the hard lane in terms of distance, not skill
 - **The mistake this week fixes:** standing at the front of the creep wave. It looks like participating; it is taking creep aggro and enemy spells at once, and pushing the lane.
 - **deck_reason:** Creep equilibrium is one diagram's worth of idea; the drawing on this page does more than a deck would.
 - **Where the wave meets, and why it matters** (from `docs/map-reference.md`): mid meets at the centre of the map; on a **safe lane** the meeting point sits closer to the safe-lane team's own tier-1 tower, and therefore on an **off lane** it sits far from the off-laner's tower and close to the enemy's. Say this on the page: it is the structural reason the off lane is the hard lane, and it makes "hold the wave near your tower" a different job depending on which lane you are standing in. No figures — the asymmetry is a shape, not a distance.
@@ -109,18 +116,18 @@ notes were not.
 - **Hero:** Lion — *Earth Spike*. Why this week: the most common payoff for leaving your lane is catching somebody standing in the wrong place, and Earth Spike is the plainest tool for it. It also makes the point that a support leaving lane is not "giving up farm" — it is going to earn somewhere else.
 - **Item:** Observer and Sentry Wards, **as a placeholder only**. One sentence: this week a ward blocks a camp; using wards to watch people is week 9.
 - **After this week you can:**
-  - stack a camp in a bot game
-  - say what you went to get when you left the lane
-  - predict the next camp spawn before it happens
+  - say which four camps on the map can be pulled into a lane, and why the others cannot
+  - give the reason you left the lane, in the form "I gave up X to get Y"
+  - say whether the jungle you are looking at is an early-game jungle or a late one
 - **The mistake this week fixes:** leaving the lane "to have a look". A rotation without a target trades certain experience for nothing.
 - **deck_reason:** Pulling and stacking are questions of timing, and static slides cannot teach timing; this week's weight is in the Lobby Lab, not at the lectern.
 - **OPEN (author):** confirm that splitting wards across weeks 4 and 9 reads naturally, rather than leaving week 4 students asking about the other half.
 
 ---
 
-## Week 5 — Who should I pick?
+## Week 5 — Who should I pick — attributes
 
-- **Decision:** Who should I pick?
+- **Decision:** Who should I pick — attributes
 - **Mechanics:**
   1. The four primary attributes: Strength, Agility, Intelligence, Universal. Your primary attribute decides what each level gives you.
   2. How attributes become combat, from `docs/mechanics-reference.md`: Strength into maximum health and health regeneration; Agility into armour and attack speed; Intelligence into maximum mana, mana regeneration and magic resistance — **not** spell damage, which an earlier draft of these notes got wrong. Universal turns every point of any attribute into attack damage.
@@ -134,17 +141,17 @@ notes were not.
   (Correction: an earlier note here said 7.41 removed Circlet of Nobility. It did not; that came from a garbled automated summary of the patch notes.)
 - **OPEN (author):** whether Purge's list of heroes a beginner should avoid appears here as a counter-example, and if so with a line making clear the course borrows its criteria, not its roster.
 - **After this week you can:**
-  - look at a hero you have never played and infer from the primary attribute roughly how they work
-  - say what your last hero lived on
-  - say why the same item is worth different amounts to two heroes
+  - say what a point of each attribute actually buys, without looking it up
+  - explain why a hero's primary attribute is worth more to them than the other two
+  - read a shop item's stat line and say who on your team it is for
 - **The mistake this week fixes:** picking on how a hero looks, then discovering in the game that every ability costs mana and you are a Strength hero.
 - **deck_reason:** The attribute-to-stat mapping is a table, and a table earns its place on a page students come back to, not in a deck they see once.
 
 ---
 
-## Week 6 — What am I for in this team?
+## Week 6 — What am I for in this team — roles
 
-- **Decision:** What am I for in this team?
+- **Decision:** What am I for in this team — roles
 - **Mechanics:**
   1. Positions one to five describe an **order of resource priority**, not a job description. Position one takes the most gold, position five the least.
   2. The real difference between core and support: a core converts the team's resources into late-game power; a support spends their own time protecting that conversion.
@@ -172,14 +179,14 @@ notes were not.
 - **Decision:** What do I buy?
 - **Mechanics:**
   1. How the shop is structured — components, recipes, upgrades — and why Dota items are assembled rather than selected.
-  2. Consumables and the teleport scroll are not "spending"; they are infrastructure. They buy time on the map and the ability to be somewhere else.
+  2. Consumables and the teleport scroll are bought for what they let you *keep doing*, not for what they add — the regeneration that keeps you in lane, the scroll that means a lane is never lost just because you are not standing in it.
   3. The logic of a build: solve staying alive, then solve damage, then solve whatever the enemy has aimed at you.
   4. **The course's position: follow the recommended build first, and change it once you understand why.** State this without apology.
 - **Resource lens (gold into stats):** week 2 said gold is time; week 5 said attributes are the exchange rate. This week joins them — your gold passes through that rate into specific numbers, and numbers only matter inside particular windows.
 - **Before the lecture:** Valve tutorial §1 — regeneration and teleporting; §4 — build guides and the item panel.
 - **Hero:** Lich — *Frost Shield*. Why this week: Lich's mana pressure is severe, so a student feels for the first time that what they buy directly decides how many spells they get to cast. Items and abilities interlock here. **CHECK (author): confirm the ability name and current effect.**
 - **Item:** Power Treads. Why: the first item that asks you to *operate* it during the game by switching attributes. It turns buying from a one-off decision into a running one — which is exactly the step this week wants students to take.
-- **On TorteDeLini's in-game guides:** the course recommends opening one from day one, because it answers "what do I buy when" for you, freeing your attention for everything else. Some time after week eleven you will start disagreeing with it. That is the point at which you have graduated. (Author to adjust the wording.)
+- **On TorteDeLini's in-game guides:** the course recommends opening one from day one, because it answers "what do I buy when" for you, freeing your attention for everything else. Some time after week eleven you will start disagreeing with it. That is the whole point of this week, and the disagreement will have reasons behind it. (Author to adjust the wording.)
 - **After this week you can:**
   - play a whole game following a guide, and say where you wanted to deviate
   - explain what each item in your starting kit is for
@@ -189,9 +196,9 @@ notes were not.
 
 ---
 
-## Week 8 — When should I not engage?
+## Week 8 — When should I *not* engage — control
 
-- **Decision:** When should I not engage?
+- **Decision:** When should I *not* engage — control
 - **Mechanics:**
   1. Kinds of control — stuns, roots, silences, hexes — and **what each one forbids**, which matters more than how long it lasts.
   2. Status effects and dispels: some control can be removed and some cannot, and that decides whether you owe an item slot to a dispel.
@@ -211,9 +218,9 @@ notes were not.
 
 ---
 
-## Week 9 — Where did he go?
+## Week 9 — Where did he go — information
 
-- **Decision:** Where did he go?
+- **Decision:** Where did he go — information
 - **Mechanics:**
   1. Fog: what you cannot see is still happening. Dota's default state is that you do not know.
   2. An Observer Ward buys vision; a Sentry Ward buys the **denial** of the enemy's vision. Beginners routinely treat these as one thing.
@@ -233,9 +240,9 @@ notes were not.
 
 ---
 
-## Week 10 — Towers or heroes?
+## Week 10 — Towers or heroes — objectives
 
-- **Decision:** Towers or heroes?
+- **Decision:** Towers or heroes — objectives
 - **Mechanics:**
   1. A tower is not only an obstacle: it gives vision, a safe area and gold, and destroying it permanently changes the shape of the map.
   2. Barracks: destroying them permanently weakens the enemy's creep waves — one of the few irreversible gains in the game.
@@ -255,9 +262,9 @@ notes were not.
 
 ---
 
-## Week 11 — Who goes first?
+## Week 11 — Who goes first — teamfights and drafting
 
-- **Decision:** Who goes first?
+- **Decision:** Who goes first — teamfights and drafting
 - **Mechanics:**
   1. Initiation and counter-initiation: "who opens" is really "whose combination of abilities pays most while the enemy has not reacted".
   2. Positioning: the three seconds before a fight starts decide most of its outcome.
@@ -288,6 +295,7 @@ notes were not.
 - **Resource lens:** the five-resource table from week 1, returned to, with each cell now filled by the student's own examples from twelve weeks.
 - **Before the lecture:** Valve tutorial §4 introduction — "the possibilities are endless".
 - **Hero / item:** none. Say why: this week's heroes are the five your team drafted.
+- **Where the Hall of Fame goes:** mention it **early on the page**, in a sentence, as part of how match day runs — never as the closing line. The page ends on the review habit, which is the thing the course actually wants to leave behind. A gag in the last paragraph undercuts the argument the same paragraph is making.
 - **"After this course you can…"** — the closing claim of the whole course. **PROPOSED, author to confirm or replace:**
   - play a full game and afterwards name three decisions you had reasons for, and one you did not
   - read a patch note and say which of your decisions it changes, not which numbers it moves
