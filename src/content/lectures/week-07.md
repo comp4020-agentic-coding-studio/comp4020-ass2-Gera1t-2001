@@ -82,7 +82,8 @@ you to take.
 A note on in-game guides: open one from your first game. TorteDeLini's build
 guides answer "what do I buy and when" for you, which frees your attention for
 everything else on this page. Some time after week eleven you will start
-disagreeing with the guide. That is the point at which you have graduated.
+disagreeing with the guide, and that disagreement is the whole point of this
+week — by then you will have reasons behind it.
 
 ## After this week you can…
 

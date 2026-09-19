@@ -1346,3 +1346,25 @@ drafted from; it is not itself the submission.
   typecheck errors).
 - **Citation:**
   [`3fddd23`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/3fddd23)
+
+---
+
+- **Date/time:** 2026-09-19, around 13:20
+- **Tag:** [routine]
+- **What happened:** Track C flagged three places where satire had leaked
+  out of titles/framing and into sincere body prose: Lobby Lab 12 ending
+  on the Hall of Fame gag right after establishing a review habit, and
+  week 7's "that is the point at which you have graduated" line.
+- **What I did instead of the obvious thing:** Rather than deleting the
+  Hall of Fame mention from Lobby Lab 12, moved it into the "How it
+  runs" section as a plain fact about how match day works, so the page
+  still says it, and let "How you know it went well" end on the review
+  being due — the notes' fix is about order, not omission. Reworded week
+  7's "graduated" line into a sincere statement of the same fact (the
+  disagreement is the point of the week, and by then it has reasons).
+- **How I knew it was right:** Re-read both pages end to end after
+  editing to confirm "How you know it went well" no longer ends on a
+  joke and the Hall of Fame fact still appears once. `pnpm check` green
+  (42 pages, 36 tests, 0 typecheck errors).
+- **Citation:**
+  [`18202de`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/18202de)

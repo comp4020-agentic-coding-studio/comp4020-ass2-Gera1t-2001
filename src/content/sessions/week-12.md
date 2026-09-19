@@ -26,11 +26,12 @@ Your team.
 ## How it runs
 
 The [Assignment 4](/assessments/assignment-4/) best-of-three, Captains Mode,
-with a tutor present as coach. The coach may speak during the draft and
-between games, and not during a game — the ordinary convention in this game's
-competition, and what keeps the played games yours. That rule is also on the
-[policies page](/policies/), because the fairness of the assignment rests on
-it.
+with a tutor present as coach — the winning side's most valuable player goes
+on the [Hall of Fame](/hall-of-fame/) afterwards, which carries no marks. The
+coach may speak during the draft and between games, and not during a game —
+the ordinary convention in this game's competition, and what keeps the played
+games yours. That rule is also on the [policies page](/policies/), because
+the fairness of the assignment rests on it.
 
 **This week meets on the Tuesday, not the Thursday.** If match day were the
 Thursday, the review would be due at noon the next day; the Tuesday leaves
@@ -44,5 +45,4 @@ the seed of their review.
 
 You leave with three decision points on paper and an agreement about who is
 writing what. The review — the team part and the individual reflection — is
-due at noon on the Friday. The winning side's most valuable player goes on the
-Hall of Fame, which carries no marks.
+due at noon on the Friday.
