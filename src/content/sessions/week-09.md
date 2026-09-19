@@ -29,10 +29,8 @@ Two groups. The defenders get a fixed number of wards and place them; the
 attackers start from their base and try to reach a named point without being
 seen. Then swap.
 
-The tutor sets the number of wards on the day — the page fixes no figure,
-because the drill is about what each ward was chosen for rather than how many
-there were. Record the run, and review the defenders' vision together
-afterwards.
+The tutor sets the number of wards on the day. Record the run, and review the
+defenders' vision together afterwards.
 
 ## How you know it went well
 

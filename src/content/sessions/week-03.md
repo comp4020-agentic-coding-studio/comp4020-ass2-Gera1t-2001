@@ -30,9 +30,7 @@ kills. It is which side of the lane the wave is sitting on at the end.** Two
 rounds, swapping sides, because the safe lane and the off lane are not the
 same job.
 
-The tutor announces the round length at the start. The page does not fix one,
-because the drill is about where the wave ends up rather than how long it took
-to get there.
+The tutor sets the round length at the start.
 
 ## How you know it went well
 

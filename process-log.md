@@ -1260,3 +1260,32 @@ drafted from; it is not itself the submission.
   staged set. `pnpm check` still green after the commit.
 - **Citation:**
   [`590b419`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/590b419)
+
+---
+
+- **Date/time:** 2026-09-19, around 12:50
+- **Tag:** [harness]
+- **What happened:** The home page and the assignment-4 brief both mentioned
+  "the Hall of Fame" in prose, but the page didn't exist and both mentions
+  were plain text, never an `<a href>`. The theme's own broken-links checker
+  (`astro-broken-links-checker`, wired with `throwError: true`) never had a
+  chance to catch this: it only ever inspects hrefs that already exist in
+  rendered HTML, and a page promised in prose with no real link produces no
+  href for any checker to walk.
+- **What I did instead of the obvious thing:** Rather than only adding the
+  missing page and links, added `spec/internal-links.test.ts` as a
+  repo-owned check that every internal `<a href>` in the built site resolves
+  to a real `dist/` page — independent of the theme's own default options,
+  which are set inside a third-party package and could silently change or be
+  flipped off (`checkLinks: false`) with no local test noticing.
+- **How I knew it was right:** Deliberately broke the new
+  `/hall-of-fame/` link (retargeted it to a nonexistent path), confirmed both
+  `pnpm build` and `npx vitest run spec/internal-links.test.ts` failed with a
+  clear message naming the broken href, then reverted and confirmed `git
+  diff` showed only the intended change. Rendered the new page at both
+  marking viewports (1920×1080, 390×844) via a headless Chromium screenshot
+  and read both images — full content visible, no dead space, links styled
+  correctly, nav intact. `pnpm check` green (42 pages, 34 tests) after
+  reverting the deliberate breakage.
+- **Citation:**
+  [`1d1f7e0`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/1d1f7e0)

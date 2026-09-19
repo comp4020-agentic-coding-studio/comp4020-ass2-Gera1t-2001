@@ -34,9 +34,7 @@ which is harder than it sounds, and is most of the exercise.
 Afterwards the five positions report: what my player did all game, when they
 got strong, and one clear mistake.
 
-The tutor chooses the replay and publishes it with the week's materials, so
-this page names no specific match — a named match would stop being current,
-and the drill would not.
+The tutor chooses the replay and publishes it with the week's materials.
 
 ## How you know it went well
 
