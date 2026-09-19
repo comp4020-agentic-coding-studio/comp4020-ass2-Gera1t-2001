@@ -1388,3 +1388,33 @@ drafted from; it is not itself the submission.
   (42 pages, 36 tests, 0 typecheck errors).
 - **Citation:**
   [`3f51e81`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/3f51e81)
+
+---
+
+- **Date/time:** 2026-09-19, around 13:35
+- **Tag:** [judgement]
+- **What happened:** D5 asked the home page to answer what the nav
+  promises. The "Where to go next" grid had six cards (Lectures, Lobby
+  Labs, Assessment, Heroes, People, Policies); the intro paragraph
+  undersold what the course actually covers.
+- **What I did instead of the obvious thing:** Tried `<CardGrid
+  columns={3}>` for the six-card grid, then reverted to `columns={2}`
+  after confirming via rendered class name and a byte-identical
+  screenshot diff that the theme's fixed content-width container caps
+  both settings at two actual columns here — `columns={3}` was a
+  no-op change that would have left the repo's one grid inconsistent
+  with `LecturesGrid`, `AssessmentsGrid`, `SessionsGrid` and
+  `PeopleGrid`, all of which use `columns={2}`. Also caught and fixed a
+  citation bug in this file predating this commit: the entry citing
+  `18202de` had described D4's Hall-of-Fame/graduated-line work, not
+  D3's actual teleport-scroll work, and D3 had no entry of its own — the
+  `3fddd23` and `18202de` entries above were split and re-cited to match
+  what each commit actually contains.
+- **How I knew it was right:** Screenshotted the built home page at
+  1920×1080 and at 390×844 (plus full-height renders) over `pnpm
+  preview`, confirmed no dead space at desktop width and clean stacking
+  on mobile. `pnpm check` green (42 pages, 36 tests, 0 typecheck
+  errors). Re-read the three entries above after the citation fix to
+  confirm each now describes only the commit it cites.
+- **Citation:**
+  [`abfe79f`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/abfe79f)

@@ -10,7 +10,7 @@ weight: 10
 spec:
   - a screenshot from a solo practice lobby, unedited, showing your hero, your
     creep score and the match clock
-  - the score meets the threshold published when this assignment opens
+  - your creep score improves on the number your partner counted in Lobby Lab 2
   - one paragraph naming what you changed between your first attempt and this one
 ---
 
@@ -27,16 +27,18 @@ answer it a few hundred times a game whether or not you are paying attention.
 Nothing later in the course works if this one is still costing you conscious
 effort.
 
-There is no way to pass this by being clever about it. The threshold is set so
-that clearing it takes practice rather than talent, and the only route is
-hours in a lobby where nothing is trying to kill you. What we are marking is
-whether you put those hours in, not whether you are naturally quick.
+There is no way to pass this by being clever about it, and there is no fixed
+number to clear. What is marked is the distance between the number your
+partner counted in Lobby Lab 2 and the number on your screenshot, and the
+only route to closing that distance is hours in a lobby where nothing is
+trying to kill you. What we are marking is whether you put those hours in,
+not whether you were naturally quick to begin with.
 
-The paragraph matters more than it looks. A student who clears the threshold
-and can say *why* their score improved — that they were standing too far
+The paragraph matters more than it looks. A student who improves and can say
+*why* their score improved — that they were standing too far
 forward, that they were watching the creep's health bar instead of its
 animation, that they kept taking the last hit and losing the next three — has
-learned something transferable. A student who clears it and can only say they
+learned something transferable. A student who improves and can only say they
 practised has learned a motor skill.
 
 ## What you submit
@@ -45,16 +47,17 @@ practised has learned a motor skill.
 - One paragraph, no more than a few sentences, on what changed in your
   technique between your first serious attempt and the one you are submitting.
 
-The threshold — the creep score you need and the minute you need it by — is
-published on this page when the assignment opens in week 2. It is not
-published now, because the figure is pinned to the patch the course teaches
-and the course fixes its numbers in one place rather than scattering them
-across pages.
+There is no separate figure published for this assignment. The number you
+are compared against is the one your partner counted in [Lobby Lab
+2](/sessions/week-02/) — write it down there, because this page does not ask
+for it again.
 
 ## How it is marked
 
-Most of the mark is the threshold: you either cleared it or you did not, and
-there are no partial credits for nearly. The paragraph is what separates a
-pass from a good one — it is read for whether you can name a specific
-correction rather than describe an effort. Submissions with a screenshot but
-no paragraph are marked as though the paragraph said nothing.
+Most of the mark is the improvement: how far your screenshot's creep score
+sits above the number your partner counted in Lobby Lab 2. There is no
+absolute figure to clear — what matters is the distance you closed. The
+paragraph is what separates a pass from a good one — it is read for whether
+you can name a specific correction rather than describe an effort.
+Submissions with a screenshot but no paragraph are marked as though the
+paragraph said nothing.

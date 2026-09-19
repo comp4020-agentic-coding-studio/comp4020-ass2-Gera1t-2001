@@ -36,6 +36,5 @@ The last stretch of the session: the tutor demonstrates the rhythm of denying.
 ## How you know it went well
 
 You have a number, written down, that somebody else counted. Today's number is
-your starting point and not your mark — the
-[Assignment 1](/assessments/assignment-1/) threshold is on the assessment
-page, and it is due in two weeks.
+your starting point and not your mark — [Assignment 1](/assessments/assignment-1/)
+marks the improvement on it, and is due in two weeks.
