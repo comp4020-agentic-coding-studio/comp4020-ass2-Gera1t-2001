@@ -103,7 +103,7 @@ purpose; this week you only need to see the exchange rate exist.
 
 ## After this week you can…
 
-- look at a hero you have never played and infer from the primary attribute
-  roughly how they work
-- say what your last hero lived on
-- say why the same item is worth different amounts to two heroes
+- say what a point of each attribute actually buys, without looking it up
+- explain why a hero's primary attribute is worth more to them than the other
+  two
+- read a shop item's stat line and say who on your team it is for

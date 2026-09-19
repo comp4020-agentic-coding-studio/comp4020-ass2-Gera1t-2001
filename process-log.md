@@ -1289,3 +1289,31 @@ drafted from; it is not itself the submission.
   reverting the deliberate breakage.
 - **Citation:**
   [`1d1f7e0`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/1d1f7e0)
+
+---
+
+- **Date/time:** 2026-09-19, around 13:05
+- **Tag:** [routine]
+- **What happened:** `docs/labs.md` added two conventions after Track C's
+  review: quantities (round length, wards, a replay) are set on the day and
+  the site should say so once rather than on every lab; and "say it out
+  loud" should survive only in labs 8 and 10, where being heard is the
+  mechanism, with lab 7 rewritten in the notes to use a written build order.
+  The `[slug].astro` template's spec-list blurb also rendered one identical
+  sentence on all twelve lab pages.
+- **What I did instead of the obvious thing:** Rather than picking which
+  lab's existing explanation to keep, moved the "quantities are set on the
+  day" statement to the Lobby Labs index page and stripped the matching
+  explanation out of weeks 3, 6 and 9, leaving a flat "the tutor sets it".
+  For the out-loud device, checked all twelve labs rather than only the
+  three the notes named — weeks 2 and 4 also say "out loud", but for
+  different mechanisms (a partner verifying a count; a tutor calling
+  timings), not a student's intent being judged by an opponent, so left
+  them alone instead of over-applying the fix.
+- **How I knew it was right:** Re-read `docs/labs.md`'s convention text
+  against the edited pages to confirm no explanation survived; grepped all
+  twelve session files for "out loud" after editing to confirm only weeks
+  8 and 10 keep the flagged device. `pnpm check` green (42 pages, 34 tests,
+  0 typecheck errors) after the edits.
+- **Citation:**
+  [`6e936cd`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/6e936cd)

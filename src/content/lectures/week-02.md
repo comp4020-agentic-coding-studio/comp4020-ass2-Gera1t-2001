@@ -105,6 +105,6 @@ more damage".
 
 ## After this week you can…
 
-- take your share of the creeps in a bot game, reliably
-- deny at least once, and say what you refused the enemy
-- say why you pressed attack on one creep and not on the next
+- say what one creep is worth in time rather than in gold
+- explain what a deny takes from the enemy, and what it does to the wave
+- name the three things that happen at once when you hold down the attack key

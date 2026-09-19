@@ -99,6 +99,8 @@ a camp. Using wards to watch people is week 9.
 
 ## After this week you can…
 
-- stack a camp in a bot game
-- say what you went to get when you left the lane
-- predict the next camp spawn before it happens
+- say which four camps on the map can be pulled into a lane, and why the
+  others cannot
+- give the reason you left the lane, in the form "I gave up X to get Y"
+- say whether the jungle you are looking at is an early-game jungle or a late
+  one

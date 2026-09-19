@@ -102,6 +102,7 @@ for the first time.
 
 ## After this week you can…
 
-- hold the wave in front of your tower on purpose, and say why you want it there
-- push the wave before you go home
-- name one attack you should not have made
+- say where the wave will settle on a given lane before it gets there, and why
+  the two sides differ
+- give a reason to push that is not "I want the tower"
+- explain why the off lane is the hard lane in terms of distance, not skill
