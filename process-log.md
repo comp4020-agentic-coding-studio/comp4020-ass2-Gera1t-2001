@@ -1418,3 +1418,58 @@ drafted from; it is not itself the submission.
   confirm each now describes only the commit it cites.
 - **Citation:**
   [`abfe79f`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/abfe79f)
+
+---
+
+- **Date/time:** 2026-09-19, around 13:40
+- **Tag:** [judgement]
+- **What happened:** D6 asked for Policies and support's four missing
+  sections, now that `docs/policies.md` answered the questions the
+  earlier report-and-stop draft had flagged. That file also directed a
+  change beyond D6 itself: dropping Assignment 1's absolute last-hit
+  threshold for a model that marks improvement against the Lobby Lab 2
+  baseline instead.
+- **What I did instead of the obvious thing:** `docs/policies.md` said
+  the four new sections go "after" the three sections already there; a
+  first pass had spliced them in after only the first of the three
+  instead of after all of them. Reordered so the three original
+  sections stay together, in their original order, with the four new
+  ones appended after all three — then re-read the file end to end to
+  confirm nothing else had shifted. Updated `week-02.md`'s closing
+  sentence to match the new Assignment 1 model and grepped the repo for
+  "threshold" to confirm no other page still referenced the old one.
+- **How I knew it was right:** `pnpm check` green (42 pages, 36 tests, 0
+  typecheck errors). Screenshotted the policies and assignment-1 pages
+  at both marking viewports (1920×1080, 390×844) plus full-height
+  renders at each width, confirming the section order, no dead space at
+  desktop width, and no overflow on mobile.
+- **Citation:**
+  [`8e5e6df`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/8e5e6df)
+
+---
+
+- **Date/time:** 2026-09-19, around 13:55
+- **Tag:** [judgement]
+- **What happened:** D7 asked for the C2 repetition review to be re-run,
+  same prompt and same three lists, against the fixed pages, and for a
+  plain gone/survives/new comparison against the original findings.
+- **What I did instead of the obvious thing:** The original C2 report
+  was never committed to this repo — C2's own instruction was "report
+  verbatim... change nothing", so it only ever existed in chat — so
+  there was no file to diff against directly. Rather than reconstructing
+  a verbatim old list from memory, ran the identical C2 prompt from
+  `docs/brief-day2-2.md` against the current `dist/` build, then checked
+  the fresh output against the specific findings D0–D6 actually named
+  (the only durable record of what the old review said survives as the
+  brief's own text and the commits that answered it), and reported
+  everything else in the new output on its own terms rather than
+  guessing whether the original pass had already seen it.
+- **How I knew it was right:** Read every quoted pair the review
+  subagent returned back against the real source files before trusting
+  any of it — confirmed the Policies/Assignment-4 "teams and captains"
+  overlap, the twelve-page and four-page template sentences, and the
+  still-open Lobby Lab 8 and 12 satire lines are real text, not
+  invented. Grepped for the removed Assignment 1 threshold language and
+  the pre-D1 session template blurb to confirm both are actually gone.
+- **Citation:** (no commit — review pass only; site reviewed as of
+  `8e5e6df`)
