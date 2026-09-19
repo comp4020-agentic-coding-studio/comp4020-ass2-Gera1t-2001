@@ -1592,3 +1592,22 @@ drafted from; it is not itself the submission.
   commits) or anything else this pass touched.
 - **Citation:** (no commit — verification finding only; `pnpm check:evidence`
   output as of `38c0c10`)
+
+---
+
+- **Date/time:** 2026-09-19, late afternoon
+- **Tag:** [routine]
+- **What happened:** After D8's report, the human pointed out that week 12's
+  "the coach may speak during the draft and between games, and not during a
+  game" line claims that rule "is also on the policies page" — the dead
+  cross-reference D8's sweep had flagged but was told to report, not fix.
+- **What I did instead of the obvious thing:** Added the rule to the
+  Policies page's "If you cannot make match day" section, in one sentence in
+  the page's own voice, exactly as asked — rather than also trimming week
+  12's fuller statement to a half-sentence link, since the human's
+  instruction was explicit that week 12 stay untouched this time.
+- **How I knew it was right:** Reread the new sentence against week 12's
+  claim to confirm the rule it points at now actually exists there; ran
+  `pnpm check` (build, links, accessibility, tests) and it passed.
+- **Citation:**
+  [`5c8f5f5`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/5c8f5f5)
