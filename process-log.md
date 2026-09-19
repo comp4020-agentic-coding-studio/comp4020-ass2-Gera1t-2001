@@ -1546,3 +1546,49 @@ drafted from; it is not itself the submission.
   check` (build, links, accessibility, tests) stayed green throughout.
 - **Citation:**
   [`4c362b6`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/4c362b6)
+
+---
+
+- **Date/time:** 2026-09-19, mid-afternoon
+- **Tag:** [routine]
+- **What happened:** D7 found week 1's lecture stating the same three-item
+  list — the bots last-hit, buy on time, and move as a group — twice, once in
+  the week's decision narrative and again, in full, under Mechanics' own "Why
+  the bots beat you" heading roughly 40 lines later.
+- **What I did instead of the obvious thing:** Kept the Mechanics copy, since
+  it sits under a heading written for exactly this fact and the brief's own
+  tie-break favours the list living next to what it explains rather than in
+  an introduction, and rewrote the earlier mention to point forward to
+  Mechanics instead of repeating the list.
+- **How I knew it was right:** Grepped the file for `last-hit`/`buy on
+  time`/`move` afterward to confirm the three items now appear in exactly one
+  place; `pnpm check` (build, links, accessibility, tests) passed, and the
+  built page read correctly at 1920×1080 and 390×844 in a fresh preview
+  build.
+- **Citation:**
+  [`38c0c10`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/38c0c10)
+
+---
+
+- **Date/time:** 2026-09-19, late afternoon
+- **Tag:** [judgement]
+- **What happened:** D8's item G asked for `pnpm check` and `pnpm
+  check:evidence` both green before reporting. `pnpm check` passed throughout
+  A–F. `pnpm check:evidence` fails on two pre-existing conditions: PROCESS.md
+  still carries its starter template text, and the template's two example
+  citations (`a1b2c3d`, `e4f5a6b`) are placeholder hashes that do not resolve
+  in this repo.
+- **What I did instead of the obvious thing:** Did not touch PROCESS.md to
+  make the check pass — this pass's closing section explicitly forbids
+  opening it ("do not touch PROCESS.md... those are the author's"), and the
+  failure predates every commit made in this pass (confirmed via `git log
+  --oneline -- PROCESS.md`, which shows only the initial commit). Reported
+  the contradiction instead of forcing the edit, per this brief's own rule
+  that the repo wins when an instruction conflicts with what's actually
+  there.
+- **How I knew it was right:** Read `scripts/check-evidence.ts` to confirm
+  its failures are scoped to `PROCESS.md`'s own content and citations, not to
+  `process-log.md` (whose citations in this pass all resolve to real
+  commits) or anything else this pass touched.
+- **Citation:** (no commit — verification finding only; `pnpm check:evidence`
+  output as of `38c0c10`)
