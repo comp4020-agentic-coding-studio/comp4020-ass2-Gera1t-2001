@@ -13,8 +13,8 @@ needs_others: >-
   product is one shared table nobody could have built alone.
 spec:
   - you tried the same item on three heroes of different primary attributes
-  - you can say which hero it was worth most on, for a reason other than "that
-    hero is stronger"
+  - you can say which hero it was worth most on, and point to the exchange
+    rate that made it so
   - you can look at an untried hero and infer from its attribute roughly how it
     plays
 related:

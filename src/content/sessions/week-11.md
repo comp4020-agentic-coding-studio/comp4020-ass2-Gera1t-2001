@@ -13,7 +13,8 @@ needs_others: >-
   answering you.
 spec:
   - your team completed a full Captains Mode draft
-  - your team gave a reason for every ban that was not "that hero is strong"
+  - your team could name, for every ban, the specific matchup or plan it
+    closed off
   - you can say at which stage of the game your lineup intends to win
 related:
   - lectures/week-11

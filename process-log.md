@@ -1495,3 +1495,31 @@ drafted from; it is not itself the submission.
   390×844 and read the new sentence in place.
 - **Citation:**
   [`a34d918`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/a34d918)
+
+---
+
+- **Date/time:** 2026-09-19, mid-afternoon
+- **Tag:** [judgement]
+- **What happened:** D8 named a general rule — every fact has one home page
+  that states it in full, everywhere else names it and links — and applied it
+  to two cases: the Hall of Fame's no-marks fact (stated in full on its own
+  page, on Policies, and on Assignment 4) and the Assignment 1 baseline
+  accommodation (re-explained on Policies instead of pointed at Assignment
+  1's own page).
+- **What I did instead of the obvious thing:** For the Hall of Fame, the
+  "home" page was itself deferring to Policies ("see the policies page for
+  the rule") even though it already stated the fact — the inverted case, not
+  the duplicated one. Fixed the Hall of Fame page to own the statement
+  directly instead of just trimming the other two and leaving that backwards
+  reference in place. Also read Lobby Lab 12's Hall-of-Fame mention before
+  touching anything else, since it looked like a third over-explainer; it
+  already only names the fact in-line, so I left it alone rather than
+  "fixing" text that already matched the rule.
+- **How I knew it was right:** Grepped `no marks`, `no bonus`, `no weight`,
+  and `baseline` across the repo before and after editing to confirm each
+  fact's full explanation now appears exactly once. Rendered the Hall of
+  Fame, Assignment 4, and Policies pages at 1920×1080 and 390×844 in a fresh
+  preview build and read every link on those pages to confirm none broke;
+  `pnpm check`'s broken-links pass also came back clean.
+- **Citation:**
+  [`a39871a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/a39871a)

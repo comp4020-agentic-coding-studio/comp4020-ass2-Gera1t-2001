@@ -96,6 +96,6 @@ for directly.
 ## After this week you can…
 
 - say what to take after winning a fight
-- say whether your team should start Roshan, with a reason that is not "we are
-  strong"
+- say whether your team should start Roshan, and name the timing window or
+  vision that makes it worth it
 - explain why barracks and towers are different orders of magnitude
