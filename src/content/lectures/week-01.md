@@ -22,10 +22,10 @@ tutorial: "§1 — This is Dota, basic mechanics, looking around"
 
 You install the game, you finish the tutorial, you queue against the bots, and
 the bots win. The reason is not that they are quick. It is that they are
-playing a different game from you: they take their last hits, they buy on
-time, and they move as a group, while you are crossing the map looking for a
-fight. That contrast — deciding against reacting — is the first one this
-course draws, and the eleven weeks after it are all elaborations of it.
+playing a different game from you, one this week's Mechanics section spells
+out, while you are crossing the map looking for a fight. That contrast —
+deciding against reacting — is the first one this course draws, and the eleven
+weeks after it are all elaborations of it.
 
 The mistake this week fixes is treating Dota as a fighting game, and so
 spending the whole match hunting fights. Most of what you actually do is

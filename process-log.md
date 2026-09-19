@@ -1523,3 +1523,26 @@ drafted from; it is not itself the submission.
   `pnpm check`'s broken-links pass also came back clean.
 - **Citation:**
   [`a39871a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/a39871a)
+
+---
+
+- **Date/time:** 2026-09-19, mid-afternoon
+- **Tag:** [judgement]
+- **What happened:** D8 named "a reason that is not '[naive answer]'" a tic
+  after five uses across weeks 3, 5, 9, 10 and 11, and ruled that only weeks 3
+  and 9 keep it — the naive answer in those two is one a beginner would
+  actually give — while 5, 10 and 11 should lose it in favour of a plain
+  question.
+- **What I did instead of the obvious thing:** The easy path was one
+  replacement phrase reused three times, which would just be a second tic in
+  the same shape as the first. Wrote three distinct sentences instead — week
+  5's spec now asks for the exchange rate directly, week 10's asks for the
+  specific timing or vision advantage, and week 11's asks for the matchup or
+  plan a ban closed off — each naming the actual thing a good answer contains
+  rather than defining it by exclusion.
+- **How I knew it was right:** Grepped for the formula's shape across
+  `src/content/` before and after; only week 3's and week 9's uses remain, and
+  the three new sentences share no repeated wording with each other. `pnpm
+  check` (build, links, accessibility, tests) stayed green throughout.
+- **Citation:**
+  [`4c362b6`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/4c362b6)
