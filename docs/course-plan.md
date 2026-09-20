@@ -97,20 +97,22 @@ Fixed sections every week's page carries, in this order:
 
 ### Decks
 
-- **One flagship deck: week 2 (last-hitting).** A1 hangs off it, it is the
-  week that most needs visuals, and it is where the course diverges most from
-  Valve's order (the deck's first slide can say so).
-- If time allows, a second deck for week 8 (control and BKB). The two weeks
-  are non-adjacent by design.
-- Every other lecture declares in frontmatter `deck: none` with a non-empty
-  `deck_reason`. Absence is a stated decision, not an omission.
+- **Every lecture has a deck** (`/decks/week-01/` to `/decks/week-12/`).
+  This reverses the original plan of one flagship deck on week 2, with the
+  other eleven declaring `deck: none` and a `deck_reason`. Those reasons
+  were phrased as teaching arguments, but the real constraint was cost: a
+  deck meant designing one by hand, and a polished hand-made deck would
+  have pulled toward third-party artwork. Once decks could be drafted with
+  AI from each lecture page, reusing the in-house diagrams, the cost
+  argument fell away and the reasons were removed rather than kept.
 - Decks use the starter's astromotion format (`src/decks/<name>.deck.mdx`,
   markdown with `---` between slides). A deck is a lecture, not a copy of the
   week page: fewer words, more pictures, one judgement per slide.
-- **Decks are written by the course author.** The agent's part is plumbing
-  only: a title-only stub so links and checks stay green, then adding the
-  finished file, building it and checking every slide at both marking
-  viewports.
+- **Decks are drafted with AI in the author's planning session**, from
+  the lecture page, and reviewed and accepted by the author before they
+  enter the repo. The build agent's part is plumbing only: adding the
+  finished file, wiring the lecture's `slides:` link, building it, and
+  checking every slide at both marking viewports.
 
 ### Lobby Labs (the `sessions` collection)
 
@@ -239,7 +241,7 @@ commit.
 - "Order of decisions, not order of survival": the disagreement with Valve's tutorial.
 - Rejecting the "+1 mark" MVP bonus in favour of a Hall of Fame: the sum-to-100 check, and rewarding learning rather than winning.
 - Three "attribute hero showcase" weeks were split into one case-study hero per week, to avoid twelve weeks that repeat one another.
-- One deck only, with `deck_reason` turning each absence into a commitment.
+- One deck only, with `deck_reason` turning each absence into a commitment — then reversed on 20 Sep, when the reasons turned out to be covering for cost (`5f5dac9`).
 - Data and visuals handled separately for copyright.
 - The build agent's own review of the schedule (Wed 16 Sep): it argued the plan put a data layer ahead of the twelve weeks the marker actually reads, that artwork is a hard gate not a finish, and that nothing checked `draft: true` off. Accepted, with the draft check deferred to Friday so the suite stays readable in between.
 - The ≤ 2 abilities rule: it stops an agent generating encyclopaedic slop; the full breakdown is A3's job.
@@ -252,7 +254,7 @@ Resolved in planning (2026-09-16):
 
 - [x] Title: *Welcome to Dota. You Will Lose.*
 - [x] Calendar: the starter's Semester 1 2027 dates, unchanged (§2).
-- [x] Flagship deck: week 2, written by the author.
+- [x] Decks: all twelve weeks, drafted with AI and reviewed by the author (reversed from one flagship deck on 20 Sep).
 - [x] The `sessions` collection is this course's weekly **Lobby Lab**, twelve of them (§3). The collection key, refs and URL stay `sessions`; only `sessionLabels` changes.
 - [x] Data layer reduced to one small `FACTS.md` (§6).
 - [x] Patch 7.41 removed Facets (confirmed 16 Sep from patch coverage); week 5 teaches the four attributes only.

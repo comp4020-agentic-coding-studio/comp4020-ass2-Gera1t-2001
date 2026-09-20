@@ -53,7 +53,7 @@ notes were not.
   - point out the three lanes, both jungles and the Roshan pit on the minimap
   - name which of the five resources you lost your last game on
 - **The mistake this week fixes:** treating Dota as a fighting game, and so spending the whole match looking for fights. Most of what you do is collect gold and experience; fights happen to protect that or to interrupt theirs.
-- **deck_reason:** Week one hands over a map and a vocabulary; one diagram and a paragraph do that better than slides. The week that needs visual work is week 2.
+- **Deck:** `/decks/week-01/`.
 
 ---
 
@@ -75,7 +75,7 @@ notes were not.
   - explain what a deny takes from the enemy, and what it does to the wave
   - name the three things that happen at once when you hold down the attack key
 - **The mistake this week fixes:** holding down the attack key. It misses last hits, pushes the lane, and pulls creep aggro onto you — three errors in one action.
-- **Deck:** this week carries the course's one deck, `/decks/week-02/`. Written by the author.
+- **Deck:** `/decks/week-02/`.
 
 ---
 
@@ -96,7 +96,7 @@ notes were not.
   - give a reason to push that is not "I want the tower"
   - explain why the off lane is the hard lane in terms of distance, not skill
 - **The mistake this week fixes:** standing at the front of the creep wave. It looks like participating; it is taking creep aggro and enemy spells at once, and pushing the lane.
-- **deck_reason:** Creep equilibrium is one diagram's worth of idea; the drawing on this page does more than a deck would.
+- **Deck:** `/decks/week-03/`.
 - **Where the wave meets, and why it matters** (from `docs/map-reference.md`): mid meets at the centre of the map; on a **safe lane** the meeting point sits closer to the safe-lane team's own tier-1 tower, and therefore on an **off lane** it sits far from the off-laner's tower and close to the enemy's. Say this on the page: it is the structural reason the off lane is the hard lane, and it makes "hold the wave near your tower" a different job depending on which lane you are standing in. No figures — the asymmetry is a shape, not a distance.
 
 ---
@@ -120,7 +120,7 @@ notes were not.
   - give the reason you left the lane, in the form "I gave up X to get Y"
   - say whether the jungle you are looking at is an early-game jungle or a late one
 - **The mistake this week fixes:** leaving the lane "to have a look". A rotation without a target trades certain experience for nothing.
-- **deck_reason:** Pulling and stacking are questions of timing, and static slides cannot teach timing; this week's weight is in the Lobby Lab, not at the lectern.
+- **Deck:** `/decks/week-04/`.
 - **OPEN (author):** confirm that splitting wards across weeks 4 and 9 reads naturally, rather than leaving week 4 students asking about the other half.
 
 ---
@@ -145,7 +145,7 @@ notes were not.
   - explain why a hero's primary attribute is worth more to them than the other two
   - read a shop item's stat line and say who on your team it is for
 - **The mistake this week fixes:** picking on how a hero looks, then discovering in the game that every ability costs mana and you are a Strength hero.
-- **deck_reason:** The attribute-to-stat mapping is a table, and a table earns its place on a page students come back to, not in a deck they see once.
+- **Deck:** `/decks/week-05/`.
 
 ---
 
@@ -170,7 +170,7 @@ notes were not.
   - say who your team should be playing around right now
   - explain why a position five not last-hitting is not laziness
 - **The mistake this week fixes:** five players who all want position one; or picking a support and then playing it like a core, competing for the same gold.
-- **deck_reason:** A position is a discussion, not a lecture — this week's weight is the argument in the Lobby Lab.
+- **Deck:** `/decks/week-06/`.
 
 ---
 
@@ -192,7 +192,7 @@ notes were not.
   - explain what each item in your starting kit is for
   - say what to buy when the enemy has aimed something at you
 - **The mistake this week fixes:** saving for one big item while owning nothing; or the reverse, spending everything on components and never completing anything.
-- **deck_reason:** A build is a checklist students will look up again, and a page can be looked up.
+- **Deck:** `/decks/week-07/`.
 
 ---
 
@@ -214,7 +214,7 @@ notes were not.
   - look at the enemy lineup and say whether you need a BKB
   - tell apart a fight lost to being controlled and one lost to standing in the wrong place
 - **The mistake this week fixes:** spending a control spell the moment it is off cooldown; or buying a BKB and walking into five people believing you are invulnerable.
-- **Deck:** none, unless the optional second deck is made. **deck_reason:** The taxonomy of control is a table this page can hold; it deserves a deck, but this course promised one deck and gave it to last-hitting.
+- **Deck:** `/decks/week-08/`.
 
 ---
 
@@ -236,7 +236,7 @@ notes were not.
   - say where an enemy probably is when they disappear, instead of continuing to push
   - say what an Observer and a Sentry each bought you
 - **The mistake this week fixes:** warding at your own feet; or never looking at the minimap and still pushing two minutes after all five enemies vanished.
-- **deck_reason:** Ward positions are specific places on a map, and an annotated map is more direct than a stack of slides.
+- **Deck:** `/decks/week-09/`.
 
 ---
 
@@ -258,7 +258,7 @@ notes were not.
   - say whether your team should start Roshan, with a reason that is not "we are strong"
   - explain why barracks and towers are different orders of magnitude
 - **The mistake this week fixes:** going home to shop after winning a teamfight. That minute is the most expensive minute in the game, and it was spent in the shop interface.
-- **deck_reason:** Objective priority is a judgement, not a fact to memorise; the page gives the frame and the Lobby Lab gives the practice.
+- **Deck:** `/decks/week-10/`.
 
 ---
 
@@ -280,7 +280,7 @@ notes were not.
   - complete a simple Captains Mode draft and give a reason for every ban
   - name a fight lost on initiation timing rather than on execution
 - **The mistake this week fixes:** going in first because you have the most health. Initiation is decided by which abilities combine, not by who is hardest to kill.
-- **deck_reason:** Drafting is a procedure students walk through for real in A4; the page holds the rules and the Lobby Lab holds the rehearsal.
+- **Deck:** `/decks/week-11/`.
 
 ---
 
@@ -300,7 +300,7 @@ notes were not.
   - play a full game and afterwards name three decisions you had reasons for, and one you did not
   - read a patch note and say which of your decisions it changes, not which numbers it moves
   - decide for yourself what to practise next, without being told
-- **deck_reason:** This is match week; students are playing, not listening.
+- **Deck:** `/decks/week-12/`.
 
 ---
 
