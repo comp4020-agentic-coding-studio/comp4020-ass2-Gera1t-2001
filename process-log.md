@@ -1678,3 +1678,85 @@ drafted from; it is not itself the submission.
   [`58930f1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/58930f17d957b01b89711970223cc81d4cb05865),
   both verified to exist via `git cat-file -e <sha>^{commit}`.
 - **Curated prompt:** "Read docs/brief-decks.md and execute it."
+
+---
+
+- **Date/time:** 2026-09-20, afternoon
+- **Tag:** [judgement]
+- **What happened:** The prior pass's per-slide report found five diagram
+  slides clipped at the bottom at 1920x1080. The cause: reveal.js lays each
+  markdown image out at its native pixel size inside the deck's fixed
+  1280x720 slide frame, and no CSS anywhere in the stack (astro-theme-
+  university's `deck.css`, reveal.js core, astromotion, astro-theme-slop)
+  constrains image height — several diagrams are simply taller than the
+  frame has room for once the heading and padding are accounted for.
+- **What I did instead of the obvious thing:** Rather than guess a
+  `max-height` and eyeball the result, measured the actual rendered layout
+  first. No Python image library or Playwright/Puppeteer package was
+  available in this environment (`pip`, `PIL`, `pip install` all failed with
+  no network-installable fallback), so I drove the already-running headless
+  Chromium directly over the Chrome DevTools Protocol with a small hand-
+  rolled WebSocket client (no third-party dependency), calling
+  `Runtime.evaluate` for `getBoundingClientRect()` on the heading and image
+  of the affected slides. That gave the deck's fixed local coordinate
+  numbers directly: a 720px-tall slide, 64px top/bottom padding, a
+  single-line heading occupying ~53px, leaving ~507px of vertical room —
+  consistent across every affected slide, since every heading in this set is
+  one line. I set `max-height: 29rem` (464px) on `section > p > img`, a few
+  percent under that measured ceiling rather than flush with it, and
+  confirmed via `grep` that every image in all twelve decks is a plain
+  markdown image in that exact structure (no `.hero`/`.logo-slide`/
+  `.qr-code` component appears anywhere in `src/decks/*.deck.mdx`), so one
+  rule was safe to apply deck-wide rather than needing a per-slide class.
+- **How I knew it was right:** `pnpm check` green. Screenshotted and read
+  all seven diagram slides at 1920x1080 (weeks 1, 2, 3, 4, 5, 9, 10):
+  weeks 1, 3, 5, 9, 10 now fit with labels readable, and the two previously
+  "clean" slides (week-02 s9, week-04 s6) are not degraded — if anything the
+  same CDP measurement showed week-04's `camp-cycle.svg` (900px tall) was
+  *also* already overflowing the 507px ceiling before this fix, just less
+  visibly than the others, so the earlier "clean" read was itself a minor
+  false green that this fix also corrects. Re-checked week-06 slide 13's
+  previously-reported red-tinted full stop: it does not reproduce in a fresh
+  screenshot, and the rendered HTML for that paragraph carries no inline
+  style or span at all (plain inherited text colour), so there was nothing
+  in CSS to have caused it — most likely a one-off artifact of the earlier
+  screenshot pass, not a real bug, and I made no change for it. Spot-checked
+  week-03's diagram slide at 390x844: the whole slide scales down uniformly
+  with the rest of the frame and shows no clipping.
+- **Citation:**
+  [`b9f4d48`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/b9f4d48)
+  (this commit).
+- **Curated prompt:** "Read docs/brief-deck-fix.md and execute it."
+
+---
+
+- **Date/time:** 2026-09-20, afternoon
+- **Tag:** [judgement]
+- **What happened:** `docs/weeks.md` and `docs/course-plan.md` still described
+  the reversed decision from before the deck-fix pass: eleven weeks carrying a
+  `deck_reason` explaining why they had no deck, when all twelve now have one.
+  `docs/brief-deck-fix.md` granted a one-time, explicitly scoped authorisation
+  to edit exactly these two files' stale lines myself, rather than routing the
+  change back to the author the way `docs/*.md` normally works.
+- **What I did instead of the obvious thing:** Used the authorisation exactly
+  as scoped rather than treating it as a general licence to tidy the docs.
+  Touched only the twelve `deck_reason`/provenance lines in `weeks.md` and the
+  four specific bullets/lines in `course-plan.md` the brief named, with the
+  brief's own verbatim replacement text — not a paraphrase, and not an
+  opportunity to also fix anything else noticed nearby. `CLAUDE.md`, every
+  deck `.mdx` file, and `PROCESS.md` were left untouched, and the brief file
+  itself stayed uncommitted, per the brief's own "do not" list.
+- **How I knew it was right:** `grep -n "one deck\|deck_reason\|flagship\|
+  Written by the author" docs/weeks.md docs/course-plan.md` came back with
+  zero hits in `weeks.md` and six in `course-plan.md`, all six accounted for:
+  four are the brief's own replacement text describing the reversal
+  historically (correct to mention "flagship"/`deck_reason` as what changed,
+  not as a leftover), and two are lines the brief explicitly said to leave —
+  the §8 spec-check line (still true: every lecture links a deck, which still
+  satisfies the original either/or) and the Sat-19-Sep schedule row (a record
+  of the plan as it stood that day, not a current claim). `pnpm check` green
+  afterwards: 53 pages built, no accessibility or broken-link violations, 12
+  decks structurally clean, 36/36 tests passed.
+- **Citation:**
+  [`74f8ffd`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/74f8ffd)
+- **Curated prompt:** "Read docs/brief-deck-fix.md and execute it."
