@@ -8,10 +8,7 @@ date: 2027-05-03
 decision: "Where did he go?"
 teachers:
   - wen-adeyemi
-deck: none
-deck_reason:
-  Ward positions are specific places on a map, and an annotated map is more
-  direct than a stack of slides.
+slides: /decks/week-09/
 heroes:
   - vengeful-spirit
 abilities:

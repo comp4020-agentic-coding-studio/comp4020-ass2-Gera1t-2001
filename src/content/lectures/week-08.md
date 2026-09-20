@@ -8,10 +8,7 @@ date: 2027-04-26
 decision: "When should I not engage?"
 teachers:
   - grace-nakamura
-deck: none
-deck_reason:
-  The taxonomy of control is a table this page can hold; it deserves a deck,
-  and this course promised one deck and gave it to last-hitting.
+slides: /decks/week-08/
 heroes:
   - sand-king
 abilities:

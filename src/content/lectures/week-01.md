@@ -8,10 +8,7 @@ date: 2027-02-22
 decision: "Why can't I even beat the bots?"
 teachers:
   - wen-adeyemi
-deck: none
-deck_reason:
-  Week one hands over a map and a vocabulary; one diagram and a paragraph do
-  that better than slides. The week that needs visual work is week 2.
+slides: /decks/week-01/
 heroes: []
 abilities: []
 items: []

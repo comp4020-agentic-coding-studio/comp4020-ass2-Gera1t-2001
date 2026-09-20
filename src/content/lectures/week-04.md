@@ -8,10 +8,7 @@ date: 2027-03-15
 decision: "When should I leave the lane?"
 teachers:
   - hana-okabe
-deck: none
-deck_reason:
-  Pulling and stacking are questions of timing, and static slides cannot teach
-  timing; this week's weight is in the Lobby Lab, not at the lectern.
+slides: /decks/week-04/
 heroes:
   - lion
 abilities:

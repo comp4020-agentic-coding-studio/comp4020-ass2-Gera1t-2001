@@ -8,10 +8,7 @@ date: 2027-05-10
 decision: "Towers or heroes?"
 teachers:
   - nadia-petrova
-deck: none
-deck_reason:
-  Objective priority is a judgement, not a fact to memorise; the page gives
-  the frame and the Lobby Lab gives the practice.
+slides: /decks/week-10/
 heroes:
   - enigma
 abilities:

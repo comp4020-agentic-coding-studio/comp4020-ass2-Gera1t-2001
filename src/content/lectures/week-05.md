@@ -8,10 +8,7 @@ date: 2027-03-22
 decision: "Who should I pick?"
 teachers:
   - wen-adeyemi
-deck: none
-deck_reason:
-  The attribute-to-stat mapping is a table, and a table earns its place on a
-  page students come back to, not in a deck they see once.
+slides: /decks/week-05/
 heroes:
   - sven
   - phantom-assassin

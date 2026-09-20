@@ -8,10 +8,7 @@ date: 2027-04-19
 decision: "What do I buy?"
 teachers:
   - hana-okabe
-deck: none
-deck_reason:
-  A build is a checklist students will look up again, and a page can be looked
-  up.
+slides: /decks/week-07/
 heroes:
   - lich
 abilities:

@@ -9,8 +9,7 @@ decision: "Capstone: the best-of-three"
 teachers:
   - grace-nakamura
   - wen-adeyemi
-deck: none
-deck_reason: This is match week; students are playing, not listening.
+slides: /decks/week-12/
 heroes: []
 abilities: []
 items: []

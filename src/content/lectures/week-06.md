@@ -9,10 +9,7 @@ decision: "What am I for in this team?"
 teachers:
   - wen-adeyemi
   - nadia-petrova
-deck: none
-deck_reason:
-  A position is a discussion, not a lecture — this week's weight is the
-  argument in the Lobby Lab.
+slides: /decks/week-06/
 heroes:
   - crystal-maiden
   - juggernaut

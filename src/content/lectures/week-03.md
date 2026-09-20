@@ -8,10 +8,7 @@ date: 2027-03-08
 decision: "Where is the lane, and where do I stand?"
 teachers:
   - hana-okabe
-deck: none
-deck_reason:
-  Creep equilibrium is one diagram's worth of idea; the drawing on this page
-  does more than a deck would.
+slides: /decks/week-03/
 heroes:
   - wraith-king
 abilities:

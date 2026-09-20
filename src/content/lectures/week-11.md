@@ -8,10 +8,7 @@ date: 2027-05-17
 decision: "Who goes first?"
 teachers:
   - grace-nakamura
-deck: none
-deck_reason:
-  Drafting is a procedure students walk through for real in Assignment 4; the
-  page holds the rules and the Lobby Lab holds the rehearsal.
+slides: /decks/week-11/
 heroes:
   - tidehunter
 abilities:
