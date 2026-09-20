@@ -1611,3 +1611,22 @@ drafted from; it is not itself the submission.
   `pnpm check` (build, links, accessibility, tests) and it passed.
 - **Citation:**
   [`5c8f5f5`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/5c8f5f5)
+
+---
+
+- **Date/time:** 2026-09-19, late afternoon
+- **Tag:** [routine]
+- **What happened:** The commit that actually carried the Policies-page
+  sentence and the owed log entry above landed as `90cdbb3`, not `5c8f5f5` —
+  `5c8f5f5` only ever touched `process-log.md` (confirmed via `git show
+  --stat` on both hashes).
+- **What I did instead of the obvious thing:** Rather than rewrite the
+  entry above to fix its citation, left it as-is and added this one instead
+  — editing a past entry's citation after the fact is a judgement call for
+  the human to make, not something to do silently while pushing unrelated
+  files.
+- **How I knew it was right:** `git show --stat 5c8f5f5` shows only
+  `process-log.md`; `git show --stat 90cdbb3` shows `process-log.md` and
+  `src/pages/policies/index.mdx` — the coach-rule sentence is in the latter.
+- **Citation:**
+  [`90cdbb3`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/90cdbb3363cfb6a29daa0ad29090496edef84138)
