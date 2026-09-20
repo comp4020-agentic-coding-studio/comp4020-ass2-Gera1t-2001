@@ -1760,3 +1760,25 @@ drafted from; it is not itself the submission.
 - **Citation:**
   [`74f8ffd`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/74f8ffd)
 - **Curated prompt:** "Read docs/brief-deck-fix.md and execute it."
+
+---
+
+- **Date/time:** 2026-09-20, evening
+- **Tag:** [routine]
+- **What happened:** With the deadline close, `PROCESS.md` was still the
+  unfilled starter template — its own TEMPLATE comment, placeholder headings,
+  and example citations (`YOUR-ORG/YOUR-REPO`, `a1b2c3d`) — with no account of
+  the actual course or process written yet.
+- **What I did instead of the obvious thing:** Rather than a chronological
+  log of every commit, picked three moments that share one shape — a mistake
+  that passed a fetch, a checker, or a green build, and was only caught by
+  whoever knew enough to look (me, then the build agent, twice) — and wrote
+  the narrative around that pattern instead. Cut everything that didn't serve
+  it to land inside the word ceiling while keeping every claim cited.
+- **How I knew it was right:** `pnpm check:evidence` green (all 9 cited
+  commits resolve, template comment gone). Word count excluding headings and
+  link URLs: 576, inside the spec's 400–600 range. Re-read each of the three
+  moments against the commit it cites to confirm the citation matches the
+  work described, not just that the hash resolves.
+- **Citation:**
+  [`c84544f`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/c84544f)
