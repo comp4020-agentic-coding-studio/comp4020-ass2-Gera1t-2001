@@ -1630,3 +1630,51 @@ drafted from; it is not itself the submission.
   `src/pages/policies/index.mdx` — the coach-rule sentence is in the latter.
 - **Citation:**
   [`90cdbb3`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/90cdbb3363cfb6a29daa0ad29090496edef84138)
+
+---
+
+- **Date/time:** 2026-09-20, late morning
+- **Tag:** [judgement]
+- **What happened:** The author reversed an earlier decision: until now week 2
+  was the only lecture with a deck, and the other eleven carried `deck: none`
+  with a `deck_reason`. From this commit on, all twelve lectures link a deck.
+  This entry records the author's own reasoning for the reversal, not the
+  agent's.
+- **The author's reasoning:** The eleven `deck_reason`s were written as
+  teaching arguments ("static slides cannot teach timing", "one diagram does
+  more than a deck would"), but the real reason underneath them was cost: a
+  deck was pictured as something to design and polish by hand, one per week.
+  Week 8's own reason gave this away — it said the week "deserves a deck" and
+  that the course "promised one deck and gave it to last-hitting." Hand-
+  polishing decks would also have pulled the work toward third-party artwork,
+  which this course rules out (in-house visuals only, no Valve art), so the
+  expensive version was not just expensive, it was the version most likely to
+  break the course's own rules. Drafts produced with AI from each week's
+  lecture page, reusing the in-house diagrams already in
+  `src/assets/diagrams/`, turned out to be good enough for the purpose — once
+  a deck cost minutes rather than an evening, the cost argument no longer
+  held, and the teaching arguments on top of it were not strong enough to
+  stand alone. So the reasons were removed rather than kept as justification
+  the author no longer believes. Provenance: all twelve decks, including week
+  2's, were drafted by Claude in the author's separate planning session from
+  the lecture pages, and reviewed and accepted by the author.
+- **What I did instead of the obvious thing:** Rather than write this
+  reasoning up as my own assessment of the trade-off, recorded it verbatim as
+  the author's judgement, per the brief that requested it (`docs/brief-decks.md`)
+  — the agent's role here was execution (frontmatter swap, verification,
+  commit), not authorship of the decision.
+- **How I knew it was right:** `pnpm check` green after the swap (`spec/
+  course-structure.test.ts`'s deck-or-deck_reason constraint holds for all
+  twelve lectures; `spec/weekly-contract.test.ts`'s deck-reason test degrades
+  to a no-op now that no lecture carries `deck_reason`); every slide of all
+  twelve decks screenshotted at 1920x1080 and read to confirm the seven
+  diagram slides genuinely render their SVGs (no broken-image icon, no
+  placeholder) before treating the swap as safe to commit.
+- **Citation:**
+  [`5f5dac9`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/5f5dac9)
+  (this commit). The `deck_reason` keys being removed here were introduced by
+  [`bf9cfc0`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/bf9cfc055af3fd3623fed28322fdc902a80294c7)
+  and
+  [`58930f1`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-Gera1t-2001/commit/58930f17d957b01b89711970223cc81d4cb05865),
+  both verified to exist via `git cat-file -e <sha>^{commit}`.
+- **Curated prompt:** "Read docs/brief-decks.md and execute it."

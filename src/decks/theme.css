@@ -11,3 +11,18 @@
  * slide class you reach for (`_class: quote`), a code-heavy layout, a
  * background. */
 @import url("astro-theme-university/styles/deck.css");
+
+/* Diagram slides are a bare markdown image (`section > p > img`), and
+ * reveal.js lays each one out at its native pixel size inside the fixed
+ * 1280x720 slide frame --- several diagrams are taller than what's left
+ * under a heading, so they spill past the frame and get clipped by
+ * reveal's own overflow. Cap the height at what a one-line heading and the
+ * slide's own padding actually leave (measured via the rendered layout,
+ * not guessed) and let width follow the image's aspect ratio. */
+:where(.reveal .slides) section > p > img {
+  max-height: 29rem;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin-inline: auto;
+}
